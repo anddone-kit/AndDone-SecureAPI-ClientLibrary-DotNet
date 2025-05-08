@@ -1,0 +1,50 @@
+# Org.OpenAPITools.Model.PaymentLinkResponse
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**MerchantId** | **string** |  | [optional] 
+**Title** | **string** |  | [optional] 
+**PaymentLink** | **string** |  | [optional] 
+**ShortLink** | **string** |  | [optional] 
+**Amount** | **float** |  | [optional] 
+**PaymentDescription** | **string** |  | [optional] 
+**ExpireIn** | **int** |  | [optional] 
+**ExpireInUnit** | **string** |  | [optional] 
+**ExpireOn** | **string** |  | [optional] 
+**Payments** | [**List&lt;PaymentLinkResponsePaymentsInner&gt;**](PaymentLinkResponsePaymentsInner.md) |  | [optional] 
+**NoOfPaymentMade** | **float** |  | [optional] 
+**TotalPaidAmount** | **float** |  | [optional] 
+**LinkStatus** | **string** |  | [optional] 
+**InvoiceNumber** | **string** |  | [optional] 
+**CreatedOn** | **string** |  | [optional] 
+**CreatedBy** | **string** |  | [optional] 
+**ModifiedOn** | **string** |  | [optional] 
+**ModifiedBy** | **string** |  | [optional] 
+**ShortDescription** | **string** |  | [optional] 
+**ResponseType** | **string** |  | [optional] 
+**CallbackParameters** | [**PaymentLinkResponseCallbackParameters**](PaymentLinkResponseCallbackParameters.md) |  | [optional] 
+**Customers** | [**List&lt;PaymentLinkResponseCustomersInner&gt;**](PaymentLinkResponseCustomersInner.md) |  | [optional] 
+**LineItems** | [**List&lt;PaymentLinkResponseLineItemsInner&gt;**](PaymentLinkResponseLineItemsInner.md) |  | [optional] 
+**DisplaySettings** | [**PaymentLinkResponseDisplaySettings**](PaymentLinkResponseDisplaySettings.md) |  | [optional] 
+**Splits** | [**List&lt;PaymentIntentRequestSplitsInner&gt;**](PaymentIntentRequestSplitsInner.md) |  | [optional] 
+**SaveForFuture** | **bool** |  | [optional] 
+**QuoteKey** | **string** |  | [optional] 
+**AccountNumber** | **string** |  | [optional] 
+**ReferenceType** | **string** |  | [optional] 
+**ReferenceNumber** | **string** |  | [optional] 
+**ReferenceKey** | **string** |  | [optional] 
+**ReferenceDataList** | [**List&lt;PaymentLinkResponseReferenceDataListInner&gt;**](PaymentLinkResponseReferenceDataListInner.md) |  | [optional] 
+**EnablePremiumFinance** | **bool** |  | [optional] 
+**IsPremiumFinancier** | **bool** |  | [optional] 
+**Pfr** | [**PaymentIntentRequestPfr**](PaymentIntentRequestPfr.md) |  | [optional] 
+**PaymentLinkType** | **string** |  | [optional] 
+**SuppressTechnologyFee** | **bool** |  | [optional] 
+**OverrideTechnologyFee** | **float** |  | [optional] 
+**IsPFLite** | **bool** |  | [optional] 
+**IsPayInFull** | **bool** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
