@@ -1,0 +1,52 @@
+# Org.OpenAPITools.Model.PaymentLinkResponse
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**MerchantId** | **string** |  | [optional] 
+**Title** | **string** |  | [optional] 
+**PaymentLink** | **string** |  | [optional] 
+**ShortLink** | **string** |  | [optional] 
+**Amount** | **decimal** |  | [optional] 
+**PaymentDescription** | **string** |  | [optional] 
+**ExpireBy** | **string** |  | [optional] 
+**ExpireOn** | **string** |  | [optional] 
+**ApplyPaymentAdjustments** | **bool** |  | [optional] 
+**EnablePartialPayment** | **bool** |  | [optional] 
+**EnableMultiplePayment** | **bool** |  | [optional] 
+**Payments** | **List&lt;string&gt;** |  | [optional] 
+**NoOfPaymentMade** | **decimal** |  | [optional] 
+**TotalPaidAmount** | **decimal** |  | [optional] 
+**EnableProtection** | **bool** |  | [optional] 
+**ProtectionMode** | **string** |  | [optional] 
+**DisplayReceipt** | **bool** |  | [optional] 
+**LinkStatus** | **decimal** |  | [optional] 
+**InvoiceNumber** | **string** |  | [optional] 
+**CreatedOn** | **string** |  | [optional] 
+**CreatedBy** | **string** |  | [optional] 
+**ModifiedOn** | **string** |  | [optional] 
+**ModifiedBy** | **string** |  | [optional] 
+**ShortDescription** | **string** |  | [optional] 
+**ResonseType** | **string** |  | [optional] 
+**CallbackParameters** | [**PaymentLinkResponseCallbackParameters**](PaymentLinkResponseCallbackParameters.md) |  | [optional] 
+**Customers** | [**List&lt;PaymentLinkResponseCustomersInner&gt;**](PaymentLinkResponseCustomersInner.md) |  | [optional] 
+**LineItems** | [**List&lt;PaymentLinkResponseLineItemsInner&gt;**](PaymentLinkResponseLineItemsInner.md) |  | [optional] 
+**DisplaySettings** | **string** |  | [optional] 
+**Splits** | [**List&lt;PaymentLinkResponseSplitsInner&gt;**](PaymentLinkResponseSplitsInner.md) |  | [optional] 
+**SaveForFuture** | **bool** |  | [optional] 
+**QuoteKey** | **string** |  | [optional] 
+**AccountNumber** | **string** |  | [optional] 
+**ReferenceDataList** | [**List&lt;PaymentIntentRequestReferenceDataListInner&gt;**](PaymentIntentRequestReferenceDataListInner.md) |  | [optional] 
+**EnablePremiumFinance** | **bool** |  | [optional] 
+**IsPremiumFinancier** | **bool** |  | [optional] 
+**Pfr** | [**PaymentLinkResponsePfr**](PaymentLinkResponsePfr.md) |  | [optional] 
+**PaymentLinkType** | **string** |  | [optional] 
+**SuppressTechnologyFee** | **bool** |  | [optional] 
+**OverrideTechnologyFee** | **decimal** |  | [optional] 
+**IsPFLite** | **bool** |  | [optional] 
+**IsPayInFull** | **bool** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

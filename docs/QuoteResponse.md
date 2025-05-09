@@ -1,0 +1,50 @@
+# Org.OpenAPITools.Model.QuoteResponse
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** | The unique identifier for the quote. | [optional] 
+**QuoteKey** | **string** | The key associated with the quote. | [optional] 
+**PFType** | **string** | The type of premium finance. | [optional] 
+**IsEndorsement** | **bool** | Indicates if the quote is an endorsement. | [optional] 
+**MerchantId** | **string** | The ID of the merchant. | [optional] 
+**ProgramId** | **int** | The ID of the program. | [optional] 
+**ProgramName** | **string** | The name of the program. | [optional] 
+**PaymentIntentId** | **string** | The ID of the payment intent. | [optional] 
+**AccountNumber** | **string** | The account number. | [optional] 
+**QuoteStatus** | **string** | The status of the quote. | [optional] 
+**IsActive** | **bool** | Indicates if the quote is active. | [optional] [default to true]
+**Premium** | **decimal** | The premium amount. | [optional] 
+**Tax** | **decimal** |  | [optional] 
+**AdditionalFees** | **decimal** | Additional fees associated with the quote. | [optional] 
+**DownAmount** | **decimal** | The down payment amount. | [optional] 
+**AmountFinanced** | **decimal** | The amount financed. | [optional] 
+**FinanceCharge** | **decimal** | The finance charge. | [optional] 
+**TotalPayments** | **decimal** | The total payments. | [optional] 
+**PaymentAmount** | **decimal** | The payment amount. | [optional] 
+**TotalAmount** | **decimal** | Total amount. | [optional] 
+**DocStamp** | **int** | The document stamp. | [optional] 
+**FirstDueDate** | **string** | The first due date. | [optional] 
+**Apr** | **decimal** | The annual percentage rate (APR). | [optional] 
+**Installments** | **int** | The number of installments. | [optional] 
+**BatchId** | **string** | The batch ID. | [optional] 
+**PaymentsRetained** | **int** | The number of payments retained. | [optional] 
+**PaymentRetainedAmount** | **decimal** | The amount retained from the payment. | [optional] 
+**RetailAgentRegisterLoginURL** | **string** | The URL for the retail agent register login. | [optional] 
+**InsuredName** | **string** | The name of the insured. | [optional] 
+**IsEsignPFA** | **bool** | Indicates if eSign is required for the PFA. | [optional] 
+**NextPaymentDueDate** | **string** | The next payment due date. | [optional] 
+**LastPaymentDate** | **string** | The last payment date. | [optional] 
+**IsDownPaymentRequired** | **bool** | Indicates if a down payment is required. | [optional] 
+**IsEsignRequired** | **bool** | Indicates if eSign is required. | [optional] 
+**IsDeleted** | **bool** | Indicates if the quote is deleted. | [optional] 
+**CreatedOn** | **string** | The date when the quote was created. | [optional] 
+**CreatedBy** | **string** | The user who created the quote. | [optional] 
+**ModifiedOn** | **string** | The date when the quote was last modified. | [optional] 
+**ModifiedBy** | **string** | The user who last modified the quote. | [optional] 
+**UnSignPFA** | **string** | The unsigned PFA document. | [optional] 
+**SignPFA** | **string** | The signed PFA document. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
