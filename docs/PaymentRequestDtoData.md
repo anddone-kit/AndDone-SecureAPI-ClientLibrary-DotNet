@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CheckNumber** | **int** |  | [optional] 
+**CheckNumber** | **float** |  | [optional] 
 **Memo** | **string** |  | [optional] 
 **CheckDate** | **string** |  | [optional] 
 **RemittanceData** | [**PaymentRequestDtoDataRemittanceData**](PaymentRequestDtoDataRemittanceData.md) |  | [optional] 

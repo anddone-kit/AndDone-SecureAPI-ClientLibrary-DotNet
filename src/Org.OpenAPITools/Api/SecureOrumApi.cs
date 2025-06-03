@@ -39,7 +39,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="verificationEntityRequest">Verification Entity (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>List&lt;VerifyBankAccountResponse&gt;</returns>
-        List<VerifyBankAccountResponse> SecureBankaccountsDetailsPost(string xApiKey, string xAppKey, string xVersion, string origin, decimal? id = default(decimal?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0);
+        List<VerifyBankAccountResponse> SecureBankaccountsDetailsPost(string xApiKey, string xAppKey, float xVersion, string origin, float? id = default(float?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0);
 
         /// <summary>
         /// This API will request for verified bank account.
@@ -57,7 +57,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="verificationEntityRequest">Verification Entity (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of List&lt;VerifyBankAccountResponse&gt;</returns>
-        ApiResponse<List<VerifyBankAccountResponse>> SecureBankaccountsDetailsPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, decimal? id = default(decimal?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0);
+        ApiResponse<List<VerifyBankAccountResponse>> SecureBankaccountsDetailsPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, float? id = default(float?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0);
         /// <summary>
         /// This API will request for account verification.
         /// </summary>
@@ -69,7 +69,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="verifyBankAccountRequest">Bank Accout detals (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>List&lt;VerifyBankAccountResponse&gt;</returns>
-        List<VerifyBankAccountResponse> SecureBankaccountsVerifyPost(string xApiKey, string xAppKey, string xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0);
+        List<VerifyBankAccountResponse> SecureBankaccountsVerifyPost(string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0);
 
         /// <summary>
         /// This API will request for account verification.
@@ -85,7 +85,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="verifyBankAccountRequest">Bank Accout detals (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of List&lt;VerifyBankAccountResponse&gt;</returns>
-        ApiResponse<List<VerifyBankAccountResponse>> SecureBankaccountsVerifyPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0);
+        ApiResponse<List<VerifyBankAccountResponse>> SecureBankaccountsVerifyPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
@@ -112,7 +112,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of List&lt;VerifyBankAccountResponse&gt;</returns>
-        System.Threading.Tasks.Task<List<VerifyBankAccountResponse>> SecureBankaccountsDetailsPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, decimal? id = default(decimal?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<List<VerifyBankAccountResponse>> SecureBankaccountsDetailsPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, float? id = default(float?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API will request for verified bank account.
@@ -131,7 +131,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (List&lt;VerifyBankAccountResponse&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<VerifyBankAccountResponse>>> SecureBankaccountsDetailsPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, decimal? id = default(decimal?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<List<VerifyBankAccountResponse>>> SecureBankaccountsDetailsPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, float? id = default(float?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// This API will request for account verification.
         /// </summary>
@@ -147,7 +147,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of List&lt;VerifyBankAccountResponse&gt;</returns>
-        System.Threading.Tasks.Task<List<VerifyBankAccountResponse>> SecureBankaccountsVerifyPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<List<VerifyBankAccountResponse>> SecureBankaccountsVerifyPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API will request for account verification.
@@ -164,7 +164,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (List&lt;VerifyBankAccountResponse&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<VerifyBankAccountResponse>>> SecureBankaccountsVerifyPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<List<VerifyBankAccountResponse>>> SecureBankaccountsVerifyPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -298,7 +298,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="verificationEntityRequest">Verification Entity (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>List&lt;VerifyBankAccountResponse&gt;</returns>
-        public List<VerifyBankAccountResponse> SecureBankaccountsDetailsPost(string xApiKey, string xAppKey, string xVersion, string origin, decimal? id = default(decimal?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0)
+        public List<VerifyBankAccountResponse> SecureBankaccountsDetailsPost(string xApiKey, string xAppKey, float xVersion, string origin, float? id = default(float?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>> localVarResponse = SecureBankaccountsDetailsPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, id, type, verificationEntityRequest);
             return localVarResponse.Data;
@@ -317,7 +317,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="verificationEntityRequest">Verification Entity (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of List&lt;VerifyBankAccountResponse&gt;</returns>
-        public Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>> SecureBankaccountsDetailsPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, decimal? id = default(decimal?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>> SecureBankaccountsDetailsPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, float? id = default(float?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -329,12 +329,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOrumApi->SecureBankaccountsDetailsPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOrumApi->SecureBankaccountsDetailsPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -377,7 +371,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = verificationEntityRequest;
 
             localVarRequestOptions.Operation = "SecureOrumApi.SecureBankaccountsDetailsPost";
@@ -422,7 +416,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of List&lt;VerifyBankAccountResponse&gt;</returns>
-        public async System.Threading.Tasks.Task<List<VerifyBankAccountResponse>> SecureBankaccountsDetailsPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, decimal? id = default(decimal?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<List<VerifyBankAccountResponse>> SecureBankaccountsDetailsPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, float? id = default(float?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>> localVarResponse = await SecureBankaccountsDetailsPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, id, type, verificationEntityRequest, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -442,7 +436,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (List&lt;VerifyBankAccountResponse&gt;)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>>> SecureBankaccountsDetailsPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, decimal? id = default(decimal?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>>> SecureBankaccountsDetailsPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, float? id = default(float?), string? type = default(string?), VerificationEntityRequest? verificationEntityRequest = default(VerificationEntityRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -454,12 +448,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOrumApi->SecureBankaccountsDetailsPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOrumApi->SecureBankaccountsDetailsPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -503,7 +491,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = verificationEntityRequest;
 
             localVarRequestOptions.Operation = "SecureOrumApi.SecureBankaccountsDetailsPost";
@@ -546,7 +534,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="verifyBankAccountRequest">Bank Accout detals (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>List&lt;VerifyBankAccountResponse&gt;</returns>
-        public List<VerifyBankAccountResponse> SecureBankaccountsVerifyPost(string xApiKey, string xAppKey, string xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0)
+        public List<VerifyBankAccountResponse> SecureBankaccountsVerifyPost(string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>> localVarResponse = SecureBankaccountsVerifyPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, verifyBankAccountRequest);
             return localVarResponse.Data;
@@ -563,7 +551,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="verifyBankAccountRequest">Bank Accout detals (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of List&lt;VerifyBankAccountResponse&gt;</returns>
-        public Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>> SecureBankaccountsVerifyPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>> SecureBankaccountsVerifyPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -575,12 +563,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOrumApi->SecureBankaccountsVerifyPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOrumApi->SecureBankaccountsVerifyPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -615,7 +597,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = verifyBankAccountRequest;
 
             localVarRequestOptions.Operation = "SecureOrumApi.SecureBankaccountsVerifyPost";
@@ -658,7 +640,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of List&lt;VerifyBankAccountResponse&gt;</returns>
-        public async System.Threading.Tasks.Task<List<VerifyBankAccountResponse>> SecureBankaccountsVerifyPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<List<VerifyBankAccountResponse>> SecureBankaccountsVerifyPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>> localVarResponse = await SecureBankaccountsVerifyPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, verifyBankAccountRequest, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -676,7 +658,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (List&lt;VerifyBankAccountResponse&gt;)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>>> SecureBankaccountsVerifyPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<VerifyBankAccountResponse>>> SecureBankaccountsVerifyPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = default(VerifyBankAccountRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -688,12 +670,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOrumApi->SecureBankaccountsVerifyPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOrumApi->SecureBankaccountsVerifyPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -729,7 +705,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = verifyBankAccountRequest;
 
             localVarRequestOptions.Operation = "SecureOrumApi.SecureBankaccountsVerifyPost";

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **AddressLine2** | **string** |  | [optional] 
 **City** | **string** |  | [optional] 
 **State** | **string** |  | [optional] 
-**Country** | **decimal** |  | [optional] 
+**Country** | **float** |  | [optional] 
 **PostalCode** | **string** |  | [optional] 
 **VarTimeZone** | **string** |  | [optional] 
 

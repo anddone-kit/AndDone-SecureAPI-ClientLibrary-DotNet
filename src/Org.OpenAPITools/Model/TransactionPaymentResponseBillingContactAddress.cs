@@ -41,7 +41,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="country">country.</param>
         /// <param name="postalCode">postalCode.</param>
         /// <param name="varTimeZone">varTimeZone.</param>
-        public TransactionPaymentResponseBillingContactAddress(string addressLine1 = default(string), string addressLine2 = default(string), string city = default(string), string state = default(string), decimal country = default(decimal), string postalCode = default(string), string varTimeZone = default(string))
+        public TransactionPaymentResponseBillingContactAddress(string addressLine1 = default(string), string addressLine2 = default(string), string city = default(string), string state = default(string), float country = default(float), string postalCode = default(string), string varTimeZone = default(string))
         {
             this.AddressLine1 = addressLine1;
             this.AddressLine2 = addressLine2;
@@ -80,7 +80,7 @@ namespace Org.OpenAPITools.Model
         /// Gets or Sets Country
         /// </summary>
         [DataMember(Name = "country", EmitDefaultValue = false)]
-        public decimal Country { get; set; }
+        public float Country { get; set; }
 
         /// <summary>
         /// Gets or Sets PostalCode

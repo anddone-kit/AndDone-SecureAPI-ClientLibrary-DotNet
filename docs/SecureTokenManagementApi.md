@@ -9,7 +9,7 @@ All URIs are relative to *https://api.uat.anddone.com*
 
 <a id="securetokensactivationsdelete"></a>
 # **SecureTokensActivationsDelete**
-> void SecureTokensActivationsDelete (string xApiKey, string xAppKey, string xVersion, string origin, TokenRequest tokenRequest)
+> void SecureTokensActivationsDelete (string xApiKey, string xAppKey, float xVersion, string origin, TokenRequest tokenRequest)
 
 This API is used for deactivating merchant token securely
 
@@ -41,7 +41,7 @@ namespace Example
             var apiInstance = new SecureTokenManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
-            var xVersion = "xVersion_example";  // string | x-version
+            var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
             var tokenRequest = new TokenRequest(); // TokenRequest | secure merchant token request
 
@@ -84,7 +84,7 @@ catch (ApiException e)
 |------|------|-------------|-------|
 | **xApiKey** | **string** | an authorization header |  |
 | **xAppKey** | **string** | an authorization header |  |
-| **xVersion** | **string** | x-version |  |
+| **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
 | **tokenRequest** | [**TokenRequest**](TokenRequest.md) | secure merchant token request |  |
 
@@ -114,7 +114,7 @@ void (empty response body)
 
 <a id="securetokensdetailspost"></a>
 # **SecureTokensDetailsPost**
-> SecureMerchantTokenShortResponse SecureTokensDetailsPost (string xApiKey, string xAppKey, string xVersion, string origin, SecureTokenLinkRequest secureTokenLinkRequest)
+> SecureMerchantTokenShortResponse SecureTokensDetailsPost (string xApiKey, string xAppKey, float xVersion, string origin, SecureTokenLinkRequest secureTokenLinkRequest)
 
 This API is used for getting details of Merchant Token by Token link.
 
@@ -146,7 +146,7 @@ namespace Example
             var apiInstance = new SecureTokenManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
-            var xVersion = "xVersion_example";  // string | x-version
+            var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
             var secureTokenLinkRequest = new SecureTokenLinkRequest(); // SecureTokenLinkRequest | Secure Token Link Id Request
 
@@ -193,7 +193,7 @@ catch (ApiException e)
 |------|------|-------------|-------|
 | **xApiKey** | **string** | an authorization header |  |
 | **xAppKey** | **string** | an authorization header |  |
-| **xVersion** | **string** | x-version |  |
+| **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
 | **secureTokenLinkRequest** | [**SecureTokenLinkRequest**](SecureTokenLinkRequest.md) | Secure Token Link Id Request |  |
 

@@ -38,7 +38,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="memo">memo.</param>
         /// <param name="checkDate">checkDate.</param>
         /// <param name="remittanceData">remittanceData.</param>
-        public DataDto(int checkNumber = default(int), string memo = default(string), string checkDate = default(string), RemittanceDataDto remittanceData = default(RemittanceDataDto))
+        public DataDto(float checkNumber = default(float), string memo = default(string), string checkDate = default(string), RemittanceDataDto remittanceData = default(RemittanceDataDto))
         {
             this.CheckNumber = checkNumber;
             this.Memo = memo;
@@ -50,7 +50,7 @@ namespace Org.OpenAPITools.Model
         /// Gets or Sets CheckNumber
         /// </summary>
         [DataMember(Name = "checkNumber", EmitDefaultValue = false)]
-        public int CheckNumber { get; set; }
+        public float CheckNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets Memo

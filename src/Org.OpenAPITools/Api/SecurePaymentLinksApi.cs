@@ -37,7 +37,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="securePaymentLinkRequest">Secure Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentLinkResponse</returns>
-        PaymentLinkResponse SecurePaymentlinksDetailsPost(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0);
+        PaymentLinkResponse SecurePaymentlinksDetailsPost(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0);
 
         /// <summary>
         /// This API is used for getting Payment Links by PaymentLink ID
@@ -53,7 +53,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="securePaymentLinkRequest">Secure Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentLinkResponse</returns>
-        ApiResponse<PaymentLinkResponse> SecurePaymentlinksDetailsPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0);
+        ApiResponse<PaymentLinkResponse> SecurePaymentlinksDetailsPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0);
         /// <summary>
         /// This API is used for to set expired payment link
         /// </summary>
@@ -65,7 +65,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="securePaymentLinkRequest">Secure Payment Link Request (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentLinkExpiresResponse</returns>
-        PaymentLinkExpiresResponse SecurePaymentlinksExpirationsPost(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0);
+        PaymentLinkExpiresResponse SecurePaymentlinksExpirationsPost(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0);
 
         /// <summary>
         /// This API is used for to set expired payment link
@@ -81,7 +81,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="securePaymentLinkRequest">Secure Payment Link Request (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentLinkExpiresResponse</returns>
-        ApiResponse<PaymentLinkExpiresResponse> SecurePaymentlinksExpirationsPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0);
+        ApiResponse<PaymentLinkExpiresResponse> SecurePaymentlinksExpirationsPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0);
         /// <summary>
         /// This API is used to update Payment Links
         /// </summary>
@@ -90,11 +90,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
         /// <param name="origin">origin</param>
-        /// <param name="id">PaymentLink Identifier</param>
+        /// <param name="id">PaymentLink identifier</param>
         /// <param name="secureUpdatePaymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentLinkResponse</returns>
-        PaymentLinkResponse SecurePaymentlinksIdPut(string xApiKey, string xAppKey, string xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0);
+        PaymentLinkResponse SecurePaymentlinksIdPut(string xApiKey, string xAppKey, float xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0);
 
         /// <summary>
         /// This API is used to update Payment Links
@@ -107,11 +107,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
         /// <param name="origin">origin</param>
-        /// <param name="id">PaymentLink Identifier</param>
+        /// <param name="id">PaymentLink identifier</param>
         /// <param name="secureUpdatePaymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentLinkResponse</returns>
-        ApiResponse<PaymentLinkResponse> SecurePaymentlinksIdPutWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0);
+        ApiResponse<PaymentLinkResponse> SecurePaymentlinksIdPutWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0);
         /// <summary>
         /// This API is used to create Payment Links
         /// </summary>
@@ -123,7 +123,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentLinkResponse</returns>
-        PaymentLinkResponse SecurePaymentlinksPost(string xApiKey, string xAppKey, string xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0);
+        PaymentLinkResponse SecurePaymentlinksPost(string xApiKey, string xAppKey, float xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0);
 
         /// <summary>
         /// This API is used to create Payment Links
@@ -139,7 +139,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentLinkResponse</returns>
-        ApiResponse<PaymentLinkResponse> SecurePaymentlinksPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0);
+        ApiResponse<PaymentLinkResponse> SecurePaymentlinksPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
@@ -164,7 +164,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentLinkResponse</returns>
-        System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksDetailsPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksDetailsPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API is used for getting Payment Links by PaymentLink ID
@@ -181,7 +181,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentLinkResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PaymentLinkResponse>> SecurePaymentlinksDetailsPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PaymentLinkResponse>> SecurePaymentlinksDetailsPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// This API is used for to set expired payment link
         /// </summary>
@@ -197,7 +197,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentLinkExpiresResponse</returns>
-        System.Threading.Tasks.Task<PaymentLinkExpiresResponse> SecurePaymentlinksExpirationsPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PaymentLinkExpiresResponse> SecurePaymentlinksExpirationsPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API is used for to set expired payment link
@@ -214,7 +214,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentLinkExpiresResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PaymentLinkExpiresResponse>> SecurePaymentlinksExpirationsPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PaymentLinkExpiresResponse>> SecurePaymentlinksExpirationsPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// This API is used to update Payment Links
         /// </summary>
@@ -226,12 +226,12 @@ namespace Org.OpenAPITools.Api
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
         /// <param name="origin">origin</param>
-        /// <param name="id">PaymentLink Identifier</param>
+        /// <param name="id">PaymentLink identifier</param>
         /// <param name="secureUpdatePaymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentLinkResponse</returns>
-        System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksIdPutAsync(string xApiKey, string xAppKey, string xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksIdPutAsync(string xApiKey, string xAppKey, float xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API is used to update Payment Links
@@ -244,12 +244,12 @@ namespace Org.OpenAPITools.Api
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
         /// <param name="origin">origin</param>
-        /// <param name="id">PaymentLink Identifier</param>
+        /// <param name="id">PaymentLink identifier</param>
         /// <param name="secureUpdatePaymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentLinkResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PaymentLinkResponse>> SecurePaymentlinksIdPutWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PaymentLinkResponse>> SecurePaymentlinksIdPutWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// This API is used to create Payment Links
         /// </summary>
@@ -265,7 +265,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentLinkResponse</returns>
-        System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API is used to create Payment Links
@@ -282,7 +282,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentLinkResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PaymentLinkResponse>> SecurePaymentlinksPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PaymentLinkResponse>> SecurePaymentlinksPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -414,7 +414,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="securePaymentLinkRequest">Secure Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentLinkResponse</returns>
-        public PaymentLinkResponse SecurePaymentlinksDetailsPost(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0)
+        public PaymentLinkResponse SecurePaymentlinksDetailsPost(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> localVarResponse = SecurePaymentlinksDetailsPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, securePaymentLinkRequest);
             return localVarResponse.Data;
@@ -431,7 +431,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="securePaymentLinkRequest">Secure Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentLinkResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> SecurePaymentlinksDetailsPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> SecurePaymentlinksDetailsPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -443,12 +443,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecurePaymentLinksApi->SecurePaymentlinksDetailsPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecurePaymentLinksApi->SecurePaymentlinksDetailsPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -489,7 +483,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = securePaymentLinkRequest;
 
             localVarRequestOptions.Operation = "SecurePaymentLinksApi.SecurePaymentlinksDetailsPost";
@@ -532,7 +526,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentLinkResponse</returns>
-        public async System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksDetailsPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksDetailsPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> localVarResponse = await SecurePaymentlinksDetailsPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, securePaymentLinkRequest, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -550,7 +544,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentLinkResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse>> SecurePaymentlinksDetailsPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse>> SecurePaymentlinksDetailsPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -562,12 +556,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecurePaymentLinksApi->SecurePaymentlinksDetailsPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecurePaymentLinksApi->SecurePaymentlinksDetailsPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -609,7 +597,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = securePaymentLinkRequest;
 
             localVarRequestOptions.Operation = "SecurePaymentLinksApi.SecurePaymentlinksDetailsPost";
@@ -652,7 +640,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="securePaymentLinkRequest">Secure Payment Link Request (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentLinkExpiresResponse</returns>
-        public PaymentLinkExpiresResponse SecurePaymentlinksExpirationsPost(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0)
+        public PaymentLinkExpiresResponse SecurePaymentlinksExpirationsPost(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentLinkExpiresResponse> localVarResponse = SecurePaymentlinksExpirationsPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, securePaymentLinkRequest);
             return localVarResponse.Data;
@@ -669,7 +657,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="securePaymentLinkRequest">Secure Payment Link Request (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentLinkExpiresResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PaymentLinkExpiresResponse> SecurePaymentlinksExpirationsPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<PaymentLinkExpiresResponse> SecurePaymentlinksExpirationsPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -681,12 +669,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecurePaymentLinksApi->SecurePaymentlinksExpirationsPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecurePaymentLinksApi->SecurePaymentlinksExpirationsPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -721,7 +703,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = securePaymentLinkRequest;
 
             localVarRequestOptions.Operation = "SecurePaymentLinksApi.SecurePaymentlinksExpirationsPost";
@@ -764,7 +746,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentLinkExpiresResponse</returns>
-        public async System.Threading.Tasks.Task<PaymentLinkExpiresResponse> SecurePaymentlinksExpirationsPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PaymentLinkExpiresResponse> SecurePaymentlinksExpirationsPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentLinkExpiresResponse> localVarResponse = await SecurePaymentlinksExpirationsPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, securePaymentLinkRequest, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -782,7 +764,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentLinkExpiresResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentLinkExpiresResponse>> SecurePaymentlinksExpirationsPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentLinkExpiresResponse>> SecurePaymentlinksExpirationsPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = default(SecurePaymentLinkRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -794,12 +776,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecurePaymentLinksApi->SecurePaymentlinksExpirationsPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecurePaymentLinksApi->SecurePaymentlinksExpirationsPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -835,7 +811,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = securePaymentLinkRequest;
 
             localVarRequestOptions.Operation = "SecurePaymentLinksApi.SecurePaymentlinksExpirationsPost";
@@ -875,11 +851,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
         /// <param name="origin">origin</param>
-        /// <param name="id">PaymentLink Identifier</param>
+        /// <param name="id">PaymentLink identifier</param>
         /// <param name="secureUpdatePaymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentLinkResponse</returns>
-        public PaymentLinkResponse SecurePaymentlinksIdPut(string xApiKey, string xAppKey, string xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0)
+        public PaymentLinkResponse SecurePaymentlinksIdPut(string xApiKey, string xAppKey, float xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> localVarResponse = SecurePaymentlinksIdPutWithHttpInfo(xApiKey, xAppKey, xVersion, origin, id, secureUpdatePaymentLinkRequest);
             return localVarResponse.Data;
@@ -893,11 +869,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
         /// <param name="origin">origin</param>
-        /// <param name="id">PaymentLink Identifier</param>
+        /// <param name="id">PaymentLink identifier</param>
         /// <param name="secureUpdatePaymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentLinkResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> SecurePaymentlinksIdPutWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> SecurePaymentlinksIdPutWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -909,12 +885,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecurePaymentLinksApi->SecurePaymentlinksIdPut");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecurePaymentLinksApi->SecurePaymentlinksIdPut");
             }
 
             // verify the required parameter 'origin' is set
@@ -962,7 +932,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = secureUpdatePaymentLinkRequest;
 
             localVarRequestOptions.Operation = "SecurePaymentLinksApi.SecurePaymentlinksIdPut";
@@ -1001,12 +971,12 @@ namespace Org.OpenAPITools.Api
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
         /// <param name="origin">origin</param>
-        /// <param name="id">PaymentLink Identifier</param>
+        /// <param name="id">PaymentLink identifier</param>
         /// <param name="secureUpdatePaymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentLinkResponse</returns>
-        public async System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksIdPutAsync(string xApiKey, string xAppKey, string xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksIdPutAsync(string xApiKey, string xAppKey, float xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> localVarResponse = await SecurePaymentlinksIdPutWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, id, secureUpdatePaymentLinkRequest, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1020,12 +990,12 @@ namespace Org.OpenAPITools.Api
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
         /// <param name="origin">origin</param>
-        /// <param name="id">PaymentLink Identifier</param>
+        /// <param name="id">PaymentLink identifier</param>
         /// <param name="secureUpdatePaymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentLinkResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse>> SecurePaymentlinksIdPutWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse>> SecurePaymentlinksIdPutWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, string id, SecureUpdatePaymentLinkRequest secureUpdatePaymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1037,12 +1007,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecurePaymentLinksApi->SecurePaymentlinksIdPut");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecurePaymentLinksApi->SecurePaymentlinksIdPut");
             }
 
             // verify the required parameter 'origin' is set
@@ -1091,7 +1055,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = secureUpdatePaymentLinkRequest;
 
             localVarRequestOptions.Operation = "SecurePaymentLinksApi.SecurePaymentlinksIdPut";
@@ -1134,7 +1098,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentLinkResponse</returns>
-        public PaymentLinkResponse SecurePaymentlinksPost(string xApiKey, string xAppKey, string xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0)
+        public PaymentLinkResponse SecurePaymentlinksPost(string xApiKey, string xAppKey, float xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> localVarResponse = SecurePaymentlinksPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, paymentLinkRequest);
             return localVarResponse.Data;
@@ -1151,7 +1115,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentLinkRequest">Payment Link Request</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentLinkResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> SecurePaymentlinksPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> SecurePaymentlinksPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1163,12 +1127,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecurePaymentLinksApi->SecurePaymentlinksPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecurePaymentLinksApi->SecurePaymentlinksPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -1209,7 +1167,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = paymentLinkRequest;
 
             localVarRequestOptions.Operation = "SecurePaymentLinksApi.SecurePaymentlinksPost";
@@ -1252,7 +1210,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentLinkResponse</returns>
-        public async System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PaymentLinkResponse> SecurePaymentlinksPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse> localVarResponse = await SecurePaymentlinksPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, paymentLinkRequest, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1270,7 +1228,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentLinkResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse>> SecurePaymentlinksPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentLinkResponse>> SecurePaymentlinksPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentLinkRequest paymentLinkRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1282,12 +1240,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecurePaymentLinksApi->SecurePaymentlinksPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecurePaymentLinksApi->SecurePaymentlinksPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -1329,7 +1281,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = paymentLinkRequest;
 
             localVarRequestOptions.Operation = "SecurePaymentLinksApi.SecurePaymentlinksPost";

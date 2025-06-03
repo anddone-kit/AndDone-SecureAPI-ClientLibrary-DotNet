@@ -40,7 +40,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="phone">phone.</param>
         /// <param name="phoneCountryCode">phoneCountryCode.</param>
         /// <param name="address">address.</param>
-        public TokenLinkSecureRequestCustomersInner(string firstName = default(string), string lastName = default(string), string email = default(string), string phone = default(string), string phoneCountryCode = default(string), TokenLinkSecureRequestCustomersInnerAddress address = default(TokenLinkSecureRequestCustomersInnerAddress))
+        public TokenLinkSecureRequestCustomersInner(string firstName = default(string), string lastName = default(string), string email = default(string), string phone = default(string), string phoneCountryCode = default(string), PaymentLinkResponseCustomersInnerAddress address = default(PaymentLinkResponseCustomersInnerAddress))
         {
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -84,7 +84,7 @@ namespace Org.OpenAPITools.Model
         /// Gets or Sets Address
         /// </summary>
         [DataMember(Name = "address", EmitDefaultValue = false)]
-        public TokenLinkSecureRequestCustomersInnerAddress Address { get; set; }
+        public PaymentLinkResponseCustomersInnerAddress Address { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

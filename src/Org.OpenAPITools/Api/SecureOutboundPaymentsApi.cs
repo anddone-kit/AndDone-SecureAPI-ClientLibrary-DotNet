@@ -37,7 +37,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentTimeLineRequestDto">PaymentTimeLineRequestDto</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>List&lt;OutboundPaymentTimelineResponseDTOInner&gt;</returns>
-        List<OutboundPaymentTimelineResponseDTOInner> VendorapiSecureOutboundPaymentsTimelinesPost(string xApiKey, string xAppKey, string xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0);
+        List<OutboundPaymentTimelineResponseDTOInner> VendorapiSecureOutboundPaymentsTimelinesPost(string xApiKey, string xAppKey, float xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0);
 
         /// <summary>
         /// This API gets outbound payment timelines
@@ -53,7 +53,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentTimeLineRequestDto">PaymentTimeLineRequestDto</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of List&lt;OutboundPaymentTimelineResponseDTOInner&gt;</returns>
-        ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>> VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0);
+        ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>> VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0);
         /// <summary>
         /// This API cancel outbound payment request
         /// </summary>
@@ -65,7 +65,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="cancelPaymentRequestDTO">CancelPaymentRequestDTO</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns></returns>
-        void VendorapiSecureOutboundpaymentsCancelPost(string xApiKey, string xAppKey, string xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0);
+        void VendorapiSecureOutboundpaymentsCancelPost(string xApiKey, string xAppKey, float xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0);
 
         /// <summary>
         /// This API cancel outbound payment request
@@ -81,7 +81,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="cancelPaymentRequestDTO">CancelPaymentRequestDTO</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> VendorapiSecureOutboundpaymentsCancelPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0);
+        ApiResponse<Object> VendorapiSecureOutboundpaymentsCancelPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0);
         /// <summary>
         /// This API fetch outbound payment by paymentId
         /// </summary>
@@ -93,7 +93,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentRequestDetailDTO">PaymentRequestDetailDTO</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentDetailResponseDTO</returns>
-        PaymentDetailResponseDTO VendorapiSecureOutboundpaymentsDetailPost(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0);
+        PaymentDetailResponseDTO VendorapiSecureOutboundpaymentsDetailPost(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0);
 
         /// <summary>
         /// This API fetch outbound payment by paymentId
@@ -109,7 +109,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentRequestDetailDTO">PaymentRequestDetailDTO</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentDetailResponseDTO</returns>
-        ApiResponse<PaymentDetailResponseDTO> VendorapiSecureOutboundpaymentsDetailPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0);
+        ApiResponse<PaymentDetailResponseDTO> VendorapiSecureOutboundpaymentsDetailPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0);
         /// <summary>
         /// This API creates outbound payment request
         /// </summary>
@@ -121,7 +121,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentRequestDto">PaymentRequestDto</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentResponseDto</returns>
-        PaymentResponseDto VendorapiSecureOutboundpaymentsPost(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0);
+        PaymentResponseDto VendorapiSecureOutboundpaymentsPost(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0);
 
         /// <summary>
         /// This API creates outbound payment request
@@ -137,7 +137,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentRequestDto">PaymentRequestDto</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentResponseDto</returns>
-        ApiResponse<PaymentResponseDto> VendorapiSecureOutboundpaymentsPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0);
+        ApiResponse<PaymentResponseDto> VendorapiSecureOutboundpaymentsPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0);
         /// <summary>
         /// This API gets all outbound payment
         /// </summary>
@@ -145,6 +145,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="xApiKey">an authorization header</param>
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
+        /// <param name="origin">origin</param>
         /// <param name="vendorId">sets vendorId (optional)</param>
         /// <param name="paymentBasedId">sets paymentBasedId (optional)</param>
         /// <param name="paymentId">sets paymentId (optional)</param>
@@ -160,7 +161,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="sortField">sets sortField (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PagePaymentListResponseDTO</returns>
-        PagePaymentListResponseDTO VendorapiSecureOutboundpaymentsSearchPost(string xApiKey, string xAppKey, string xVersion, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), string? amount = default(string?), string? fromAmount = default(string?), string? toAmount = default(string?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0);
+        PagePaymentListResponseDTO VendorapiSecureOutboundpaymentsSearchPost(string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), float? amount = default(float?), float? fromAmount = default(float?), float? toAmount = default(float?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0);
 
         /// <summary>
         /// This API gets all outbound payment
@@ -172,6 +173,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="xApiKey">an authorization header</param>
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
+        /// <param name="origin">origin</param>
         /// <param name="vendorId">sets vendorId (optional)</param>
         /// <param name="paymentBasedId">sets paymentBasedId (optional)</param>
         /// <param name="paymentId">sets paymentId (optional)</param>
@@ -187,7 +189,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="sortField">sets sortField (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PagePaymentListResponseDTO</returns>
-        ApiResponse<PagePaymentListResponseDTO> VendorapiSecureOutboundpaymentsSearchPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), string? amount = default(string?), string? fromAmount = default(string?), string? toAmount = default(string?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0);
+        ApiResponse<PagePaymentListResponseDTO> VendorapiSecureOutboundpaymentsSearchPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), float? amount = default(float?), float? fromAmount = default(float?), float? toAmount = default(float?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
@@ -212,7 +214,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of List&lt;OutboundPaymentTimelineResponseDTOInner&gt;</returns>
-        System.Threading.Tasks.Task<List<OutboundPaymentTimelineResponseDTOInner>> VendorapiSecureOutboundPaymentsTimelinesPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<List<OutboundPaymentTimelineResponseDTOInner>> VendorapiSecureOutboundPaymentsTimelinesPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API gets outbound payment timelines
@@ -229,7 +231,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (List&lt;OutboundPaymentTimelineResponseDTOInner&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>>> VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>>> VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// This API cancel outbound payment request
         /// </summary>
@@ -245,7 +247,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task VendorapiSecureOutboundpaymentsCancelPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task VendorapiSecureOutboundpaymentsCancelPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API cancel outbound payment request
@@ -262,7 +264,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> VendorapiSecureOutboundpaymentsCancelPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> VendorapiSecureOutboundpaymentsCancelPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// This API fetch outbound payment by paymentId
         /// </summary>
@@ -278,7 +280,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentDetailResponseDTO</returns>
-        System.Threading.Tasks.Task<PaymentDetailResponseDTO> VendorapiSecureOutboundpaymentsDetailPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PaymentDetailResponseDTO> VendorapiSecureOutboundpaymentsDetailPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API fetch outbound payment by paymentId
@@ -295,7 +297,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentDetailResponseDTO)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PaymentDetailResponseDTO>> VendorapiSecureOutboundpaymentsDetailPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PaymentDetailResponseDTO>> VendorapiSecureOutboundpaymentsDetailPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// This API creates outbound payment request
         /// </summary>
@@ -311,7 +313,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentResponseDto</returns>
-        System.Threading.Tasks.Task<PaymentResponseDto> VendorapiSecureOutboundpaymentsPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PaymentResponseDto> VendorapiSecureOutboundpaymentsPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API creates outbound payment request
@@ -328,7 +330,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentResponseDto)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PaymentResponseDto>> VendorapiSecureOutboundpaymentsPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PaymentResponseDto>> VendorapiSecureOutboundpaymentsPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// This API gets all outbound payment
         /// </summary>
@@ -339,6 +341,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="xApiKey">an authorization header</param>
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
+        /// <param name="origin">origin</param>
         /// <param name="vendorId">sets vendorId (optional)</param>
         /// <param name="paymentBasedId">sets paymentBasedId (optional)</param>
         /// <param name="paymentId">sets paymentId (optional)</param>
@@ -355,7 +358,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PagePaymentListResponseDTO</returns>
-        System.Threading.Tasks.Task<PagePaymentListResponseDTO> VendorapiSecureOutboundpaymentsSearchPostAsync(string xApiKey, string xAppKey, string xVersion, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), string? amount = default(string?), string? fromAmount = default(string?), string? toAmount = default(string?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PagePaymentListResponseDTO> VendorapiSecureOutboundpaymentsSearchPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), float? amount = default(float?), float? fromAmount = default(float?), float? toAmount = default(float?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// This API gets all outbound payment
@@ -367,6 +370,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="xApiKey">an authorization header</param>
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
+        /// <param name="origin">origin</param>
         /// <param name="vendorId">sets vendorId (optional)</param>
         /// <param name="paymentBasedId">sets paymentBasedId (optional)</param>
         /// <param name="paymentId">sets paymentId (optional)</param>
@@ -383,7 +387,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PagePaymentListResponseDTO)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PagePaymentListResponseDTO>> VendorapiSecureOutboundpaymentsSearchPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), string? amount = default(string?), string? fromAmount = default(string?), string? toAmount = default(string?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PagePaymentListResponseDTO>> VendorapiSecureOutboundpaymentsSearchPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), float? amount = default(float?), float? fromAmount = default(float?), float? toAmount = default(float?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -515,7 +519,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentTimeLineRequestDto">PaymentTimeLineRequestDto</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>List&lt;OutboundPaymentTimelineResponseDTOInner&gt;</returns>
-        public List<OutboundPaymentTimelineResponseDTOInner> VendorapiSecureOutboundPaymentsTimelinesPost(string xApiKey, string xAppKey, string xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0)
+        public List<OutboundPaymentTimelineResponseDTOInner> VendorapiSecureOutboundPaymentsTimelinesPost(string xApiKey, string xAppKey, float xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>> localVarResponse = VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, paymentTimeLineRequestDto);
             return localVarResponse.Data;
@@ -532,7 +536,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentTimeLineRequestDto">PaymentTimeLineRequestDto</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of List&lt;OutboundPaymentTimelineResponseDTOInner&gt;</returns>
-        public Org.OpenAPITools.Client.ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>> VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>> VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -544,12 +548,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundPaymentsTimelinesPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundPaymentsTimelinesPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -590,7 +588,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = paymentTimeLineRequestDto;
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundPaymentsTimelinesPost";
@@ -633,7 +631,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of List&lt;OutboundPaymentTimelineResponseDTOInner&gt;</returns>
-        public async System.Threading.Tasks.Task<List<OutboundPaymentTimelineResponseDTOInner>> VendorapiSecureOutboundPaymentsTimelinesPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<List<OutboundPaymentTimelineResponseDTOInner>> VendorapiSecureOutboundPaymentsTimelinesPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>> localVarResponse = await VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, paymentTimeLineRequestDto, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -651,7 +649,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (List&lt;OutboundPaymentTimelineResponseDTOInner&gt;)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>>> VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<OutboundPaymentTimelineResponseDTOInner>>> VendorapiSecureOutboundPaymentsTimelinesPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentTimeLineRequestDto paymentTimeLineRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -663,12 +661,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundPaymentsTimelinesPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundPaymentsTimelinesPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -710,7 +702,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = paymentTimeLineRequestDto;
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundPaymentsTimelinesPost";
@@ -753,7 +745,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="cancelPaymentRequestDTO">CancelPaymentRequestDTO</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns></returns>
-        public void VendorapiSecureOutboundpaymentsCancelPost(string xApiKey, string xAppKey, string xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0)
+        public void VendorapiSecureOutboundpaymentsCancelPost(string xApiKey, string xAppKey, float xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0)
         {
             VendorapiSecureOutboundpaymentsCancelPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, cancelPaymentRequestDTO);
         }
@@ -769,7 +761,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="cancelPaymentRequestDTO">CancelPaymentRequestDTO</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> VendorapiSecureOutboundpaymentsCancelPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<Object> VendorapiSecureOutboundpaymentsCancelPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -781,12 +773,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsCancelPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsCancelPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -826,7 +812,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = cancelPaymentRequestDTO;
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundpaymentsCancelPost";
@@ -869,7 +855,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task VendorapiSecureOutboundpaymentsCancelPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task VendorapiSecureOutboundpaymentsCancelPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             await VendorapiSecureOutboundpaymentsCancelPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, cancelPaymentRequestDTO, operationIndex, cancellationToken).ConfigureAwait(false);
         }
@@ -886,7 +872,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> VendorapiSecureOutboundpaymentsCancelPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> VendorapiSecureOutboundpaymentsCancelPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, CancelPaymentRequestDTO cancelPaymentRequestDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -898,12 +884,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsCancelPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsCancelPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -944,7 +924,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = cancelPaymentRequestDTO;
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundpaymentsCancelPost";
@@ -987,7 +967,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentRequestDetailDTO">PaymentRequestDetailDTO</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentDetailResponseDTO</returns>
-        public PaymentDetailResponseDTO VendorapiSecureOutboundpaymentsDetailPost(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0)
+        public PaymentDetailResponseDTO VendorapiSecureOutboundpaymentsDetailPost(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentDetailResponseDTO> localVarResponse = VendorapiSecureOutboundpaymentsDetailPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, paymentRequestDetailDTO);
             return localVarResponse.Data;
@@ -1004,7 +984,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentRequestDetailDTO">PaymentRequestDetailDTO</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentDetailResponseDTO</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PaymentDetailResponseDTO> VendorapiSecureOutboundpaymentsDetailPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<PaymentDetailResponseDTO> VendorapiSecureOutboundpaymentsDetailPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1016,12 +996,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsDetailPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsDetailPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -1062,7 +1036,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = paymentRequestDetailDTO;
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundpaymentsDetailPost";
@@ -1105,7 +1079,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentDetailResponseDTO</returns>
-        public async System.Threading.Tasks.Task<PaymentDetailResponseDTO> VendorapiSecureOutboundpaymentsDetailPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PaymentDetailResponseDTO> VendorapiSecureOutboundpaymentsDetailPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentDetailResponseDTO> localVarResponse = await VendorapiSecureOutboundpaymentsDetailPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, paymentRequestDetailDTO, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1123,7 +1097,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentDetailResponseDTO)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentDetailResponseDTO>> VendorapiSecureOutboundpaymentsDetailPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentDetailResponseDTO>> VendorapiSecureOutboundpaymentsDetailPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDetailDTO paymentRequestDetailDTO, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1135,12 +1109,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsDetailPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsDetailPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -1182,7 +1150,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = paymentRequestDetailDTO;
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundpaymentsDetailPost";
@@ -1225,7 +1193,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentRequestDto">PaymentRequestDto</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PaymentResponseDto</returns>
-        public PaymentResponseDto VendorapiSecureOutboundpaymentsPost(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0)
+        public PaymentResponseDto VendorapiSecureOutboundpaymentsPost(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentResponseDto> localVarResponse = VendorapiSecureOutboundpaymentsPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, paymentRequestDto);
             return localVarResponse.Data;
@@ -1242,7 +1210,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="paymentRequestDto">PaymentRequestDto</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PaymentResponseDto</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PaymentResponseDto> VendorapiSecureOutboundpaymentsPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<PaymentResponseDto> VendorapiSecureOutboundpaymentsPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1254,12 +1222,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -1300,7 +1262,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = paymentRequestDto;
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundpaymentsPost";
@@ -1343,7 +1305,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PaymentResponseDto</returns>
-        public async System.Threading.Tasks.Task<PaymentResponseDto> VendorapiSecureOutboundpaymentsPostAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PaymentResponseDto> VendorapiSecureOutboundpaymentsPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<PaymentResponseDto> localVarResponse = await VendorapiSecureOutboundpaymentsPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, paymentRequestDto, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1361,7 +1323,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PaymentResponseDto)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentResponseDto>> VendorapiSecureOutboundpaymentsPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PaymentResponseDto>> VendorapiSecureOutboundpaymentsPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, PaymentRequestDto paymentRequestDto, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1373,12 +1335,6 @@ namespace Org.OpenAPITools.Api
             if (xAppKey == null)
             {
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsPost");
-            }
-
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
-            {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsPost");
             }
 
             // verify the required parameter 'origin' is set
@@ -1420,7 +1376,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("Origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
             localVarRequestOptions.Data = paymentRequestDto;
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundpaymentsPost";
@@ -1459,6 +1415,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="xApiKey">an authorization header</param>
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
+        /// <param name="origin">origin</param>
         /// <param name="vendorId">sets vendorId (optional)</param>
         /// <param name="paymentBasedId">sets paymentBasedId (optional)</param>
         /// <param name="paymentId">sets paymentId (optional)</param>
@@ -1474,9 +1431,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="sortField">sets sortField (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>PagePaymentListResponseDTO</returns>
-        public PagePaymentListResponseDTO VendorapiSecureOutboundpaymentsSearchPost(string xApiKey, string xAppKey, string xVersion, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), string? amount = default(string?), string? fromAmount = default(string?), string? toAmount = default(string?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0)
+        public PagePaymentListResponseDTO VendorapiSecureOutboundpaymentsSearchPost(string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), float? amount = default(float?), float? fromAmount = default(float?), float? toAmount = default(float?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<PagePaymentListResponseDTO> localVarResponse = VendorapiSecureOutboundpaymentsSearchPostWithHttpInfo(xApiKey, xAppKey, xVersion, vendorId, paymentBasedId, paymentId, vendorName, paymentMethodType, paymentMethodStatus, amount, fromAmount, toAmount, startDate, endDate, searchText, sortField);
+            Org.OpenAPITools.Client.ApiResponse<PagePaymentListResponseDTO> localVarResponse = VendorapiSecureOutboundpaymentsSearchPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, vendorId, paymentBasedId, paymentId, vendorName, paymentMethodType, paymentMethodStatus, amount, fromAmount, toAmount, startDate, endDate, searchText, sortField);
             return localVarResponse.Data;
         }
 
@@ -1487,6 +1444,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="xApiKey">an authorization header</param>
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
+        /// <param name="origin">origin</param>
         /// <param name="vendorId">sets vendorId (optional)</param>
         /// <param name="paymentBasedId">sets paymentBasedId (optional)</param>
         /// <param name="paymentId">sets paymentId (optional)</param>
@@ -1502,7 +1460,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="sortField">sets sortField (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of PagePaymentListResponseDTO</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PagePaymentListResponseDTO> VendorapiSecureOutboundpaymentsSearchPostWithHttpInfo(string xApiKey, string xAppKey, string xVersion, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), string? amount = default(string?), string? fromAmount = default(string?), string? toAmount = default(string?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<PagePaymentListResponseDTO> VendorapiSecureOutboundpaymentsSearchPostWithHttpInfo(string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), float? amount = default(float?), float? fromAmount = default(float?), float? toAmount = default(float?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0)
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1516,10 +1474,10 @@ namespace Org.OpenAPITools.Api
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsSearchPost");
             }
 
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
+            // verify the required parameter 'origin' is set
+            if (origin == null)
             {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsSearchPost");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'origin' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsSearchPost");
             }
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1599,6 +1557,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundpaymentsSearchPost";
             localVarRequestOptions.OperationIndex = operationIndex;
@@ -1635,6 +1594,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="xApiKey">an authorization header</param>
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
+        /// <param name="origin">origin</param>
         /// <param name="vendorId">sets vendorId (optional)</param>
         /// <param name="paymentBasedId">sets paymentBasedId (optional)</param>
         /// <param name="paymentId">sets paymentId (optional)</param>
@@ -1651,9 +1611,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PagePaymentListResponseDTO</returns>
-        public async System.Threading.Tasks.Task<PagePaymentListResponseDTO> VendorapiSecureOutboundpaymentsSearchPostAsync(string xApiKey, string xAppKey, string xVersion, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), string? amount = default(string?), string? fromAmount = default(string?), string? toAmount = default(string?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PagePaymentListResponseDTO> VendorapiSecureOutboundpaymentsSearchPostAsync(string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), float? amount = default(float?), float? fromAmount = default(float?), float? toAmount = default(float?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<PagePaymentListResponseDTO> localVarResponse = await VendorapiSecureOutboundpaymentsSearchPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, vendorId, paymentBasedId, paymentId, vendorName, paymentMethodType, paymentMethodStatus, amount, fromAmount, toAmount, startDate, endDate, searchText, sortField, operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<PagePaymentListResponseDTO> localVarResponse = await VendorapiSecureOutboundpaymentsSearchPostWithHttpInfoAsync(xApiKey, xAppKey, xVersion, origin, vendorId, paymentBasedId, paymentId, vendorName, paymentMethodType, paymentMethodStatus, amount, fromAmount, toAmount, startDate, endDate, searchText, sortField, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1664,6 +1624,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="xApiKey">an authorization header</param>
         /// <param name="xAppKey">an authorization header</param>
         /// <param name="xVersion">x-version</param>
+        /// <param name="origin">origin</param>
         /// <param name="vendorId">sets vendorId (optional)</param>
         /// <param name="paymentBasedId">sets paymentBasedId (optional)</param>
         /// <param name="paymentId">sets paymentId (optional)</param>
@@ -1680,7 +1641,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PagePaymentListResponseDTO)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PagePaymentListResponseDTO>> VendorapiSecureOutboundpaymentsSearchPostWithHttpInfoAsync(string xApiKey, string xAppKey, string xVersion, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), string? amount = default(string?), string? fromAmount = default(string?), string? toAmount = default(string?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PagePaymentListResponseDTO>> VendorapiSecureOutboundpaymentsSearchPostWithHttpInfoAsync(string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = default(string?), string? paymentBasedId = default(string?), string? paymentId = default(string?), string? vendorName = default(string?), string? paymentMethodType = default(string?), string? paymentMethodStatus = default(string?), float? amount = default(float?), float? fromAmount = default(float?), float? toAmount = default(float?), string? startDate = default(string?), string? endDate = default(string?), string? searchText = default(string?), string? sortField = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'xApiKey' is set
             if (xApiKey == null)
@@ -1694,10 +1655,10 @@ namespace Org.OpenAPITools.Api
                 throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xAppKey' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsSearchPost");
             }
 
-            // verify the required parameter 'xVersion' is set
-            if (xVersion == null)
+            // verify the required parameter 'origin' is set
+            if (origin == null)
             {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'xVersion' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsSearchPost");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'origin' when calling SecureOutboundPaymentsApi->VendorapiSecureOutboundpaymentsSearchPost");
             }
 
 
@@ -1778,6 +1739,7 @@ namespace Org.OpenAPITools.Api
             localVarRequestOptions.HeaderParameters.Add("x-api-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xApiKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-app-key", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xAppKey)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-version", Org.OpenAPITools.Client.ClientUtils.ParameterToString(xVersion)); // header parameter
+            localVarRequestOptions.HeaderParameters.Add("origin", Org.OpenAPITools.Client.ClientUtils.ParameterToString(origin)); // header parameter
 
             localVarRequestOptions.Operation = "SecureOutboundPaymentsApi.VendorapiSecureOutboundpaymentsSearchPost";
             localVarRequestOptions.OperationIndex = operationIndex;

@@ -28,7 +28,7 @@ namespace Org.OpenAPITools.Model
     /// <summary>
     /// PaymentRequestDtoData
     /// </summary>
-    [DataContract(Name = "PaymentRequestDto_Data")]
+    [DataContract(Name = "PaymentRequestDto_data")]
     public partial class PaymentRequestDtoData : IValidatableObject
     {
         /// <summary>
@@ -38,7 +38,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="memo">memo.</param>
         /// <param name="checkDate">checkDate.</param>
         /// <param name="remittanceData">remittanceData.</param>
-        public PaymentRequestDtoData(int checkNumber = default(int), string memo = default(string), string checkDate = default(string), PaymentRequestDtoDataRemittanceData remittanceData = default(PaymentRequestDtoDataRemittanceData))
+        public PaymentRequestDtoData(float checkNumber = default(float), string memo = default(string), string checkDate = default(string), PaymentRequestDtoDataRemittanceData remittanceData = default(PaymentRequestDtoDataRemittanceData))
         {
             this.CheckNumber = checkNumber;
             this.Memo = memo;
@@ -50,7 +50,7 @@ namespace Org.OpenAPITools.Model
         /// Gets or Sets CheckNumber
         /// </summary>
         [DataMember(Name = "checkNumber", EmitDefaultValue = false)]
-        public int CheckNumber { get; set; }
+        public float CheckNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets Memo
