@@ -182,7 +182,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="modifiedOn">modifiedOn.</param>
         /// <param name="approvedDate">approvedDate.</param>
         /// <param name="template">template.</param>
-        public PageVendorResponseDTODataInner(string id = default(string), string paymentBasedId = default(string), LegalEntityTypeEnum? legalEntityType = default(LegalEntityTypeEnum?), string merchantId = default(string), string vendorName = default(string), string vendorAliasName = default(string), string vendorDbName = default(string), PaymentMethodTypeEnum? paymentMethodType = default(PaymentMethodTypeEnum?), string notificationType = default(string), string vendorNotes = default(string), string phoneNumber = default(string), bool isMobileNumber = default(bool), string email = default(string), string url = default(string), VendorStatusEnum? vendorStatus = default(VendorStatusEnum?), bool useSameAsPhysicalAddress = default(bool), VendorResponseDTORemittanceAddress physicalAddress = default(VendorResponseDTORemittanceAddress), VendorResponseDTORemittanceAddress remittanceAddress = default(VendorResponseDTORemittanceAddress), VendorResponseDTOVerificationResultsInner verificationResults = default(VendorResponseDTOVerificationResultsInner), string createdBy = default(string), string modifiedBy = default(string), string createdOn = default(string), string modifiedOn = default(string), string approvedDate = default(string), VendorResponseDTOTemplate template = default(VendorResponseDTOTemplate))
+        public PageVendorResponseDTODataInner(string id = default(string), string paymentBasedId = default(string), LegalEntityTypeEnum? legalEntityType = default(LegalEntityTypeEnum?), string merchantId = default(string), string vendorName = default(string), string vendorAliasName = default(string), string vendorDbName = default(string), PaymentMethodTypeEnum? paymentMethodType = default(PaymentMethodTypeEnum?), string notificationType = default(string), string vendorNotes = default(string), string phoneNumber = default(string), bool isMobileNumber = default(bool), string email = default(string), string url = default(string), VendorStatusEnum? vendorStatus = default(VendorStatusEnum?), bool useSameAsPhysicalAddress = default(bool), VendorResponseDTORemittanceAddress physicalAddress = default(VendorResponseDTORemittanceAddress), VendorResponseDTORemittanceAddress remittanceAddress = default(VendorResponseDTORemittanceAddress), List<VendorResponseDTOVerificationResultsInner> verificationResults = default(List<VendorResponseDTOVerificationResultsInner>), string createdBy = default(string), string modifiedBy = default(string), string createdOn = default(string), string modifiedOn = default(string), string approvedDate = default(string), VendorResponseDTOTemplate template = default(VendorResponseDTOTemplate))
         {
             this.Id = id;
             this.PaymentBasedId = paymentBasedId;
@@ -305,7 +305,7 @@ namespace Org.OpenAPITools.Model
         /// Gets or Sets VerificationResults
         /// </summary>
         [DataMember(Name = "verificationResults", EmitDefaultValue = false)]
-        public VendorResponseDTOVerificationResultsInner VerificationResults { get; set; }
+        public List<VendorResponseDTOVerificationResultsInner> VerificationResults { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedBy

@@ -98,7 +98,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="callbackParameters">callbackParameters.</param>
         /// <param name="customers">customers.</param>
         /// <param name="settings">settings (required).</param>
-        public PFLitePaymentLinkRequest(string quoteKey = default(string), bool isPayInFull = default(bool), string title = default(string), string paymentDescription = default(string), string expireIn = default(string), ExpireInUnitEnum expireInUnit = default(ExpireInUnitEnum), List<PFLitePaymentLinkRequestReferenceDataListInner> referenceDataList = default(List<PFLitePaymentLinkRequestReferenceDataListInner>), PFLitePaymentLinkRequestCallbackParameters callbackParameters = default(PFLitePaymentLinkRequestCallbackParameters), List<PFLitePaymentLinkRequestCustomersInner> customers = default(List<PFLitePaymentLinkRequestCustomersInner>), PFLitePaymentLinkRequestSettings settings = default(PFLitePaymentLinkRequestSettings))
+        public PFLitePaymentLinkRequest(string quoteKey = default(string), bool isPayInFull = default(bool), string title = default(string), string paymentDescription = default(string), int expireIn = default(int), ExpireInUnitEnum expireInUnit = default(ExpireInUnitEnum), List<PFLitePaymentLinkRequestReferenceDataListInner> referenceDataList = default(List<PFLitePaymentLinkRequestReferenceDataListInner>), PFLitePaymentLinkRequestCallbackParameters callbackParameters = default(PFLitePaymentLinkRequestCallbackParameters), List<PFLitePaymentLinkRequestCustomersInner> customers = default(List<PFLitePaymentLinkRequestCustomersInner>), PFLitePaymentLinkRequestSettings settings = default(PFLitePaymentLinkRequestSettings))
         {
             // to ensure "quoteKey" is required (not null)
             if (quoteKey == null)
@@ -118,11 +118,6 @@ namespace Org.OpenAPITools.Model
                 throw new ArgumentNullException("paymentDescription is a required property for PFLitePaymentLinkRequest and cannot be null");
             }
             this.PaymentDescription = paymentDescription;
-            // to ensure "expireIn" is required (not null)
-            if (expireIn == null)
-            {
-                throw new ArgumentNullException("expireIn is a required property for PFLitePaymentLinkRequest and cannot be null");
-            }
             this.ExpireIn = expireIn;
             this.ExpireInUnit = expireInUnit;
             // to ensure "referenceDataList" is required (not null)
@@ -170,7 +165,7 @@ namespace Org.OpenAPITools.Model
         /// Gets or Sets ExpireIn
         /// </summary>
         [DataMember(Name = "expireIn", IsRequired = true, EmitDefaultValue = true)]
-        public string ExpireIn { get; set; }
+        public int ExpireIn { get; set; }
 
         /// <summary>
         /// Gets or Sets ReferenceDataList

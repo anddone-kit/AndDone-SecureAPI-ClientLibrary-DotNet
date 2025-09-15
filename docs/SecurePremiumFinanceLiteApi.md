@@ -328,7 +328,7 @@ catch (ApiException e)
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-| **201** | Successful operation |  -  |
+| **200** | Successful operation |  -  |
 | **400** | Bad Request |  -  |
 | **404** | Not Found |  -  |
 | **500** | Server Error |  -  |

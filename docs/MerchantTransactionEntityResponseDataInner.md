@@ -57,7 +57,7 @@ Name | Type | Description | Notes
 **AdjustmentDisplayName** | **string** |  | [optional] 
 **AdjustmentDescriptorMessage** | **string** |  | [optional] 
 **PaymentAdjustmentType** | **string** |  | [optional] 
-**CommissionType** | **string** |  | [optional] 
+**CommissionType** | [**TransactionPaymentResponseAchTenderInfoCommissionType**](TransactionPaymentResponseAchTenderInfoCommissionType.md) |  | [optional] 
 **CommissionValue** | **float** |  | [optional] 
 **CommissionFixedValue** | **float** |  | [optional] 
 **AccountToken** | **string** |  | [optional] 

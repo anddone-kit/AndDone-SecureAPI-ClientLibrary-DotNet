@@ -360,11 +360,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-
-config.json
-bin/
-obj/
-.vs/
-.user
-.suo
-*.pdb
