@@ -106,6 +106,9 @@ using Org.OpenAPITools.Model;
 Here’s a minimal working example to call the **Secure Create Payment Intent API**:
 
 ```csharp
+using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Org.OpenAPITools.Api;
 using Org.OpenAPITools.Client;
 using Org.OpenAPITools.Model;
@@ -120,29 +123,33 @@ var apiInstance = new SecurePaymentIntentApi(config);
 // Required headers
 string xApiKey = "YOUR_API_KEY";
 string xAppKey = "YOUR_APP_KEY";
-string xVersion = "2.3";
+float xVersion = 2.3F;
 string origin = "YOUR_ORIGIN";
 
-var request = new PaymentIntentRequest
-{
-    SaveForFuture = true,
-    Amount = 10000,
-    Title = "YOUR UNIQUE TITLE",
-    ShortDescription = "shortDescription",
-    PaymentDescription = "paymentDescription",
-    InvoiceNumber = "dotnet",
-    ExpiresIn = "300000",
-    Intent = new PaymentIntentRequestIntent
-    {
-        PaymentTypes = new List<string> { "CreditCard", "ACH" }
+var request = @"{
+    ""saveForFuture"": true,
+    ""amount"": 10000,
+    ""title"": ""test title 001a"",
+    ""shortDescription"": ""shortDescription"",
+    ""paymentDescription"": ""paymentDescription"",
+    ""invoiceNumber"": ""postman"",
+    ""expiresIn"": ""300000"",
+    ""intent"": {
+        ""paymentTypes"": [
+            ""CreditCard"", 
+            ""ACH""
+        ]
     },
-    EnablePremiumFinance = true,
-    AdditionalDetailsPreference = "NoAdditionalDetails"
-};
+    ""enablePremiumFinance"": true,
+    ""splits"": null,
+    ""additionalDetailsPreference"": ""NoAdditionalDetails""
+}";
+JObject data = JObject.Parse(request);
+PaymentIntentRequest postBody = JsonConvert.DeserializeObject<PaymentIntentRequest>(data.ToString());
 
 try
 {
-    var response = apiInstance.SecurePaymentintentsPost(xApiKey, xAppKey, xVersion, origin, request);
+    var response = apiInstance.SecurePaymentintentsPost(xApiKey, xAppKey, xVersion, origin, postBody);
     Console.WriteLine(response);
 }
 catch (ApiException e)
@@ -437,4 +444,3 @@ Authentication is handled via API keys in HTTP headers:
 
 * **API Environments:** Use UAT for testing; switch to Production only after validation.
 * **Issues:** Report bugs or request features via the [GitHub Issues](https://github.com/anddone-kit/AndDone-SecureAPI-ClientLibrary-DotNet/issues) page.
-
