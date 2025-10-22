@@ -9,7 +9,7 @@ All URIs are relative to *https://api.uat.anddone.com*
 
 <a id="securebankaccountsdetailspost"></a>
 # **SecureBankaccountsDetailsPost**
-> List&lt;VerifyBankAccountResponse&gt; SecureBankaccountsDetailsPost (string xApiKey, string xAppKey, float xVersion, string origin, string? id = null, string? type = null, VerificationEntityRequest? verificationEntityRequest = null)
+> VerifyBankAccountResponse SecureBankaccountsDetailsPost (string xApiKey, string xAppKey, float xVersion, string origin, string? id = null, string? type = null, VerificationEntityRequest? verificationEntityRequest = null)
 
 This API will request for verified bank account.
 
@@ -50,7 +50,7 @@ namespace Example
             try
             {
                 // This API will request for verified bank account.
-                List<VerifyBankAccountResponse> result = apiInstance.SecureBankaccountsDetailsPost(xApiKey, xAppKey, xVersion, origin, id, type, verificationEntityRequest);
+                VerifyBankAccountResponse result = apiInstance.SecureBankaccountsDetailsPost(xApiKey, xAppKey, xVersion, origin, id, type, verificationEntityRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -71,7 +71,7 @@ This returns an ApiResponse object which contains the response data, status code
 try
 {
     // This API will request for verified bank account.
-    ApiResponse<List<VerifyBankAccountResponse>> response = apiInstance.SecureBankaccountsDetailsPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, id, type, verificationEntityRequest);
+    ApiResponse<VerifyBankAccountResponse> response = apiInstance.SecureBankaccountsDetailsPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, id, type, verificationEntityRequest);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
@@ -98,7 +98,7 @@ catch (ApiException e)
 
 ### Return type
 
-[**List&lt;VerifyBankAccountResponse&gt;**](VerifyBankAccountResponse.md)
+[**VerifyBankAccountResponse**](VerifyBankAccountResponse.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ catch (ApiException e)
 
 <a id="securebankaccountsverifypost"></a>
 # **SecureBankaccountsVerifyPost**
-> List&lt;VerifyBankAccountResponse&gt; SecureBankaccountsVerifyPost (string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = null)
+> VerifyBankAccountResponse SecureBankaccountsVerifyPost (string xApiKey, string xAppKey, float xVersion, string origin, VerifyBankAccountRequest? verifyBankAccountRequest = null)
 
 This API will request for account verification.
 
@@ -161,7 +161,7 @@ namespace Example
             try
             {
                 // This API will request for account verification.
-                List<VerifyBankAccountResponse> result = apiInstance.SecureBankaccountsVerifyPost(xApiKey, xAppKey, xVersion, origin, verifyBankAccountRequest);
+                VerifyBankAccountResponse result = apiInstance.SecureBankaccountsVerifyPost(xApiKey, xAppKey, xVersion, origin, verifyBankAccountRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -182,7 +182,7 @@ This returns an ApiResponse object which contains the response data, status code
 try
 {
     // This API will request for account verification.
-    ApiResponse<List<VerifyBankAccountResponse>> response = apiInstance.SecureBankaccountsVerifyPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, verifyBankAccountRequest);
+    ApiResponse<VerifyBankAccountResponse> response = apiInstance.SecureBankaccountsVerifyPostWithHttpInfo(xApiKey, xAppKey, xVersion, origin, verifyBankAccountRequest);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
@@ -207,7 +207,7 @@ catch (ApiException e)
 
 ### Return type
 
-[**List&lt;VerifyBankAccountResponse&gt;**](VerifyBankAccountResponse.md)
+[**VerifyBankAccountResponse**](VerifyBankAccountResponse.md)
 
 ### Authorization
 

@@ -37,7 +37,7 @@ Name | Type | Description | Notes
 **AccountToken** | **string** |  | [optional] 
 **AccountTokenMessage** | **string** |  | [optional] 
 **CreateAccountToken** | **bool** |  | [optional] 
-**CommissionType** | **string** |  | [optional] 
+**CommissionType** | [**TransactionPaymentResponseAchTenderInfoCommissionType**](TransactionPaymentResponseAchTenderInfoCommissionType.md) |  | [optional] 
 **CommissionValue** | **float** |  | [optional] 
 **CommissionFixedValue** | **float** |  | [optional] 
 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **IsPayInFull** | **bool** |  | [optional] 
 **Title** | **string** |  | 
 **PaymentDescription** | **string** |  | 
-**ExpireIn** | **string** |  | 
+**ExpireIn** | **int** |  | 
 **ExpireInUnit** | **string** |  | 
 **ReferenceDataList** | [**List&lt;PFLitePaymentLinkRequestReferenceDataListInner&gt;**](PFLitePaymentLinkRequestReferenceDataListInner.md) |  | 
 **CallbackParameters** | [**PFLitePaymentLinkRequestCallbackParameters**](PFLitePaymentLinkRequestCallbackParameters.md) |  | [optional] 

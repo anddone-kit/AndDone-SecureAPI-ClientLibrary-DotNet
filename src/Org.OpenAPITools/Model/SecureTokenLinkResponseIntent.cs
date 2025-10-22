@@ -68,20 +68,20 @@ namespace Org.OpenAPITools.Model
             RTP = 5
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SecureTokenLinkResponseIntent" /> class.
+        /// </summary>
+        /// <param name="paymentTypes">paymentTypes.</param>
+        public SecureTokenLinkResponseIntent(List<PaymentTypesEnum> paymentTypes = default(List<PaymentTypesEnum>))
+        {
+            this.PaymentTypes = paymentTypes;
+        }
 
         /// <summary>
         /// Gets or Sets PaymentTypes
         /// </summary>
         [DataMember(Name = "paymentTypes", EmitDefaultValue = false)]
-        public PaymentTypesEnum? PaymentTypes { get; set; }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SecureTokenLinkResponseIntent" /> class.
-        /// </summary>
-        /// <param name="paymentTypes">paymentTypes.</param>
-        public SecureTokenLinkResponseIntent(PaymentTypesEnum? paymentTypes = default(PaymentTypesEnum?))
-        {
-            this.PaymentTypes = paymentTypes;
-        }
+        public List<SecureTokenLinkResponseIntent.PaymentTypesEnum> PaymentTypes { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

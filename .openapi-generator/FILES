@@ -179,10 +179,12 @@ docs/TransactionDetailResponseSplitsInner.md
 docs/TransactionDetailResponseTenderInfo.md
 docs/TransactionPaymentResponse.md
 docs/TransactionPaymentResponseAchTenderInfo.md
+docs/TransactionPaymentResponseAchTenderInfoCommissionType.md
 docs/TransactionPaymentResponseBillingContact.md
 docs/TransactionPaymentResponseBillingContactAddress.md
 docs/TransactionPaymentResponseBillingContactName.md
 docs/TransactionPaymentResponseCcTenderInfo.md
+docs/TransactionPaymentResponseRefundOrigin.md
 docs/TransactionPaymentResponseRefundTransactions.md
 docs/TransactionPaymentResponseRefundTransactionsDataInner.md
 docs/TransactionPaymentResponseTransactionEntitySplitResponsesInner.md
@@ -203,6 +205,8 @@ docs/VerifyBankAccountRequestBankAccountEntity.md
 docs/VerifyBankAccountResponse.md
 docs/VerifyBankAccountResponseHttpResponse.md
 git_push.sh
+src/Org.OpenAPITools.Test/Model/TransactionPaymentResponseAchTenderInfoCommissionTypeTests.cs
+src/Org.OpenAPITools.Test/Model/TransactionPaymentResponseRefundOriginTests.cs
 src/Org.OpenAPITools.Test/Org.OpenAPITools.Test.csproj
 src/Org.OpenAPITools/Api/SecureEmbeddedPremiumFinanceApi.cs
 src/Org.OpenAPITools/Api/SecureEmbeddedPremiumFinanceEndorsementsApi.cs
@@ -397,10 +401,12 @@ src/Org.OpenAPITools/Model/TransactionDetailResponseSplitsInner.cs
 src/Org.OpenAPITools/Model/TransactionDetailResponseTenderInfo.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponse.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponseAchTenderInfo.cs
+src/Org.OpenAPITools/Model/TransactionPaymentResponseAchTenderInfoCommissionType.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponseBillingContact.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponseBillingContactAddress.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponseBillingContactName.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponseCcTenderInfo.cs
+src/Org.OpenAPITools/Model/TransactionPaymentResponseRefundOrigin.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponseRefundTransactions.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponseRefundTransactionsDataInner.cs
 src/Org.OpenAPITools/Model/TransactionPaymentResponseTransactionEntitySplitResponsesInner.cs

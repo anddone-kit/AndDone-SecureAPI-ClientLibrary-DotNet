@@ -41,7 +41,7 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         /// <param name="programId">programId.</param>
         /// <param name="loanType">loanType (required).</param>
-        public PFLiteSecureQuoteRequestProgram(string programId = default(string), string loanType = default(string))
+        public PFLiteSecureQuoteRequestProgram(int programId = default(int), string loanType = default(string))
         {
             // to ensure "loanType" is required (not null)
             if (loanType == null)
@@ -56,7 +56,7 @@ namespace Org.OpenAPITools.Model
         /// Gets or Sets ProgramId
         /// </summary>
         [DataMember(Name = "programId", EmitDefaultValue = false)]
-        public string ProgramId { get; set; }
+        public int ProgramId { get; set; }
 
         /// <summary>
         /// Gets or Sets LoanType

@@ -100,31 +100,6 @@ namespace Org.OpenAPITools.Model
         [DataMember(Name = "paymentAdjustmentType", EmitDefaultValue = false)]
         public PaymentAdjustmentTypeEnum? PaymentAdjustmentType { get; set; }
         /// <summary>
-        /// Defines CommissionType
-        /// </summary>
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum CommissionTypeEnum
-        {
-            /// <summary>
-            /// Enum Fixed for value: Fixed
-            /// </summary>
-            [EnumMember(Value = "Fixed")]
-            Fixed = 1,
-
-            /// <summary>
-            /// Enum Percentage for value: Percentage
-            /// </summary>
-            [EnumMember(Value = "Percentage")]
-            Percentage = 2
-        }
-
-
-        /// <summary>
-        /// Gets or Sets CommissionType
-        /// </summary>
-        [DataMember(Name = "commissionType", EmitDefaultValue = false)]
-        public CommissionTypeEnum? CommissionType { get; set; }
-        /// <summary>
         /// Initializes a new instance of the <see cref="TransactionPaymentResponseAchTenderInfo" /> class.
         /// </summary>
         /// <param name="bankName">bankName.</param>
@@ -153,7 +128,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="commissionType">commissionType.</param>
         /// <param name="commissionValue">commissionValue.</param>
         /// <param name="commissionFixedValue">commissionFixedValue.</param>
-        public TransactionPaymentResponseAchTenderInfo(string bankName = default(string), string routingNumber = default(string), string accountType = default(string), string checkType = default(string), string checkNumber = default(string), string nameOnCheck = default(string), string accountHolderName = default(string), AccountCategoryEnum? accountCategory = default(AccountCategoryEnum?), float captureAmount = default(float), float amount = default(float), float convenienceAmount = default(float), string binNumber = default(string), float adjustmentPercentValue = default(float), float adjustmentFixedValue = default(float), float adjustmentAmount = default(float), string adjustmentDisplayName = default(string), string adjustmentDescriptorMessage = default(string), PaymentAdjustmentTypeEnum? paymentAdjustmentType = default(PaymentAdjustmentTypeEnum?), string preAuthCode = default(string), string maskAccount = default(string), string accountToken = default(string), string accountTokenMessage = default(string), bool createAccountToken = default(bool), CommissionTypeEnum? commissionType = default(CommissionTypeEnum?), float commissionValue = default(float), float commissionFixedValue = default(float))
+        public TransactionPaymentResponseAchTenderInfo(string bankName = default(string), string routingNumber = default(string), string accountType = default(string), string checkType = default(string), string checkNumber = default(string), string nameOnCheck = default(string), string accountHolderName = default(string), AccountCategoryEnum? accountCategory = default(AccountCategoryEnum?), float captureAmount = default(float), float amount = default(float), float convenienceAmount = default(float), string binNumber = default(string), float adjustmentPercentValue = default(float), float adjustmentFixedValue = default(float), float adjustmentAmount = default(float), string adjustmentDisplayName = default(string), string adjustmentDescriptorMessage = default(string), PaymentAdjustmentTypeEnum? paymentAdjustmentType = default(PaymentAdjustmentTypeEnum?), string preAuthCode = default(string), string maskAccount = default(string), string accountToken = default(string), string accountTokenMessage = default(string), bool createAccountToken = default(bool), TransactionPaymentResponseAchTenderInfoCommissionType commissionType = default(TransactionPaymentResponseAchTenderInfoCommissionType), float commissionValue = default(float), float commissionFixedValue = default(float))
         {
             this.BankName = bankName;
             this.RoutingNumber = routingNumber;
@@ -308,6 +283,12 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         [DataMember(Name = "createAccountToken", EmitDefaultValue = true)]
         public bool CreateAccountToken { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CommissionType
+        /// </summary>
+        [DataMember(Name = "commissionType", EmitDefaultValue = false)]
+        public TransactionPaymentResponseAchTenderInfoCommissionType CommissionType { get; set; }
 
         /// <summary>
         /// Gets or Sets CommissionValue

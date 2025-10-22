@@ -38,7 +38,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="message">message.</param>
         /// <param name="errorCode">errorCode.</param>
         /// <param name="statusCode">statusCode.</param>
-        public VerifyBankAccountResponseHttpResponse(bool isSuccessStatusCode = default(bool), string message = default(string), string errorCode = default(string), string statusCode = default(string))
+        public VerifyBankAccountResponseHttpResponse(bool isSuccessStatusCode = default(bool), string message = default(string), string errorCode = default(string), float statusCode = default(float))
         {
             this.IsSuccessStatusCode = isSuccessStatusCode;
             this.Message = message;
@@ -68,7 +68,7 @@ namespace Org.OpenAPITools.Model
         /// Gets or Sets StatusCode
         /// </summary>
         [DataMember(Name = "statusCode", EmitDefaultValue = false)]
-        public string StatusCode { get; set; }
+        public float StatusCode { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

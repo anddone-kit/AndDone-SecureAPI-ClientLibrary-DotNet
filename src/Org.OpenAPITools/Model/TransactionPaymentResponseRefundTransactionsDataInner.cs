@@ -676,31 +676,6 @@ namespace Org.OpenAPITools.Model
         [DataMember(Name = "paymentAdjustmentType", EmitDefaultValue = false)]
         public PaymentAdjustmentTypeEnum? PaymentAdjustmentType { get; set; }
         /// <summary>
-        /// Defines CommissionType
-        /// </summary>
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum CommissionTypeEnum
-        {
-            /// <summary>
-            /// Enum Fixed for value: Fixed
-            /// </summary>
-            [EnumMember(Value = "Fixed")]
-            Fixed = 1,
-
-            /// <summary>
-            /// Enum Percentage for value: Percentage
-            /// </summary>
-            [EnumMember(Value = "Percentage")]
-            Percentage = 2
-        }
-
-
-        /// <summary>
-        /// Gets or Sets CommissionType
-        /// </summary>
-        [DataMember(Name = "commissionType", EmitDefaultValue = false)]
-        public CommissionTypeEnum? CommissionType { get; set; }
-        /// <summary>
         /// Defines PaymentType
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
@@ -913,7 +888,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="refundDetail">refundDetail.</param>
         /// <param name="fullAccountNumber">fullAccountNumber.</param>
         /// <param name="refundType">refundType.</param>
-        public TransactionPaymentResponseRefundTransactionsDataInner(string transactionId = default(string), string merchantId = default(string), string ipAddress = default(string), string transactionDate = default(string), OperationTypeEnum? operationType = default(OperationTypeEnum?), ChannelTypeEnum? channelType = default(ChannelTypeEnum?), ProcessMethodEnum? processMethod = default(ProcessMethodEnum?), bool isDebit = default(bool), string referenceTransactionId = default(string), string referenceCustomerId = default(string), string recurringId = default(string), string batchId = default(string), TransactionStatusEnum? transactionStatus = default(TransactionStatusEnum?), string settlementDate = default(string), string authCode = default(string), string cardNumber = default(string), string accountNumber = default(string), string binNumber = default(string), string chequeNumber = default(string), string routingNumber = default(string), string nameOnCheckOrCard = default(string), string accountHolderName = default(string), AccountCategoryEnum? accountCategory = default(AccountCategoryEnum?), bool trainingMode = default(bool), float amount = default(float), float convenienceAmount = default(float), float captureAmount = default(float), string cardType = default(string), string createdOn = default(string), string createdBy = default(string), string modifiedOn = default(string), string modifiedBy = default(string), string customerName = default(string), string partnerId = default(string), string partnerName = default(string), string orderId = default(string), string invoiceId = default(string), string paymentLinkId = default(string), string referenceNo = default(string), string processorName = default(string), string processorDisplayName = default(string), string verification2Code = default(string), TransactionOriginEnum? transactionOrigin = default(TransactionOriginEnum?), PreviousTransactionStatusEnum? previousTransactionStatus = default(PreviousTransactionStatusEnum?), string traceNumber = default(string), string merchantReference = default(string), string additionaFields = default(string), float adjustmentValue = default(float), float adjustmentFixedValue = default(float), float adjustmentAmount = default(float), string adjustmentDisplayName = default(string), string adjustmentDescriptorMessage = default(string), PaymentAdjustmentTypeEnum? paymentAdjustmentType = default(PaymentAdjustmentTypeEnum?), CommissionTypeEnum? commissionType = default(CommissionTypeEnum?), float commissionValue = default(float), float commissionFixedValue = default(float), string accountToken = default(string), PaymentTypeEnum? paymentType = default(PaymentTypeEnum?), PaymentCategoryEnum? paymentCategory = default(PaymentCategoryEnum?), string refundReason = default(string), string refundDetail = default(string), string fullAccountNumber = default(string), RefundTypeEnum? refundType = default(RefundTypeEnum?))
+        public TransactionPaymentResponseRefundTransactionsDataInner(string transactionId = default(string), string merchantId = default(string), string ipAddress = default(string), string transactionDate = default(string), OperationTypeEnum? operationType = default(OperationTypeEnum?), ChannelTypeEnum? channelType = default(ChannelTypeEnum?), ProcessMethodEnum? processMethod = default(ProcessMethodEnum?), bool isDebit = default(bool), string referenceTransactionId = default(string), string referenceCustomerId = default(string), string recurringId = default(string), string batchId = default(string), TransactionStatusEnum? transactionStatus = default(TransactionStatusEnum?), string settlementDate = default(string), string authCode = default(string), string cardNumber = default(string), string accountNumber = default(string), string binNumber = default(string), string chequeNumber = default(string), string routingNumber = default(string), string nameOnCheckOrCard = default(string), string accountHolderName = default(string), AccountCategoryEnum? accountCategory = default(AccountCategoryEnum?), bool trainingMode = default(bool), float amount = default(float), float convenienceAmount = default(float), float captureAmount = default(float), string cardType = default(string), string createdOn = default(string), string createdBy = default(string), string modifiedOn = default(string), string modifiedBy = default(string), string customerName = default(string), string partnerId = default(string), string partnerName = default(string), string orderId = default(string), string invoiceId = default(string), string paymentLinkId = default(string), string referenceNo = default(string), string processorName = default(string), string processorDisplayName = default(string), string verification2Code = default(string), TransactionOriginEnum? transactionOrigin = default(TransactionOriginEnum?), PreviousTransactionStatusEnum? previousTransactionStatus = default(PreviousTransactionStatusEnum?), string traceNumber = default(string), string merchantReference = default(string), string additionaFields = default(string), float adjustmentValue = default(float), float adjustmentFixedValue = default(float), float adjustmentAmount = default(float), string adjustmentDisplayName = default(string), string adjustmentDescriptorMessage = default(string), PaymentAdjustmentTypeEnum? paymentAdjustmentType = default(PaymentAdjustmentTypeEnum?), TransactionPaymentResponseAchTenderInfoCommissionType commissionType = default(TransactionPaymentResponseAchTenderInfoCommissionType), float commissionValue = default(float), float commissionFixedValue = default(float), string accountToken = default(string), PaymentTypeEnum? paymentType = default(PaymentTypeEnum?), PaymentCategoryEnum? paymentCategory = default(PaymentCategoryEnum?), string refundReason = default(string), string refundDetail = default(string), string fullAccountNumber = default(string), RefundTypeEnum? refundType = default(RefundTypeEnum?))
         {
             this.TransactionId = transactionId;
             this.MerchantId = merchantId;
@@ -1249,6 +1224,12 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         [DataMember(Name = "adjustmentDescriptorMessage", EmitDefaultValue = false)]
         public string AdjustmentDescriptorMessage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CommissionType
+        /// </summary>
+        [DataMember(Name = "commissionType", EmitDefaultValue = false)]
+        public TransactionPaymentResponseAchTenderInfoCommissionType CommissionType { get; set; }
 
         /// <summary>
         /// Gets or Sets CommissionValue
