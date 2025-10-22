@@ -163,7 +163,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="modifiedBy">The user who last modified the quote..</param>
         /// <param name="unSignPFA">The unsigned PFA document..</param>
         /// <param name="signPFA">The signed PFA document..</param>
-        public QuoteResponse(string id = default(string), string quoteKey = default(string), string pFType = default(string), bool isEndorsement = default(bool), string merchantId = default(string), float programId = default(float), string programName = default(string), string paymentIntentId = default(string), string accountNumber = default(string), QuoteStatusEnum? quoteStatus = default(QuoteStatusEnum?), bool isActive = true, float premium = default(float), float tax = default(float), float additionalFees = default(float), float brokerFee = default(float), float downAmount = default(float), float amountFinanced = default(float), float financeCharge = default(float), float totalPayments = default(float), float paymentAmount = default(float), float totalAmount = default(float), float docStamp = default(float), string firstDueDate = default(string), float apr = default(float), int installments = default(int), string batchId = default(string), float paymentsRetained = default(float), float paymentRetainedAmount = default(float), string retailAgentRegisterLoginURL = default(string), string insuredName = default(string), bool isEsignPFA = default(bool), string nextPaymentDueDate = default(string), string lastPaymentDate = default(string), bool isDownPaymentRequired = default(bool), bool isEsignRequired = default(bool), bool isDeleted = default(bool), string createdOn = default(string), string createdBy = default(string), string modifiedOn = default(string), string modifiedBy = default(string), string unSignPFA = default(string), string signPFA = default(string))
+        public QuoteResponse(string id = default(string), string quoteKey = default(string), string pFType = default(string), bool isEndorsement = default(bool), string merchantId = default(string), int programId = default(int), string programName = default(string), string paymentIntentId = default(string), string accountNumber = default(string), QuoteStatusEnum? quoteStatus = default(QuoteStatusEnum?), bool isActive = true, float premium = default(float), float tax = default(float), float additionalFees = default(float), float brokerFee = default(float), float downAmount = default(float), float amountFinanced = default(float), float financeCharge = default(float), float totalPayments = default(float), float paymentAmount = default(float), float totalAmount = default(float), int docStamp = default(int), string firstDueDate = default(string), float apr = default(float), int installments = default(int), string batchId = default(string), int paymentsRetained = default(int), float paymentRetainedAmount = default(float), string retailAgentRegisterLoginURL = default(string), string insuredName = default(string), bool isEsignPFA = default(bool), string nextPaymentDueDate = default(string), string lastPaymentDate = default(string), bool isDownPaymentRequired = default(bool), bool isEsignRequired = default(bool), bool isDeleted = default(bool), string createdOn = default(string), string createdBy = default(string), string modifiedOn = default(string), string modifiedBy = default(string), string unSignPFA = default(string), string signPFA = default(string))
         {
             this.Id = id;
             this.QuoteKey = quoteKey;
@@ -249,7 +249,7 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         /// <value>The ID of the program.</value>
         [DataMember(Name = "programId", EmitDefaultValue = false)]
-        public float ProgramId { get; set; }
+        public int ProgramId { get; set; }
 
         /// <summary>
         /// The name of the program.
@@ -353,7 +353,7 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         /// <value>The document stamp.</value>
         [DataMember(Name = "docStamp", EmitDefaultValue = false)]
-        public float DocStamp { get; set; }
+        public int DocStamp { get; set; }
 
         /// <summary>
         /// The first due date.
@@ -388,7 +388,7 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         /// <value>The number of payments retained.</value>
         [DataMember(Name = "paymentsRetained", EmitDefaultValue = false)]
-        public float PaymentsRetained { get; set; }
+        public int PaymentsRetained { get; set; }
 
         /// <summary>
         /// The amount retained from the payment.

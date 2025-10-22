@@ -63,7 +63,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="totalPayFunding">totalPayFunding.</param>
         /// <param name="policyFee">policyFee.</param>
         /// <param name="invoiceNumber">This denotes the invoice number..</param>
-        public PFEndorsementRequestQuotePoliciesInner(string policyId = default(string), float premium = default(float), float down = default(float), float downPercent = default(float), float fee = default(float), float tax = default(float), string policyNumber = default(string), PFEndorsementRequestQuotePoliciesInnerCompany company = default(PFEndorsementRequestQuotePoliciesInnerCompany), PFEndorsementRequestQuotePoliciesInnerGa ga = default(PFEndorsementRequestQuotePoliciesInnerGa), PFEndorsementRequestQuotePoliciesInnerGa broker = default(PFEndorsementRequestQuotePoliciesInnerGa), string coverage = default(string), string effectiveDate = default(string), string expirationDate = default(string), float term = default(float), float minimumEarned = default(float), float minimumEarnedPercent = default(float), bool auditable = default(bool), string cancelDays = default(string), bool lossPayeeRequested = default(bool), float minimumLiability = default(float), float maximumLiability = default(float), List<PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner> totalPayFunding = default(List<PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner>), List<PFEndorsementRequestQuotePoliciesInnerPolicyFeeInner> policyFee = default(List<PFEndorsementRequestQuotePoliciesInnerPolicyFeeInner>), string invoiceNumber = default(string))
+        public PFEndorsementRequestQuotePoliciesInner(string policyId = default(string), float premium = default(float), float down = default(float), float downPercent = default(float), float fee = default(float), float tax = default(float), string policyNumber = default(string), PFEndorsementRequestQuotePoliciesInnerCompany company = default(PFEndorsementRequestQuotePoliciesInnerCompany), PFEndorsementRequestQuotePoliciesInnerGa ga = default(PFEndorsementRequestQuotePoliciesInnerGa), PFEndorsementRequestQuotePoliciesInnerGa broker = default(PFEndorsementRequestQuotePoliciesInnerGa), string coverage = default(string), string effectiveDate = default(string), string expirationDate = default(string), int term = default(int), float minimumEarned = default(float), float minimumEarnedPercent = default(float), bool auditable = default(bool), string cancelDays = default(string), bool lossPayeeRequested = default(bool), float minimumLiability = default(float), float maximumLiability = default(float), List<PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner> totalPayFunding = default(List<PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner>), List<PFEndorsementRequestQuotePoliciesInnerPolicyFeeInner> policyFee = default(List<PFEndorsementRequestQuotePoliciesInnerPolicyFeeInner>), string invoiceNumber = default(string))
         {
             this.Premium = premium;
             // to ensure "effectiveDate" is required (not null)
@@ -194,7 +194,7 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         /// <value>This denotes the number of terms.</value>
         [DataMember(Name = "term", EmitDefaultValue = false)]
-        public float Term { get; set; }
+        public int Term { get; set; }
 
         /// <summary>
         /// This denotes the minimum earned amount.

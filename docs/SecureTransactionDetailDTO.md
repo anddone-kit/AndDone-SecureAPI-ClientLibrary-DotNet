@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **TraceNumber** | **string** |  | [optional] 
 **TransactionCode** | **string** |  | [optional] 
 **TransactionOrigin** | **string** |  | [optional] 
-**RefundOrigin** | **int** |  | [optional] 
+**RefundOrigin** | [**TransactionPaymentResponseRefundOrigin**](TransactionPaymentResponseRefundOrigin.md) |  | [optional] 
 **BillingContact** | [**TransactionPaymentResponseBillingContact**](TransactionPaymentResponseBillingContact.md) |  | [optional] 
 **ShippingContact** | [**TransactionPaymentResponseBillingContact**](TransactionPaymentResponseBillingContact.md) |  | [optional] 
 **ReferenceTransactionId** | **string** |  | [optional] 
