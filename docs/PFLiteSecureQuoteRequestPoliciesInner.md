@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PFLiteSecureQuoteRequestPoliciesInner
+# AndDoneSecureClientLibrary.Model.PFLiteSecureQuoteRequestPoliciesInner
 
 ## Properties
 

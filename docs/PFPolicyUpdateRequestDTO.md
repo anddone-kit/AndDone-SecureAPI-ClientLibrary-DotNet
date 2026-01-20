@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PFPolicyUpdateRequestDTO
+# AndDoneSecureClientLibrary.Model.PFPolicyUpdateRequestDTO
 
 ## Properties
 

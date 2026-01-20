@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.HeadingDto
+# AndDoneSecureClientLibrary.Model.HeadingDto
 
 ## Properties
 

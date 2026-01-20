@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PaymentLinkResponse
+# AndDoneSecureClientLibrary.Model.PaymentLinkResponse
 
 ## Properties
 

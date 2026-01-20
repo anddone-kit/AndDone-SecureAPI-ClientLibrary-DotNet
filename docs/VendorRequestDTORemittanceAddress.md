@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.VendorRequestDTORemittanceAddress
+# AndDoneSecureClientLibrary.Model.VendorRequestDTORemittanceAddress
 Required if `useSameAsPhysicalAddress` is false or missing. 
 
 ## Properties

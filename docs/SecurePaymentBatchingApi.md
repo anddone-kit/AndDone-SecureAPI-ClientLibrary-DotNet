@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecurePaymentBatchingApi
+# AndDoneSecureClientLibrary.Api.SecurePaymentBatchingApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -20,9 +20,9 @@ This API is used for getting Secure Payment Batch Details
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -120,9 +120,9 @@ This API execute on-demand batch transaction.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -208,7 +208,7 @@ No authorization required
 
 <a id="securebatchespost"></a>
 # **SecureBatchesPost**
-> PaymentBatchResponse SecureBatchesPost (string xApiKey, string xAppKey, float xVersion, string origin, int? startRow = null, int? pageSize = null, string? sortField = null, bool? asc = null)
+> PaymentBatchResponse SecureBatchesPost (string xApiKey, string xAppKey, float xVersion, string origin, int? startRow = null, int? pageSize = null, string sortField = null, bool? asc = null)
 
 This API is used for getting Secure Payment Batches
 
@@ -216,9 +216,9 @@ This API is used for getting Secure Payment Batches
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -235,7 +235,7 @@ namespace Example
             var origin = "origin_example";  // string | origin
             var startRow = 56;  // int? | Set StartRow (optional) 
             var pageSize = 56;  // int? | Set PageSize (optional) 
-            var sortField = "sortField_example";  // string? | Set SortField (optional) 
+            var sortField = "sortField_example";  // string | Set SortField (optional) 
             var asc = true;  // bool? | Set Asc (optional) 
 
             try
@@ -285,7 +285,7 @@ catch (ApiException e)
 | **origin** | **string** | origin |  |
 | **startRow** | **int?** | Set StartRow | [optional]  |
 | **pageSize** | **int?** | Set PageSize | [optional]  |
-| **sortField** | **string?** | Set SortField | [optional]  |
+| **sortField** | **string** | Set SortField | [optional]  |
 | **asc** | **bool?** | Set Asc | [optional]  |
 
 ### Return type
@@ -322,9 +322,9 @@ This API will returns batch timeline.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -422,9 +422,9 @@ This API cancels transactions from an active batch.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {

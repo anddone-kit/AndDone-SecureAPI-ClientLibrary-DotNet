@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecurePaymentIntentApi
+# AndDoneSecureClientLibrary.Api.SecurePaymentIntentApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -17,9 +17,9 @@ This API expires the payment Intent or link.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -108,7 +108,7 @@ No authorization required
 
 <a id="securepaymentintentspost"></a>
 # **SecurePaymentintentsPost**
-> PaymentIntentResponse SecurePaymentintentsPost (string xApiKey, string xAppKey, float xVersion, string origin, PaymentIntentRequest? paymentIntentRequest = null)
+> PaymentIntentResponse SecurePaymentintentsPost (string xApiKey, string xAppKey, float xVersion, string origin, PaymentIntentRequest paymentIntentRequest = null)
 
 This API is use to create Secure payment Intent.
 
@@ -116,9 +116,9 @@ This API is use to create Secure payment Intent.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -133,7 +133,7 @@ namespace Example
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var paymentIntentRequest = new PaymentIntentRequest?(); // PaymentIntentRequest? | Payment Intent Request (optional) 
+            var paymentIntentRequest = new PaymentIntentRequest(); // PaymentIntentRequest | Payment Intent Request (optional) 
 
             try
             {
@@ -180,7 +180,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **paymentIntentRequest** | [**PaymentIntentRequest?**](PaymentIntentRequest?.md) | Payment Intent Request | [optional]  |
+| **paymentIntentRequest** | [**PaymentIntentRequest**](PaymentIntentRequest.md) | Payment Intent Request | [optional]  |
 
 ### Return type
 

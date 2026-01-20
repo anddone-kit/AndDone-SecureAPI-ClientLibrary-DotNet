@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.CancelPaymentRequestDTO
+# AndDoneSecureClientLibrary.Model.CancelPaymentRequestDTO
 
 ## Properties
 

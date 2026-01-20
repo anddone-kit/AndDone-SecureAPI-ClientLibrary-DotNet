@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecureTokenLinkByIdResponseAccountToken
+# AndDoneSecureClientLibrary.Model.SecureTokenLinkByIdResponseAccountToken
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecureTokenLinkByIdResponseTimeLineInner
+# AndDoneSecureClientLibrary.Model.SecureTokenLinkByIdResponseTimeLineInner
 
 ## Properties
 

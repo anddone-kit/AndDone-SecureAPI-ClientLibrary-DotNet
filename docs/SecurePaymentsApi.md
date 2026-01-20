@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecurePaymentsApi
+# AndDoneSecureClientLibrary.Api.SecurePaymentsApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -11,7 +11,7 @@ All URIs are relative to *https://api.uat.anddone.com*
 
 <a id="securepaymentsexportpost"></a>
 # **SecurePaymentsExportPost**
-> void SecurePaymentsExportPost (string xApiKey, string xAppKey, float xVersion, string origin, string? startDate = null, string? endDate = null, string? transactionIds = null, string? referenceTransactionId = null, string? transactionStatuses = null, string? customerIds = null, string? transactionType = null, string? authCode = null, string? cardHolderName = null, string? shopperName = null, float? amount = null, float? fromAmount = null, float? toAmount = null, string? channelTypes = null, string? maskAccount = null, string? customerName = null, string? recurringId = null, string? referenceNo = null, bool? exportToCsv = null, bool? exportToPDF = null, string? transactionOrigins = null, string? transactionSourceType = null, int? sourceId = null, string? traceNumbers = null, string? binNumber = null, string? processMethod = null, string? searchText = null, string? merchantReference = null, string? additionalFields = null, string? additionalFieldValue = null, string? paymentMethod = null, string? accountAlias = null, bool? isPaid = null, string? paymentTypes = null, string? merchantId = null, string? paymentCategories = null, bool? suppressTechnologyFee = null, string? batchId = null, string? sortField = null, int? startRow = null, int? pageSize = null, bool? asc = null)
+> void SecurePaymentsExportPost (string xApiKey, string xAppKey, float xVersion, string origin, string startDate = null, string endDate = null, string transactionIds = null, string referenceTransactionId = null, string transactionStatuses = null, string customerIds = null, string transactionType = null, string authCode = null, string cardHolderName = null, string shopperName = null, float? amount = null, float? fromAmount = null, float? toAmount = null, string channelTypes = null, string maskAccount = null, string customerName = null, string recurringId = null, string referenceNo = null, bool? exportToCsv = null, bool? exportToPDF = null, string transactionOrigins = null, string transactionSourceType = null, int? sourceId = null, string traceNumbers = null, string binNumber = null, string processMethod = null, string searchText = null, string merchantReference = null, string additionalFields = null, string additionalFieldValue = null, string paymentMethod = null, string accountAlias = null, bool? isPaid = null, string paymentTypes = null, string merchantId = null, string paymentCategories = null, bool? suppressTechnologyFee = null, string batchId = null, string sortField = null, int? startRow = null, int? pageSize = null, bool? asc = null)
 
 This API gets Secure payment by search criteria for the merchant.
 
@@ -19,9 +19,9 @@ This API gets Secure payment by search criteria for the merchant.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -36,45 +36,45 @@ namespace Example
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var startDate = "startDate_example";  // string? | Start date for the transaction search (optional) 
-            var endDate = "endDate_example";  // string? | End date for the transaction search (optional) 
-            var transactionIds = "transactionIds_example";  // string? | Transaction identifier (optional) 
-            var referenceTransactionId = "referenceTransactionId_example";  // string? | Reference transaction identifier (optional) 
-            var transactionStatuses = "transactionStatuses_example";  // string? | Status of the transaction (optional) 
-            var customerIds = "customerIds_example";  // string? | Customer IDs associated with the transaction (optional) 
-            var transactionType = "Sale";  // string? | Type of the transaction (optional) 
-            var authCode = "authCode_example";  // string? | Authorization code of the transaction (optional) 
-            var cardHolderName = "cardHolderName_example";  // string? | Name of the cardholder (optional) 
-            var shopperName = "shopperName_example";  // string? | ShopperName of the cardholder (optional) 
+            var startDate = "startDate_example";  // string | Start date for the transaction search (optional) 
+            var endDate = "endDate_example";  // string | End date for the transaction search (optional) 
+            var transactionIds = "transactionIds_example";  // string | Transaction identifier (optional) 
+            var referenceTransactionId = "referenceTransactionId_example";  // string | Reference transaction identifier (optional) 
+            var transactionStatuses = "transactionStatuses_example";  // string | Status of the transaction (optional) 
+            var customerIds = "customerIds_example";  // string | Customer IDs associated with the transaction (optional) 
+            var transactionType = "Sale";  // string | Type of the transaction (optional) 
+            var authCode = "authCode_example";  // string | Authorization code of the transaction (optional) 
+            var cardHolderName = "cardHolderName_example";  // string | Name of the cardholder (optional) 
+            var shopperName = "shopperName_example";  // string | ShopperName of the cardholder (optional) 
             var amount = 8.14D;  // float? | Transaction amount (optional) 
             var fromAmount = 8.14D;  // float? | Minimum transaction amount (optional) 
             var toAmount = 8.14D;  // float? | Maximum transaction amount (optional) 
-            var channelTypes = "channelTypes_example";  // string? | Channel types used for the transaction (optional) 
-            var maskAccount = "maskAccount_example";  // string? | Masked account number (optional) 
-            var customerName = "customerName_example";  // string? | Name of the customer (optional) 
-            var recurringId = "recurringId_example";  // string? | Recurring payment ID (optional) 
-            var referenceNo = "referenceNo_example";  // string? | Reference number (optional) 
+            var channelTypes = "channelTypes_example";  // string | Channel types used for the transaction (optional) 
+            var maskAccount = "maskAccount_example";  // string | Masked account number (optional) 
+            var customerName = "customerName_example";  // string | Name of the customer (optional) 
+            var recurringId = "recurringId_example";  // string | Recurring payment ID (optional) 
+            var referenceNo = "referenceNo_example";  // string | Reference number (optional) 
             var exportToCsv = true;  // bool? | Export To Csv (optional) 
             var exportToPDF = true;  // bool? | Export To PDF (optional) 
-            var transactionOrigins = "transactionOrigins_example";  // string? | Type of origin used in the transaction (optional) 
-            var transactionSourceType = "Independent";  // string? | Transaction source type of the transaction (optional) 
+            var transactionOrigins = "transactionOrigins_example";  // string | Type of origin used in the transaction (optional) 
+            var transactionSourceType = "Independent";  // string | Transaction source type of the transaction (optional) 
             var sourceId = 56;  // int? | Set SourceId (optional) 
-            var traceNumbers = "traceNumbers_example";  // string? | TraceNumbers associated with the transaction (optional) 
-            var binNumber = "binNumber_example";  // string? | BinNumber (optional) 
-            var processMethod = "NotDefined";  // string? | Process Method used for the transaction (optional) 
-            var searchText = "searchText_example";  // string? | SearchText of the transaction (optional) 
-            var merchantReference = "merchantReference_example";  // string? | Merchant Reference of the transaction (optional) 
-            var additionalFields = "additionalFields_example";  // string? | Additional Fields (optional) 
-            var additionalFieldValue = "additionalFieldValue_example";  // string? | AdditionalFieldValue (optional) 
-            var paymentMethod = "paymentMethod_example";  // string? | Payment Method (optional) 
-            var accountAlias = "accountAlias_example";  // string? | Set AccountAlias (optional) 
+            var traceNumbers = "traceNumbers_example";  // string | TraceNumbers associated with the transaction (optional) 
+            var binNumber = "binNumber_example";  // string | BinNumber (optional) 
+            var processMethod = "NotDefined";  // string | Process Method used for the transaction (optional) 
+            var searchText = "searchText_example";  // string | SearchText of the transaction (optional) 
+            var merchantReference = "merchantReference_example";  // string | Merchant Reference of the transaction (optional) 
+            var additionalFields = "additionalFields_example";  // string | Additional Fields (optional) 
+            var additionalFieldValue = "additionalFieldValue_example";  // string | AdditionalFieldValue (optional) 
+            var paymentMethod = "paymentMethod_example";  // string | Payment Method (optional) 
+            var accountAlias = "accountAlias_example";  // string | Set AccountAlias (optional) 
             var isPaid = true;  // bool? | Set IsPaid (optional) 
-            var paymentTypes = "paymentTypes_example";  // string? | Type of payment used in the transaction (optional) 
-            var merchantId = "merchantId_example";  // string? | Search with Merchant Id (optional) 
-            var paymentCategories = "paymentCategories_example";  // string? | Set PaymentCategories (optional) 
+            var paymentTypes = "paymentTypes_example";  // string | Type of payment used in the transaction (optional) 
+            var merchantId = "merchantId_example";  // string | Search with Merchant Id (optional) 
+            var paymentCategories = "paymentCategories_example";  // string | Set PaymentCategories (optional) 
             var suppressTechnologyFee = true;  // bool? | SuppressTechnologyFee (optional) 
-            var batchId = "batchId_example";  // string? | BatchId (optional) 
-            var sortField = "sortField_example";  // string? | SortField (optional) 
+            var batchId = "batchId_example";  // string | BatchId (optional) 
+            var sortField = "sortField_example";  // string | SortField (optional) 
             var startRow = 56;  // int? | Set StartRow (optional) 
             var pageSize = 56;  // int? | Set PageSize (optional) 
             var asc = true;  // bool? | Set Asc (optional) 
@@ -120,45 +120,45 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **startDate** | **string?** | Start date for the transaction search | [optional]  |
-| **endDate** | **string?** | End date for the transaction search | [optional]  |
-| **transactionIds** | **string?** | Transaction identifier | [optional]  |
-| **referenceTransactionId** | **string?** | Reference transaction identifier | [optional]  |
-| **transactionStatuses** | **string?** | Status of the transaction | [optional]  |
-| **customerIds** | **string?** | Customer IDs associated with the transaction | [optional]  |
-| **transactionType** | **string?** | Type of the transaction | [optional]  |
-| **authCode** | **string?** | Authorization code of the transaction | [optional]  |
-| **cardHolderName** | **string?** | Name of the cardholder | [optional]  |
-| **shopperName** | **string?** | ShopperName of the cardholder | [optional]  |
+| **startDate** | **string** | Start date for the transaction search | [optional]  |
+| **endDate** | **string** | End date for the transaction search | [optional]  |
+| **transactionIds** | **string** | Transaction identifier | [optional]  |
+| **referenceTransactionId** | **string** | Reference transaction identifier | [optional]  |
+| **transactionStatuses** | **string** | Status of the transaction | [optional]  |
+| **customerIds** | **string** | Customer IDs associated with the transaction | [optional]  |
+| **transactionType** | **string** | Type of the transaction | [optional]  |
+| **authCode** | **string** | Authorization code of the transaction | [optional]  |
+| **cardHolderName** | **string** | Name of the cardholder | [optional]  |
+| **shopperName** | **string** | ShopperName of the cardholder | [optional]  |
 | **amount** | **float?** | Transaction amount | [optional]  |
 | **fromAmount** | **float?** | Minimum transaction amount | [optional]  |
 | **toAmount** | **float?** | Maximum transaction amount | [optional]  |
-| **channelTypes** | **string?** | Channel types used for the transaction | [optional]  |
-| **maskAccount** | **string?** | Masked account number | [optional]  |
-| **customerName** | **string?** | Name of the customer | [optional]  |
-| **recurringId** | **string?** | Recurring payment ID | [optional]  |
-| **referenceNo** | **string?** | Reference number | [optional]  |
+| **channelTypes** | **string** | Channel types used for the transaction | [optional]  |
+| **maskAccount** | **string** | Masked account number | [optional]  |
+| **customerName** | **string** | Name of the customer | [optional]  |
+| **recurringId** | **string** | Recurring payment ID | [optional]  |
+| **referenceNo** | **string** | Reference number | [optional]  |
 | **exportToCsv** | **bool?** | Export To Csv | [optional]  |
 | **exportToPDF** | **bool?** | Export To PDF | [optional]  |
-| **transactionOrigins** | **string?** | Type of origin used in the transaction | [optional]  |
-| **transactionSourceType** | **string?** | Transaction source type of the transaction | [optional]  |
+| **transactionOrigins** | **string** | Type of origin used in the transaction | [optional]  |
+| **transactionSourceType** | **string** | Transaction source type of the transaction | [optional]  |
 | **sourceId** | **int?** | Set SourceId | [optional]  |
-| **traceNumbers** | **string?** | TraceNumbers associated with the transaction | [optional]  |
-| **binNumber** | **string?** | BinNumber | [optional]  |
-| **processMethod** | **string?** | Process Method used for the transaction | [optional]  |
-| **searchText** | **string?** | SearchText of the transaction | [optional]  |
-| **merchantReference** | **string?** | Merchant Reference of the transaction | [optional]  |
-| **additionalFields** | **string?** | Additional Fields | [optional]  |
-| **additionalFieldValue** | **string?** | AdditionalFieldValue | [optional]  |
-| **paymentMethod** | **string?** | Payment Method | [optional]  |
-| **accountAlias** | **string?** | Set AccountAlias | [optional]  |
+| **traceNumbers** | **string** | TraceNumbers associated with the transaction | [optional]  |
+| **binNumber** | **string** | BinNumber | [optional]  |
+| **processMethod** | **string** | Process Method used for the transaction | [optional]  |
+| **searchText** | **string** | SearchText of the transaction | [optional]  |
+| **merchantReference** | **string** | Merchant Reference of the transaction | [optional]  |
+| **additionalFields** | **string** | Additional Fields | [optional]  |
+| **additionalFieldValue** | **string** | AdditionalFieldValue | [optional]  |
+| **paymentMethod** | **string** | Payment Method | [optional]  |
+| **accountAlias** | **string** | Set AccountAlias | [optional]  |
 | **isPaid** | **bool?** | Set IsPaid | [optional]  |
-| **paymentTypes** | **string?** | Type of payment used in the transaction | [optional]  |
-| **merchantId** | **string?** | Search with Merchant Id | [optional]  |
-| **paymentCategories** | **string?** | Set PaymentCategories | [optional]  |
+| **paymentTypes** | **string** | Type of payment used in the transaction | [optional]  |
+| **merchantId** | **string** | Search with Merchant Id | [optional]  |
+| **paymentCategories** | **string** | Set PaymentCategories | [optional]  |
 | **suppressTechnologyFee** | **bool?** | SuppressTechnologyFee | [optional]  |
-| **batchId** | **string?** | BatchId | [optional]  |
-| **sortField** | **string?** | SortField | [optional]  |
+| **batchId** | **string** | BatchId | [optional]  |
+| **sortField** | **string** | SortField | [optional]  |
 | **startRow** | **int?** | Set StartRow | [optional]  |
 | **pageSize** | **int?** | Set PageSize | [optional]  |
 | **asc** | **bool?** | Set Asc | [optional]  |
@@ -197,9 +197,9 @@ This API posts new Secure payment request for the merchant.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -289,7 +289,7 @@ No authorization required
 
 <a id="securepaymentssearchpost"></a>
 # **SecurePaymentsSearchPost**
-> MerchantTransactionEntityResponse SecurePaymentsSearchPost (string xApiKey, string xAppKey, float xVersion, string origin, string? startDate = null, string? endDate = null, string? transactionIds = null, string? referenceTransactionId = null, string? transactionStatuses = null, string? customerIds = null, string? transactionType = null, string? authCode = null, string? cardHolderName = null, string? shopperName = null, float? amount = null, float? fromAmount = null, float? toAmount = null, string? channelTypes = null, string? maskAccount = null, string? customerName = null, string? recurringId = null, string? referenceNo = null, bool? exportToCsv = null, bool? exportToPDF = null, string? transactionOrigins = null, string? transactionSourceType = null, int? sourceId = null, string? traceNumbers = null, string? binNumber = null, string? processMethod = null, string? searchText = null, string? merchantReference = null, string? additionalFields = null, string? additionalFieldValue = null, string? paymentMethod = null, string? accountAlias = null, bool? isPaid = null, string? paymentTypes = null, string? merchantId = null, string? paymentCategories = null, bool? suppressTechnologyFee = null, string? batchId = null, bool? transactionsCount = null, string? sortField = null, int? startRow = null, int? pageSize = null, bool? asc = null)
+> MerchantTransactionEntityResponse SecurePaymentsSearchPost (string xApiKey, string xAppKey, float xVersion, string origin, string startDate = null, string endDate = null, string transactionIds = null, string referenceTransactionId = null, string transactionStatuses = null, string customerIds = null, string transactionType = null, string authCode = null, string cardHolderName = null, string shopperName = null, float? amount = null, float? fromAmount = null, float? toAmount = null, string channelTypes = null, string maskAccount = null, string customerName = null, string recurringId = null, string referenceNo = null, bool? exportToCsv = null, bool? exportToPDF = null, string transactionOrigins = null, string transactionSourceType = null, int? sourceId = null, string traceNumbers = null, string binNumber = null, string processMethod = null, string searchText = null, string merchantReference = null, string additionalFields = null, string additionalFieldValue = null, string paymentMethod = null, string accountAlias = null, bool? isPaid = null, string paymentTypes = null, string merchantId = null, string paymentCategories = null, bool? suppressTechnologyFee = null, string batchId = null, bool? transactionsCount = null, string sortField = null, int? startRow = null, int? pageSize = null, bool? asc = null)
 
 This API gets Secure payment by search criteria for the merchant.
 
@@ -297,9 +297,9 @@ This API gets Secure payment by search criteria for the merchant.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -314,46 +314,46 @@ namespace Example
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var startDate = "startDate_example";  // string? | Start date for the transaction search (optional) 
-            var endDate = "endDate_example";  // string? | End date for the transaction search (optional) 
-            var transactionIds = "transactionIds_example";  // string? | Transaction identifier (optional) 
-            var referenceTransactionId = "referenceTransactionId_example";  // string? | Reference transaction identifier (optional) 
-            var transactionStatuses = "transactionStatuses_example";  // string? | Status of the transaction (optional) 
-            var customerIds = "customerIds_example";  // string? | Customer IDs associated with the transaction (optional) 
-            var transactionType = "Sale";  // string? | Type of the transaction (optional) 
-            var authCode = "authCode_example";  // string? | Authorization code of the transaction (optional) 
-            var cardHolderName = "cardHolderName_example";  // string? | Name of the cardholder (optional) 
-            var shopperName = "shopperName_example";  // string? | ShopperName of the cardholder (optional) 
+            var startDate = "startDate_example";  // string | Start date for the transaction search (optional) 
+            var endDate = "endDate_example";  // string | End date for the transaction search (optional) 
+            var transactionIds = "transactionIds_example";  // string | Transaction identifier (optional) 
+            var referenceTransactionId = "referenceTransactionId_example";  // string | Reference transaction identifier (optional) 
+            var transactionStatuses = "transactionStatuses_example";  // string | Status of the transaction (optional) 
+            var customerIds = "customerIds_example";  // string | Customer IDs associated with the transaction (optional) 
+            var transactionType = "Sale";  // string | Type of the transaction (optional) 
+            var authCode = "authCode_example";  // string | Authorization code of the transaction (optional) 
+            var cardHolderName = "cardHolderName_example";  // string | Name of the cardholder (optional) 
+            var shopperName = "shopperName_example";  // string | ShopperName of the cardholder (optional) 
             var amount = 8.14D;  // float? | Transaction amount (optional) 
             var fromAmount = 8.14D;  // float? | Minimum transaction amount (optional) 
             var toAmount = 8.14D;  // float? | Maximum transaction amount (optional) 
-            var channelTypes = "channelTypes_example";  // string? | Channel types used for the transaction (optional) 
-            var maskAccount = "maskAccount_example";  // string? | Masked account number (optional) 
-            var customerName = "customerName_example";  // string? | Name of the customer (optional) 
-            var recurringId = "recurringId_example";  // string? | Recurring payment ID (optional) 
-            var referenceNo = "referenceNo_example";  // string? | Reference number (optional) 
+            var channelTypes = "channelTypes_example";  // string | Channel types used for the transaction (optional) 
+            var maskAccount = "maskAccount_example";  // string | Masked account number (optional) 
+            var customerName = "customerName_example";  // string | Name of the customer (optional) 
+            var recurringId = "recurringId_example";  // string | Recurring payment ID (optional) 
+            var referenceNo = "referenceNo_example";  // string | Reference number (optional) 
             var exportToCsv = true;  // bool? | Export To Csv (optional) 
             var exportToPDF = true;  // bool? | Export To PDF (optional) 
-            var transactionOrigins = "transactionOrigins_example";  // string? | Type of origin used in the transaction (optional) 
-            var transactionSourceType = "Independent";  // string? | Transaction source type of the transaction (optional) 
+            var transactionOrigins = "transactionOrigins_example";  // string | Type of origin used in the transaction (optional) 
+            var transactionSourceType = "Independent";  // string | Transaction source type of the transaction (optional) 
             var sourceId = 56;  // int? | Set SourceId (optional) 
-            var traceNumbers = "traceNumbers_example";  // string? | TraceNumbers associated with the transaction (optional) 
-            var binNumber = "binNumber_example";  // string? | BinNumber (optional) 
-            var processMethod = "NotDefined";  // string? | Process Method used for the transaction (optional) 
-            var searchText = "searchText_example";  // string? | SearchText of the transaction (optional) 
-            var merchantReference = "merchantReference_example";  // string? | Merchant Reference of the transaction (optional) 
-            var additionalFields = "additionalFields_example";  // string? | Additional Fields (optional) 
-            var additionalFieldValue = "additionalFieldValue_example";  // string? | AdditionalFieldValue (optional) 
-            var paymentMethod = "paymentMethod_example";  // string? | Payment Method (optional) 
-            var accountAlias = "accountAlias_example";  // string? | Set AccountAlias (optional) 
+            var traceNumbers = "traceNumbers_example";  // string | TraceNumbers associated with the transaction (optional) 
+            var binNumber = "binNumber_example";  // string | BinNumber (optional) 
+            var processMethod = "NotDefined";  // string | Process Method used for the transaction (optional) 
+            var searchText = "searchText_example";  // string | SearchText of the transaction (optional) 
+            var merchantReference = "merchantReference_example";  // string | Merchant Reference of the transaction (optional) 
+            var additionalFields = "additionalFields_example";  // string | Additional Fields (optional) 
+            var additionalFieldValue = "additionalFieldValue_example";  // string | AdditionalFieldValue (optional) 
+            var paymentMethod = "paymentMethod_example";  // string | Payment Method (optional) 
+            var accountAlias = "accountAlias_example";  // string | Set AccountAlias (optional) 
             var isPaid = true;  // bool? | Set IsPaid (optional) 
-            var paymentTypes = "paymentTypes_example";  // string? | Type of payment used in the transaction (optional) 
-            var merchantId = "merchantId_example";  // string? | Search with Merchant Id (optional) 
-            var paymentCategories = "paymentCategories_example";  // string? | Set PaymentCategories (optional) 
+            var paymentTypes = "paymentTypes_example";  // string | Type of payment used in the transaction (optional) 
+            var merchantId = "merchantId_example";  // string | Search with Merchant Id (optional) 
+            var paymentCategories = "paymentCategories_example";  // string | Set PaymentCategories (optional) 
             var suppressTechnologyFee = true;  // bool? | SuppressTechnologyFee (optional) 
-            var batchId = "batchId_example";  // string? | BatchId (optional) 
+            var batchId = "batchId_example";  // string | BatchId (optional) 
             var transactionsCount = true;  // bool? | Set whether to return only the transactions count (optional) 
-            var sortField = "sortField_example";  // string? | SortField (optional) 
+            var sortField = "sortField_example";  // string | SortField (optional) 
             var startRow = 56;  // int? | Set StartRow (optional) 
             var pageSize = 56;  // int? | Set PageSize (optional) 
             var asc = true;  // bool? | Set Asc (optional) 
@@ -403,46 +403,46 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **startDate** | **string?** | Start date for the transaction search | [optional]  |
-| **endDate** | **string?** | End date for the transaction search | [optional]  |
-| **transactionIds** | **string?** | Transaction identifier | [optional]  |
-| **referenceTransactionId** | **string?** | Reference transaction identifier | [optional]  |
-| **transactionStatuses** | **string?** | Status of the transaction | [optional]  |
-| **customerIds** | **string?** | Customer IDs associated with the transaction | [optional]  |
-| **transactionType** | **string?** | Type of the transaction | [optional]  |
-| **authCode** | **string?** | Authorization code of the transaction | [optional]  |
-| **cardHolderName** | **string?** | Name of the cardholder | [optional]  |
-| **shopperName** | **string?** | ShopperName of the cardholder | [optional]  |
+| **startDate** | **string** | Start date for the transaction search | [optional]  |
+| **endDate** | **string** | End date for the transaction search | [optional]  |
+| **transactionIds** | **string** | Transaction identifier | [optional]  |
+| **referenceTransactionId** | **string** | Reference transaction identifier | [optional]  |
+| **transactionStatuses** | **string** | Status of the transaction | [optional]  |
+| **customerIds** | **string** | Customer IDs associated with the transaction | [optional]  |
+| **transactionType** | **string** | Type of the transaction | [optional]  |
+| **authCode** | **string** | Authorization code of the transaction | [optional]  |
+| **cardHolderName** | **string** | Name of the cardholder | [optional]  |
+| **shopperName** | **string** | ShopperName of the cardholder | [optional]  |
 | **amount** | **float?** | Transaction amount | [optional]  |
 | **fromAmount** | **float?** | Minimum transaction amount | [optional]  |
 | **toAmount** | **float?** | Maximum transaction amount | [optional]  |
-| **channelTypes** | **string?** | Channel types used for the transaction | [optional]  |
-| **maskAccount** | **string?** | Masked account number | [optional]  |
-| **customerName** | **string?** | Name of the customer | [optional]  |
-| **recurringId** | **string?** | Recurring payment ID | [optional]  |
-| **referenceNo** | **string?** | Reference number | [optional]  |
+| **channelTypes** | **string** | Channel types used for the transaction | [optional]  |
+| **maskAccount** | **string** | Masked account number | [optional]  |
+| **customerName** | **string** | Name of the customer | [optional]  |
+| **recurringId** | **string** | Recurring payment ID | [optional]  |
+| **referenceNo** | **string** | Reference number | [optional]  |
 | **exportToCsv** | **bool?** | Export To Csv | [optional]  |
 | **exportToPDF** | **bool?** | Export To PDF | [optional]  |
-| **transactionOrigins** | **string?** | Type of origin used in the transaction | [optional]  |
-| **transactionSourceType** | **string?** | Transaction source type of the transaction | [optional]  |
+| **transactionOrigins** | **string** | Type of origin used in the transaction | [optional]  |
+| **transactionSourceType** | **string** | Transaction source type of the transaction | [optional]  |
 | **sourceId** | **int?** | Set SourceId | [optional]  |
-| **traceNumbers** | **string?** | TraceNumbers associated with the transaction | [optional]  |
-| **binNumber** | **string?** | BinNumber | [optional]  |
-| **processMethod** | **string?** | Process Method used for the transaction | [optional]  |
-| **searchText** | **string?** | SearchText of the transaction | [optional]  |
-| **merchantReference** | **string?** | Merchant Reference of the transaction | [optional]  |
-| **additionalFields** | **string?** | Additional Fields | [optional]  |
-| **additionalFieldValue** | **string?** | AdditionalFieldValue | [optional]  |
-| **paymentMethod** | **string?** | Payment Method | [optional]  |
-| **accountAlias** | **string?** | Set AccountAlias | [optional]  |
+| **traceNumbers** | **string** | TraceNumbers associated with the transaction | [optional]  |
+| **binNumber** | **string** | BinNumber | [optional]  |
+| **processMethod** | **string** | Process Method used for the transaction | [optional]  |
+| **searchText** | **string** | SearchText of the transaction | [optional]  |
+| **merchantReference** | **string** | Merchant Reference of the transaction | [optional]  |
+| **additionalFields** | **string** | Additional Fields | [optional]  |
+| **additionalFieldValue** | **string** | AdditionalFieldValue | [optional]  |
+| **paymentMethod** | **string** | Payment Method | [optional]  |
+| **accountAlias** | **string** | Set AccountAlias | [optional]  |
 | **isPaid** | **bool?** | Set IsPaid | [optional]  |
-| **paymentTypes** | **string?** | Type of payment used in the transaction | [optional]  |
-| **merchantId** | **string?** | Search with Merchant Id | [optional]  |
-| **paymentCategories** | **string?** | Set PaymentCategories | [optional]  |
+| **paymentTypes** | **string** | Type of payment used in the transaction | [optional]  |
+| **merchantId** | **string** | Search with Merchant Id | [optional]  |
+| **paymentCategories** | **string** | Set PaymentCategories | [optional]  |
 | **suppressTechnologyFee** | **bool?** | SuppressTechnologyFee | [optional]  |
-| **batchId** | **string?** | BatchId | [optional]  |
+| **batchId** | **string** | BatchId | [optional]  |
 | **transactionsCount** | **bool?** | Set whether to return only the transactions count | [optional]  |
-| **sortField** | **string?** | SortField | [optional]  |
+| **sortField** | **string** | SortField | [optional]  |
 | **startRow** | **int?** | Set StartRow | [optional]  |
 | **pageSize** | **int?** | Set PageSize | [optional]  |
 | **asc** | **bool?** | Set Asc | [optional]  |
@@ -481,9 +481,9 @@ This API is used for getting details of Payments
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.QuoteRequestPoliciesInnerCompany
+# AndDoneSecureClientLibrary.Model.QuoteRequestPoliciesInnerCompany
 
 ## Properties
 

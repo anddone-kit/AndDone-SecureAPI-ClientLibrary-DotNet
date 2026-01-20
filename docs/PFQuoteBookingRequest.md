@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PFQuoteBookingRequest
+# AndDoneSecureClientLibrary.Model.PFQuoteBookingRequest
 
 ## Properties
 

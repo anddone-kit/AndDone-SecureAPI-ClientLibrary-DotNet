@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner
+# AndDoneSecureClientLibrary.Model.PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner
 
 ## Properties
 

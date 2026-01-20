@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PaymentLinkResponseLineItemsInner
+# AndDoneSecureClientLibrary.Model.PaymentLinkResponseLineItemsInner
 
 ## Properties
 

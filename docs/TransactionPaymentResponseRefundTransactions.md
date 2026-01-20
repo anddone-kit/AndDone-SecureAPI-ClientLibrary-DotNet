@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TransactionPaymentResponseRefundTransactions
+# AndDoneSecureClientLibrary.Model.TransactionPaymentResponseRefundTransactions
 
 ## Properties
 

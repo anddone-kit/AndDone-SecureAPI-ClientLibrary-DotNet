@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecureTransactionDetailDTOTenderInfo
+# AndDoneSecureClientLibrary.Model.SecureTransactionDetailDTOTenderInfo
 
 ## Properties
 

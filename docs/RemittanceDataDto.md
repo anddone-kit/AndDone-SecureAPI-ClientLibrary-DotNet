@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.RemittanceDataDto
+# AndDoneSecureClientLibrary.Model.RemittanceDataDto
 
 ## Properties
 

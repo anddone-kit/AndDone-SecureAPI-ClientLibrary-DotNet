@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.RowDto
+# AndDoneSecureClientLibrary.Model.RowDto
 
 ## Properties
 

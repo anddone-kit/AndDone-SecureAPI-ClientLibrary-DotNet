@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecureEmbeddedPremiumFinanceEndorsementsApi
+# AndDoneSecureClientLibrary.Api.SecureEmbeddedPremiumFinanceEndorsementsApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -18,9 +18,9 @@ This API will do a check of eligibility of account
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -118,9 +118,9 @@ This API will update PFA to book a endorsement quote.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -218,9 +218,9 @@ This API will do return a quote for an existing policy or new policy for an exis
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PFQuoteEsignRequest
+# AndDoneSecureClientLibrary.Model.PFQuoteEsignRequest
 
 ## Properties
 

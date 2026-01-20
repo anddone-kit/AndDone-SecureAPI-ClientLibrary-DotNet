@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.QuoteResponse
+# AndDoneSecureClientLibrary.Model.QuoteResponse
 
 ## Properties
 

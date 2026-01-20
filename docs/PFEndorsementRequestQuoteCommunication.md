@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PFEndorsementRequestQuoteCommunication
+# AndDoneSecureClientLibrary.Model.PFEndorsementRequestQuoteCommunication
 
 ## Properties
 

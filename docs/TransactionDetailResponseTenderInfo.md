@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TransactionDetailResponseTenderInfo
+# AndDoneSecureClientLibrary.Model.TransactionDetailResponseTenderInfo
 
 ## Properties
 

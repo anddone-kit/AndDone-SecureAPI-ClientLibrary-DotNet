@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PaymentBatchCancellationRequest
+# AndDoneSecureClientLibrary.Model.PaymentBatchCancellationRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PaymentRequestDetailDTO
+# AndDoneSecureClientLibrary.Model.PaymentRequestDetailDTO
 
 ## Properties
 
