@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecureBatchExecuteRequest
+# AndDoneSecureClientLibrary.Model.SecureBatchExecuteRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PFLiteQuoteByPaymentLinkResponse
+# AndDoneSecureClientLibrary.Model.PFLiteQuoteByPaymentLinkResponse
 
 ## Properties
 

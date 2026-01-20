@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.ReportDownloadRequest
+# AndDoneSecureClientLibrary.Model.ReportDownloadRequest
 
 ## Properties
 

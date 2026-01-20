@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.VendorTimelineResponseListInner
+# AndDoneSecureClientLibrary.Model.VendorTimelineResponseListInner
 
 ## Properties
 

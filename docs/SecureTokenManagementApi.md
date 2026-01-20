@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecureTokenManagementApi
+# AndDoneSecureClientLibrary.Api.SecureTokenManagementApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -17,9 +17,9 @@ This API is used for deactivating merchant token securely
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -113,9 +113,9 @@ This API is used for getting details of Merchant Token by Token link.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {

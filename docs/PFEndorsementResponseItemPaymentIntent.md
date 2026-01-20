@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PFEndorsementResponseItemPaymentIntent
+# AndDoneSecureClientLibrary.Model.PFEndorsementResponseItemPaymentIntent
 
 ## Properties
 

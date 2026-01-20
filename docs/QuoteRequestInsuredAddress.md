@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.QuoteRequestInsuredAddress
+# AndDoneSecureClientLibrary.Model.QuoteRequestInsuredAddress
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.AutoPayEnrollmentRequest
+# AndDoneSecureClientLibrary.Model.AutoPayEnrollmentRequest
 
 ## Properties
 

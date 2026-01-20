@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TransactionDetailResponse
+# AndDoneSecureClientLibrary.Model.TransactionDetailResponse
 
 ## Properties
 

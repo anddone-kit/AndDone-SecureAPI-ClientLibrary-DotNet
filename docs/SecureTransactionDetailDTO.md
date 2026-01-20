@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecureTransactionDetailDTO
+# AndDoneSecureClientLibrary.Model.SecureTransactionDetailDTO
 
 ## Properties
 

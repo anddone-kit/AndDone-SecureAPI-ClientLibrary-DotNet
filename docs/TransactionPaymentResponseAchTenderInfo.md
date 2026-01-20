@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TransactionPaymentResponseAchTenderInfo
+# AndDoneSecureClientLibrary.Model.TransactionPaymentResponseAchTenderInfo
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecurePaymentLinksApi
+# AndDoneSecureClientLibrary.Api.SecurePaymentLinksApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -19,9 +19,9 @@ This API is used for getting Payment Links by PaymentLink ID
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -111,7 +111,7 @@ No authorization required
 
 <a id="securepaymentlinksexpirationspost"></a>
 # **SecurePaymentlinksExpirationsPost**
-> PaymentLinkExpiresResponse SecurePaymentlinksExpirationsPost (string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest? securePaymentLinkRequest = null)
+> PaymentLinkExpiresResponse SecurePaymentlinksExpirationsPost (string xApiKey, string xAppKey, float xVersion, string origin, SecurePaymentLinkRequest securePaymentLinkRequest = null)
 
 This API is used for to set expired payment link
 
@@ -119,9 +119,9 @@ This API is used for to set expired payment link
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -136,7 +136,7 @@ namespace Example
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var securePaymentLinkRequest = new SecurePaymentLinkRequest?(); // SecurePaymentLinkRequest? | Secure Payment Link Request (optional) 
+            var securePaymentLinkRequest = new SecurePaymentLinkRequest(); // SecurePaymentLinkRequest | Secure Payment Link Request (optional) 
 
             try
             {
@@ -183,7 +183,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **securePaymentLinkRequest** | [**SecurePaymentLinkRequest?**](SecurePaymentLinkRequest?.md) | Secure Payment Link Request | [optional]  |
+| **securePaymentLinkRequest** | [**SecurePaymentLinkRequest**](SecurePaymentLinkRequest.md) | Secure Payment Link Request | [optional]  |
 
 ### Return type
 
@@ -218,9 +218,9 @@ This API is used to update Payment Links
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -320,9 +320,9 @@ This API is used to create Payment Links
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {

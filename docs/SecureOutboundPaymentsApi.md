@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecureOutboundPaymentsApi
+# AndDoneSecureClientLibrary.Api.SecureOutboundPaymentsApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -21,9 +21,9 @@ This API gets outbound payment timelines
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -121,9 +121,9 @@ This API cancel outbound payment request
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -216,9 +216,9 @@ This API fetch outbound payment by paymentId
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -315,9 +315,9 @@ This API gets outbound payment JPG image in Base64 string format
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -415,9 +415,9 @@ This API creates outbound payment request
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -507,7 +507,7 @@ No authorization required
 
 <a id="vendorapisecureoutboundpaymentssearchpost"></a>
 # **VendorapiSecureOutboundpaymentsSearchPost**
-> PagePaymentListResponseDTO VendorapiSecureOutboundpaymentsSearchPost (string xApiKey, string xAppKey, float xVersion, string origin, string? vendorId = null, string? paymentBasedId = null, string? paymentId = null, string? vendorName = null, string? paymentMethodType = null, string? paymentMethodStatus = null, float? amount = null, float? fromAmount = null, float? toAmount = null, string? startDate = null, string? endDate = null, string? searchText = null, int? startRow = null, int? pageSize = null, string? sortField = null, bool? asc = null)
+> PagePaymentListResponseDTO VendorapiSecureOutboundpaymentsSearchPost (string xApiKey, string xAppKey, float xVersion, string origin, string vendorId = null, string paymentBasedId = null, string paymentId = null, string vendorName = null, string paymentMethodType = null, string paymentMethodStatus = null, float? amount = null, float? fromAmount = null, float? toAmount = null, string startDate = null, string endDate = null, string searchText = null, int? startRow = null, int? pageSize = null, string sortField = null, bool? asc = null)
 
 This API gets all outbound payment
 
@@ -515,9 +515,9 @@ This API gets all outbound payment
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -532,21 +532,21 @@ namespace Example
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var vendorId = "vendorId_example";  // string? | sets vendorId (optional) 
-            var paymentBasedId = "paymentBasedId_example";  // string? | sets paymentBasedId (optional) 
-            var paymentId = "paymentId_example";  // string? | sets paymentId (optional) 
-            var vendorName = "vendorName_example";  // string? | sets vendorName (optional) 
-            var paymentMethodType = "Check";  // string? | sets paymentMethodType (optional) 
-            var paymentMethodStatus = "paymentMethodStatus_example";  // string? | sets paymentMethodStatus (optional) 
+            var vendorId = "vendorId_example";  // string | sets vendorId (optional) 
+            var paymentBasedId = "paymentBasedId_example";  // string | sets paymentBasedId (optional) 
+            var paymentId = "paymentId_example";  // string | sets paymentId (optional) 
+            var vendorName = "vendorName_example";  // string | sets vendorName (optional) 
+            var paymentMethodType = "Check";  // string | sets paymentMethodType (optional) 
+            var paymentMethodStatus = "paymentMethodStatus_example";  // string | sets paymentMethodStatus (optional) 
             var amount = 8.14D;  // float? | sets amount (optional) 
             var fromAmount = 8.14D;  // float? | sets fromAmount (optional) 
             var toAmount = 8.14D;  // float? | sets toAmount (optional) 
-            var startDate = "startDate_example";  // string? | sets startDate (optional) 
-            var endDate = "endDate_example";  // string? | sets endDate (optional) 
-            var searchText = "searchText_example";  // string? | sets searchText (optional) 
+            var startDate = "startDate_example";  // string | sets startDate (optional) 
+            var endDate = "endDate_example";  // string | sets endDate (optional) 
+            var searchText = "searchText_example";  // string | sets searchText (optional) 
             var startRow = 56;  // int? | sets startRow (optional) 
             var pageSize = 56;  // int? | sets pageSize (optional) 
-            var sortField = "sortField_example";  // string? | sets sortField (optional) 
+            var sortField = "sortField_example";  // string | sets sortField (optional) 
             var asc = true;  // bool? | Set Asc (optional) 
 
             try
@@ -594,21 +594,21 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **vendorId** | **string?** | sets vendorId | [optional]  |
-| **paymentBasedId** | **string?** | sets paymentBasedId | [optional]  |
-| **paymentId** | **string?** | sets paymentId | [optional]  |
-| **vendorName** | **string?** | sets vendorName | [optional]  |
-| **paymentMethodType** | **string?** | sets paymentMethodType | [optional]  |
-| **paymentMethodStatus** | **string?** | sets paymentMethodStatus | [optional]  |
+| **vendorId** | **string** | sets vendorId | [optional]  |
+| **paymentBasedId** | **string** | sets paymentBasedId | [optional]  |
+| **paymentId** | **string** | sets paymentId | [optional]  |
+| **vendorName** | **string** | sets vendorName | [optional]  |
+| **paymentMethodType** | **string** | sets paymentMethodType | [optional]  |
+| **paymentMethodStatus** | **string** | sets paymentMethodStatus | [optional]  |
 | **amount** | **float?** | sets amount | [optional]  |
 | **fromAmount** | **float?** | sets fromAmount | [optional]  |
 | **toAmount** | **float?** | sets toAmount | [optional]  |
-| **startDate** | **string?** | sets startDate | [optional]  |
-| **endDate** | **string?** | sets endDate | [optional]  |
-| **searchText** | **string?** | sets searchText | [optional]  |
+| **startDate** | **string** | sets startDate | [optional]  |
+| **endDate** | **string** | sets endDate | [optional]  |
+| **searchText** | **string** | sets searchText | [optional]  |
 | **startRow** | **int?** | sets startRow | [optional]  |
 | **pageSize** | **int?** | sets pageSize | [optional]  |
-| **sortField** | **string?** | sets sortField | [optional]  |
+| **sortField** | **string** | sets sortField | [optional]  |
 | **asc** | **bool?** | Set Asc | [optional]  |
 
 ### Return type

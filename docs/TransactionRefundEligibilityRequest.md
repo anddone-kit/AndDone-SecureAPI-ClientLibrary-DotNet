@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TransactionRefundEligibilityRequest
+# AndDoneSecureClientLibrary.Model.TransactionRefundEligibilityRequest
 
 ## Properties
 

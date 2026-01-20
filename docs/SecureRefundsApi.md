@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecureRefundsApi
+# AndDoneSecureClientLibrary.Api.SecureRefundsApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -17,9 +17,9 @@ This API return refund eligibility of a transaction.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -117,9 +117,9 @@ This API will refund a transaction which has been settled by the processor.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {

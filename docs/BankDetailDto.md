@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.BankDetailDto
+# AndDoneSecureClientLibrary.Model.BankDetailDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecureTokenLinksApi
+# AndDoneSecureClientLibrary.Api.SecureTokenLinksApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -20,9 +20,9 @@ This API is used for getting Token Links by TokenLink ID
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -120,9 +120,9 @@ This API expires the token link.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -211,7 +211,7 @@ No authorization required
 
 <a id="securetokenlinkslistpost"></a>
 # **SecureTokenlinksListPost**
-> TokenLinkResponse SecureTokenlinksListPost (string xApiKey, string xAppKey, float xVersion, string origin, string? email = null, string? status = null, string? phone = null, string? statuses = null, string? title = null, string? paymentDescription = null, string? invoiceNumber = null, string? expiryDate = null, string? fromExpiryDate = null, string? freeTextSearch = null, string? tokenLinkId = null, string? toExpiryDate = null, string? fromDate = null, string? toDate = null, int? startRow = null, int? pageSize = null, string? sortField = null, bool? asc = null)
+> TokenLinkResponse SecureTokenlinksListPost (string xApiKey, string xAppKey, float xVersion, string origin, string email = null, string status = null, string phone = null, string statuses = null, string title = null, string paymentDescription = null, string invoiceNumber = null, string expiryDate = null, string fromExpiryDate = null, string freeTextSearch = null, string tokenLinkId = null, string toExpiryDate = null, string fromDate = null, string toDate = null, int? startRow = null, int? pageSize = null, string sortField = null, bool? asc = null)
 
 This API is used for getting all Token Links for Merchant
 
@@ -219,9 +219,9 @@ This API is used for getting all Token Links for Merchant
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -236,23 +236,23 @@ namespace Example
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var email = "email_example";  // string? | email (optional) 
-            var status = "NA";  // string? | status (optional) 
-            var phone = "phone_example";  // string? | phone (optional) 
-            var statuses = "statuses_example";  // string? | statuses (optional) 
-            var title = "title_example";  // string? | title (optional) 
-            var paymentDescription = "paymentDescription_example";  // string? | paymentDescription (optional) 
-            var invoiceNumber = "invoiceNumber_example";  // string? | invoiceNumber (optional) 
-            var expiryDate = "expiryDate_example";  // string? | expiryDate (optional) 
-            var fromExpiryDate = "fromExpiryDate_example";  // string? | fromExpiryDate (optional) 
-            var freeTextSearch = "freeTextSearch_example";  // string? | freeTextSearch (optional) 
-            var tokenLinkId = "tokenLinkId_example";  // string? | tokenLinkId (optional) 
-            var toExpiryDate = "toExpiryDate_example";  // string? | toExpiryDate (optional) 
-            var fromDate = "fromDate_example";  // string? | fromDate (optional) 
-            var toDate = "toDate_example";  // string? | toDate (optional) 
+            var email = "email_example";  // string | email (optional) 
+            var status = "NA";  // string | status (optional) 
+            var phone = "phone_example";  // string | phone (optional) 
+            var statuses = "statuses_example";  // string | statuses (optional) 
+            var title = "title_example";  // string | title (optional) 
+            var paymentDescription = "paymentDescription_example";  // string | paymentDescription (optional) 
+            var invoiceNumber = "invoiceNumber_example";  // string | invoiceNumber (optional) 
+            var expiryDate = "expiryDate_example";  // string | expiryDate (optional) 
+            var fromExpiryDate = "fromExpiryDate_example";  // string | fromExpiryDate (optional) 
+            var freeTextSearch = "freeTextSearch_example";  // string | freeTextSearch (optional) 
+            var tokenLinkId = "tokenLinkId_example";  // string | tokenLinkId (optional) 
+            var toExpiryDate = "toExpiryDate_example";  // string | toExpiryDate (optional) 
+            var fromDate = "fromDate_example";  // string | fromDate (optional) 
+            var toDate = "toDate_example";  // string | toDate (optional) 
             var startRow = 56;  // int? | Set StartRow (optional) 
             var pageSize = 56;  // int? | Set PageSize (optional) 
-            var sortField = "sortField_example";  // string? | Set SortField (optional) 
+            var sortField = "sortField_example";  // string | Set SortField (optional) 
             var asc = true;  // bool? | Set Asc (optional) 
 
             try
@@ -300,23 +300,23 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **email** | **string?** | email | [optional]  |
-| **status** | **string?** | status | [optional]  |
-| **phone** | **string?** | phone | [optional]  |
-| **statuses** | **string?** | statuses | [optional]  |
-| **title** | **string?** | title | [optional]  |
-| **paymentDescription** | **string?** | paymentDescription | [optional]  |
-| **invoiceNumber** | **string?** | invoiceNumber | [optional]  |
-| **expiryDate** | **string?** | expiryDate | [optional]  |
-| **fromExpiryDate** | **string?** | fromExpiryDate | [optional]  |
-| **freeTextSearch** | **string?** | freeTextSearch | [optional]  |
-| **tokenLinkId** | **string?** | tokenLinkId | [optional]  |
-| **toExpiryDate** | **string?** | toExpiryDate | [optional]  |
-| **fromDate** | **string?** | fromDate | [optional]  |
-| **toDate** | **string?** | toDate | [optional]  |
+| **email** | **string** | email | [optional]  |
+| **status** | **string** | status | [optional]  |
+| **phone** | **string** | phone | [optional]  |
+| **statuses** | **string** | statuses | [optional]  |
+| **title** | **string** | title | [optional]  |
+| **paymentDescription** | **string** | paymentDescription | [optional]  |
+| **invoiceNumber** | **string** | invoiceNumber | [optional]  |
+| **expiryDate** | **string** | expiryDate | [optional]  |
+| **fromExpiryDate** | **string** | fromExpiryDate | [optional]  |
+| **freeTextSearch** | **string** | freeTextSearch | [optional]  |
+| **tokenLinkId** | **string** | tokenLinkId | [optional]  |
+| **toExpiryDate** | **string** | toExpiryDate | [optional]  |
+| **fromDate** | **string** | fromDate | [optional]  |
+| **toDate** | **string** | toDate | [optional]  |
 | **startRow** | **int?** | Set StartRow | [optional]  |
 | **pageSize** | **int?** | Set PageSize | [optional]  |
-| **sortField** | **string?** | Set SortField | [optional]  |
+| **sortField** | **string** | Set SortField | [optional]  |
 | **asc** | **bool?** | Set Asc | [optional]  |
 
 ### Return type
@@ -352,9 +352,9 @@ This API is use to create Secure Token Links
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
@@ -452,9 +452,9 @@ This API will update the expireIn and paymentType of Token Link.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {

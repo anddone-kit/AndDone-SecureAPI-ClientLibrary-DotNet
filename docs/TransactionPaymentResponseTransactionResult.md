@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TransactionPaymentResponseTransactionResult
+# AndDoneSecureClientLibrary.Model.TransactionPaymentResponseTransactionResult
 
 ## Properties
 

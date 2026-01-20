@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.OutboundPaymentImageResponseDTO
+# AndDoneSecureClientLibrary.Model.OutboundPaymentImageResponseDTO
 
 ## Properties
 

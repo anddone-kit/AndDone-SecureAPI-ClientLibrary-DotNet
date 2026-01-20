@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecureVendorUpdateRequestDTORemittanceAddress
+# AndDoneSecureClientLibrary.Model.SecureVendorUpdateRequestDTORemittanceAddress
 
 ## Properties
 

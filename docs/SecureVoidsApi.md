@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecureVoidsApi
+# AndDoneSecureClientLibrary.Api.SecureVoidsApi
 
 All URIs are relative to *https://api.uat.anddone.com*
 
@@ -16,9 +16,9 @@ This API cancel a transaction.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using AndDoneSecureClientLibrary.Api;
+using AndDoneSecureClientLibrary.Client;
+using AndDoneSecureClientLibrary.Model;
 
 namespace Example
 {
