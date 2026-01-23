@@ -4,12 +4,12 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo><!-- setting GenerateAssemblyInfo to false causes this bug https://github.com/dotnet/project-system/issues/3934 -->
     <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
     <AssemblyName>AndDoneSecureClientLibrary</AssemblyName>
-    <PackageId>AndDoneSecureClientLibrary</PackageId>
+    <PackageId>AndDone.AndDoneSecureClientLibrary</PackageId>
     <OutputType>Library</OutputType>
-    <Authors>OpenAPI</Authors>
-    <Company>OpenAPI</Company>
-    <AssemblyTitle>OpenAPI Library</AssemblyTitle>
-    <Description>A library generated from a OpenAPI doc</Description>
+    <Authors>AndDone</Authors>
+    <Company>AndDone LLC</Company>
+    <AssemblyTitle>AndDone Secure Client Library</AssemblyTitle>
+    <Description>Client library for AndDone Secure API</Description>
     <Copyright>No Copyright</Copyright>
     <RootNamespace>AndDoneSecureClientLibrary</RootNamespace>
     <Version>1.0.0</Version>
