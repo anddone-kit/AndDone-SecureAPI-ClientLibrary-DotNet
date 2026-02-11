@@ -1,0 +1,53 @@
+name: Publish Package (Dev)
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Authenticate GitHub Packages
+        run: |
+          dotnet nuget remove source githubanddone --configfile src/AndDoneSecureClientLibrary/nuget.config
+          dotnet nuget add source \
+            --username ${{ github.repository_owner }} \
+            --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
+            --store-password-in-clear-text \
+            --name githubanddone \
+            --configfile src/AndDoneSecureClientLibrary/nuget.config \
+            "https://nuget.pkg.github.com/AndDone-LLC/index.json"
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test --configuration Release --no-restore --no-build
+
+      - name: Pack
+        run: dotnet pack --configuration Release --no-build --output ./nupkg /p:VersionSuffix=dev.${{ github.run_number }}
+
+      - name: Push to GitHub Packages (Private)
+        run: |
+          dotnet nuget push ./nupkg/*.nupkg \
+            --api-key ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
+            --source "https://nuget.pkg.github.com/AndDone-LLC/index.json" \
+            --skip-duplicate

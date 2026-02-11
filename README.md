@@ -10,7 +10,7 @@ Please see our developer documentation & API Explorer, linked below, for detaile
 This .NET SDK is an auto-generated client for the AndDone Secure API, built using the [OpenAPI Generator](https://openapi-generator.tech).
 
 * **API version**: 2.3
-* **Package version**: 1.0.0
+* **Package version**: 1.0.3
 * **Generator version**: 7.9.0
 * **Build package**: `org.openapitools.codegen.languages.CSharpClientCodegen`
 * **Developer Documentation**: [DevDocs](https://docs.anddone.com/)
