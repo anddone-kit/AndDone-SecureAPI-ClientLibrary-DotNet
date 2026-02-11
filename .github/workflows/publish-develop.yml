@@ -49,5 +49,5 @@ jobs:
         run: |
           dotnet nuget push ./nupkg/*.nupkg \
             --api-key ${{ secrets.GITHUB_TOKEN }} \
-            --source githubanddone \
+            --source "https://nuget.pkg.github.com/AndDone-LLC/index.json" \
             --skip-duplicate
