@@ -21,16 +21,18 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+
       - name: Authenticate GitHub Packages
         run: |
           dotnet nuget remove source githubanddone --configfile src/AndDoneSecureClientLibrary/nuget.config
           dotnet nuget add source \
             --username ${{ github.repository_owner }} \
-            --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
+            --password ${{ secrets.GITHUB_TOKEN }} \
             --store-password-in-clear-text \
             --name githubanddone \
             --configfile src/AndDoneSecureClientLibrary/nuget.config \
             "https://nuget.pkg.github.com/AndDone-LLC/index.json"
+
       - name: Restore dependencies
         run: dotnet restore
 
@@ -40,21 +42,12 @@ jobs:
       - name: Run tests
         run: dotnet test --configuration Release --no-restore --no-build
 
-      # Generates a pre-release version based on run number
-      # e.g., 1.0.0-dev.42
       - name: Pack
         run: dotnet pack --configuration Release --no-build --output ./nupkg /p:VersionSuffix=dev.${{ github.run_number }}
 
       - name: Push to GitHub Packages (Private)
         run: |
-          dotnet nuget add source \
-            --username ${{ github.repository_owner }} \
-            --password ${{ secrets.GITHUB_TOKEN }} \
-            --store-password-in-clear-text \
-            --name github \
-            "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
-
           dotnet nuget push ./nupkg/*.nupkg \
             --api-key ${{ secrets.GITHUB_TOKEN }} \
-            --source github \
+            --source githubanddone \
             --skip-duplicate
