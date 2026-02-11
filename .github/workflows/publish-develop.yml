@@ -27,7 +27,7 @@ jobs:
           dotnet nuget remove source githubanddone --configfile src/AndDoneSecureClientLibrary/nuget.config
           dotnet nuget add source \
             --username ${{ github.repository_owner }} \
-            --password ${{ secrets.GITHUB_TOKEN }} \
+            --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
             --store-password-in-clear-text \
             --name githubanddone \
             --configfile src/AndDoneSecureClientLibrary/nuget.config \
