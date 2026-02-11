@@ -1,0 +1,64 @@
+name: Publish Package (Production)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  mirror-and-publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ── Mirror to Public Repo ──────────────────────────────────
+      - name: Push to public repo
+        run: |
+          git remote add public https://x-access-token:${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }}@github.com/${{ vars.PUBLIC_REPO }}.git
+          git push public main --force
+
+      # ── Build & Publish to Public Account ──────────────────────
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x' 
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test --configuration Release --no-restore --no-build
+
+      - name: Pack
+        run: dotnet pack --configuration Release --no-build --output ./nupkg
+
+      # Publish to the AndDone-kit account's GitHub Packages
+      - name: Push to GitHub Packages (Public)
+        env:
+          PUBLIC_OWNER: ${{ secrets.PUBLIC_REPO && contains(secrets.PUBLIC_REPO, '/') && '' || '' }}
+        run: |
+          # Extract the owner from PUBLIC_REPO (owner/repo-name)
+          PUBLIC_OWNER=$(echo "${{ secrets.PUBLIC_REPO }}" | cut -d'/' -f1)
+
+          dotnet nuget add source \
+            --username "$PUBLIC_OWNER" \
+            --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
+            --store-password-in-clear-text \
+            --name github-public \
+            "https://nuget.pkg.github.com/$PUBLIC_OWNER/index.json"
+
+          dotnet nuget push ./nupkg/*.nupkg \
+            --api-key ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
+            --source github-public \
+            --skip-duplicate
