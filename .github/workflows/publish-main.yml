@@ -29,7 +29,18 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x' 
+          dotnet-version: '8.0.x'
+
+      - name: Authenticate GitHub Packages
+        run: |
+          dotnet nuget remove source githubanddone --configfile src/AndDoneSecureClientLibrary/nuget.config
+          dotnet nuget add source \
+            --username ${{ github.repository_owner }} \
+            --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
+            --store-password-in-clear-text \
+            --name githubanddone \
+            --configfile src/AndDoneSecureClientLibrary/nuget.config \
+            "https://nuget.pkg.github.com/AndDone-LLC/index.json"
 
       - name: Restore dependencies
         run: dotnet restore
@@ -43,22 +54,11 @@ jobs:
       - name: Pack
         run: dotnet pack --configuration Release --no-build --output ./nupkg /p:RepositoryUrl=https://github.com/anddone-kit/AndDone-SecureAPI-ClientLibrary-DotNet.git
 
-        # Publish to the AndDone-kit account's GitHub Packages
       - name: Push to GitHub Packages (Public)
-        env:
-          PUBLIC_OWNER: ${{ secrets.PUBLIC_REPO && contains(secrets.PUBLIC_REPO, '/') && '' || '' }}
         run: |
-          # Extract the owner from PUBLIC_REPO (owner/repo-name)
-          PUBLIC_OWNER=$(echo "${{ secrets.PUBLIC_REPO }}" | cut -d'/' -f1)
-
-          dotnet nuget add source \
-            --username "$PUBLIC_OWNER" \
-            --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
-            --store-password-in-clear-text \
-            --name github-public \
-            "https://nuget.pkg.github.com/$PUBLIC_OWNER/index.json"
+          PUBLIC_OWNER=$(echo "${{ vars.PUBLIC_REPO }}" | cut -d'/' -f1)
 
           dotnet nuget push ./nupkg/*.nupkg \
             --api-key ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
-            --source github-public \
+            --source "https://nuget.pkg.github.com/$PUBLIC_OWNER/index.json" \
             --skip-duplicate
