@@ -23,7 +23,7 @@ jobs:
           dotnet-version: '8.0.x'
       - name: Authenticate GitHub Packages
         run: |
-          dotnet nuget remove source githubanddone --configfile nuget.config
+          dotnet nuget remove source githubanddone --configfile src/AndDoneSecureClientLibrary/nuget.config
           dotnet nuget add source \
             --username ${{ github.repository_owner }} \
             --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
