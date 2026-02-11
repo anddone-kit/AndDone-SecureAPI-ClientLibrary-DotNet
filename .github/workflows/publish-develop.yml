@@ -29,7 +29,7 @@ jobs:
             --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
             --store-password-in-clear-text \
             --name githubanddone \
-            --configfile nuget.config \
+            --configfile src/AndDoneSecureClientLibrary/nuget.config \
             "https://nuget.pkg.github.com/AndDone-LLC/index.json"
       - name: Restore dependencies
         run: dotnet restore
