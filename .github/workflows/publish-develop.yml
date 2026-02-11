@@ -23,10 +23,14 @@ jobs:
           dotnet-version: '8.0.x'
       - name: Authenticate GitHub Packages
         run: |
-          dotnet nuget update source githubanddone \
+          dotnet nuget remove source githubanddone --configfile nuget.config
+          dotnet nuget add source \
             --username ${{ github.repository_owner }} \
             --password ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }} \
-            --store-password-in-clear-text
+            --store-password-in-clear-text \
+            --name githubanddone \
+            --configfile nuget.config \
+            "https://nuget.pkg.github.com/AndDone-LLC/index.json"
       - name: Restore dependencies
         run: dotnet restore
 
