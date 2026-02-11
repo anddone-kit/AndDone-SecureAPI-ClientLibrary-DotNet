@@ -41,9 +41,9 @@ jobs:
         run: dotnet test --configuration Release --no-restore --no-build
 
       - name: Pack
-        run: dotnet pack --configuration Release --no-build --output ./nupkg
+        run: dotnet pack --configuration Release --no-build --output ./nupkg /p:RepositoryUrl=https://github.com/anddone-kit/AndDone-SecureAPI-ClientLibrary-DotNet.git
 
-      # Publish to the AndDone-kit account's GitHub Packages
+        # Publish to the AndDone-kit account's GitHub Packages
       - name: Push to GitHub Packages (Public)
         env:
           PUBLIC_OWNER: ${{ secrets.PUBLIC_REPO && contains(secrets.PUBLIC_REPO, '/') && '' || '' }}
