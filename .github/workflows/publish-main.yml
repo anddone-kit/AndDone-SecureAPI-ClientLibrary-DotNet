@@ -8,7 +8,8 @@ on:
 jobs:
   mirror-and-publish:
     runs-on: ubuntu-latest
-
+    # limit this to running only on our private repo to avoid duplicate action when we push to the public repo
+    if: github.repository == 'AndDone-LLC/AndDone-SecureAPI-ClientLibrary-DotNet-private'
     permissions:
       contents: read
       packages: write
