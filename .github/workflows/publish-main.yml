@@ -18,7 +18,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
+      - name: Debug repo access
+        run: |
+          echo "PUBLIC_REPO value: ${{ vars.PUBLIC_REPO }}"
+          curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: token ${{ secrets.CLIENT_LIBRARY_NUGET_AUTH_TOKEN }}" \
+            https://api.github.com/repos/${{ vars.PUBLIC_REPO }}    
       # ── Mirror to Public Repo ──────────────────────────────────
       - name: Push to public repo
         run: |
