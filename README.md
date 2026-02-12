@@ -436,7 +436,7 @@ Class | Method | HTTP request | Description
 ## Including library
 To include this **AndDone's DotNet client library** in your project:
 
-#### Manually - 
+#### Manually 
 1. Add the package source reference to the local machine by running the following in Powershell: 
 ```sh
 dotnet nuget add source --name githubanddone "https://nuget.pkg.github.com/AndDone-kit/index.json"
@@ -447,12 +447,7 @@ dotnet nuget add source --name githubanddone "https://nuget.pkg.github.com/AndDo
 ```
    
 #### Within Visual Studio
-    1. Open your solution in Visual Studio
-    2. Select Tools -> Nuget Package Manager -> Manage NuGet Package for solution
-    3. Click Gear Setting and add Package Source:  https://nuget.pkg.github.com/AndDone-kit/index.json  with any name
-    4. Select same name in Package Source drop down
-    5. Click Browse Tab and select "AndDoneSecureClientLibrary"
-    6. Select your project and "Install"
+To include the **AndDone's DotNet client library** in your project, a nuget.config file is included at the solution level to reference the package library.
 
    
 
