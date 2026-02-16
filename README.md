@@ -434,7 +434,7 @@ Class | Method | HTTP request | Description
 ---
 
 ## Including library
-To include this **AndDone's DotNet client library** in your project:
+You can include this **AndDone's DotNet client library** in your project manually or within Visual Studio.  Note that the first time you include the library, you may be prompted to enter your GitHub credentials.
 
 #### Manually 
 1. Add the package source reference to the local machine by running the following in Powershell: 
