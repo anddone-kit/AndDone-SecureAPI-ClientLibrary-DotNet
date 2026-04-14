@@ -8,9 +8,10 @@ Please see our developer documentation & API Explorer, linked below, for detaile
 **Secure API .NET Client**
 
 This .NET SDK is an auto-generated client for the AndDone Secure API, built using the [OpenAPI Generator](https://openapi-generator.tech).
+This .NET SDK targets both .Net 8 and NetStandard 2.0 for client consumption.  Based on the client's target framework, the appropriate Nuget package will be pulled when referenced.
 
 * **API version**: 2.3
-* **Package version**: 1.0.0
+* **Package version**: 1.0.3
 * **Generator version**: 7.9.0
 * **Build package**: `org.openapitools.codegen.languages.CSharpClientCodegen`
 * **Developer Documentation**: [DevDocs](https://docs.anddone.com/)
@@ -27,6 +28,7 @@ This .NET SDK is an auto-generated client for the AndDone Secure API, built usin
 * [API Endpoints](#api-endpoints)
 * [Models](#models)
 * [Authorization](#authorization)
+* [Including library](#including-library)
 * [Support & Versioning](#support--versioning)
 
 ---
@@ -161,6 +163,8 @@ catch (ApiException e)
 ```
 
 ---
+
+
 
 ## API Endpoints
 
@@ -428,6 +432,24 @@ Class | Method | HTTP request | Description
 </details>
 
 ---
+
+## Including library
+You can include this **AndDone's DotNet client library** in your project manually or within Visual Studio.  Note that the first time you include the library, you may be prompted to enter your GitHub credentials.
+
+#### Manually 
+1. Add the package source reference to the local machine by running the following in Powershell: 
+```sh
+dotnet nuget add source --name githubanddone "https://nuget.pkg.github.com/AndDone-kit/index.json"
+```
+2. In your .csproj file, add a package reference to:
+```sh
+<PackageReference Include="AndDoneSecureClientLibrary" Version="1.0.0" />
+```
+   
+#### Within Visual Studio
+To include the **AndDone's DotNet client library** in your project, a nuget.config file is included at the solution level to reference the package library.
+
+   
 
 ## Authorization
 
