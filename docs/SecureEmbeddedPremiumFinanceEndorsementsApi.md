@@ -1,6 +1,6 @@
-# AndDoneSecureClientLibrary.Api.SecureEmbeddedPremiumFinanceEndorsementsApi
+# Org.OpenAPITools.Api.SecureEmbeddedPremiumFinanceEndorsementsApi
 
-All URIs are relative to *https://api.uat.anddone.com*
+All URIs are relative to *https://api.anddone.com*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
@@ -18,9 +18,9 @@ This API will do a check of eligibility of account
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -29,7 +29,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceEndorsementsApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -118,9 +118,9 @@ This API will update PFA to book a endorsement quote.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -129,7 +129,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceEndorsementsApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -218,9 +218,9 @@ This API will do return a quote for an existing policy or new policy for an exis
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -229,7 +229,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceEndorsementsApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header

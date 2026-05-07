@@ -4,8 +4,8 @@ info:
   title: Secure API
   version: "2.3"
 servers:
-- url: https://api.uat.anddone.com
-- url: https://api2.uat.anddone.com
+- url: https://api.anddone.com
+- url: https://api2.anddone.com
 paths:
   /secure/paymentsdetails:
     post:
@@ -334,6 +334,73 @@ paths:
       summary: This API will return quotes created againsts a payment link.
       tags:
       - Secure Premium Finance Lite
+      x-accesscontrol-secure: secure
+      x-amazon-apigateway-integration:
+        type: aws_proxy
+        uri: arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:aws-account-id:function:APIVersioning/invocations
+        httpMethod: POST
+        credentials: arn:aws:iam::aws-account-id:role/MyLambdaRole
+  /utilityapi/secure/verifybankaccounts:
+    post:
+      parameters:
+      - description: an authorization header
+        explode: false
+        in: header
+        name: x-api-key
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: an authorization header
+        explode: false
+        in: header
+        name: x-app-key
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: x-version
+        explode: false
+        in: header
+        name: x-version
+        required: true
+        schema:
+          type: number
+        style: simple
+      - description: origin
+        explode: false
+        in: header
+        name: origin
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SecureVerifyBankAccountRequestDTO'
+        description: SecureVerifyBankAccountRequestDTO
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerifyBankAccountResponse'
+          description: Successful operation
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      security:
+      - x-api-key: []
+        x-app-key: []
+      summary: This API verifies bank account using secure ACH validation
+      tags:
+      - Secure ACH Validation
       x-accesscontrol-secure: secure
       x-amazon-apigateway-integration:
         type: aws_proxy
@@ -4830,7 +4897,10 @@ components:
           - PaymentIntent
           type: string
         refundOrigin:
-          $ref: '#/components/schemas/TransactionPaymentResponse_refundOrigin'
+          enum:
+          - API
+          - Callback
+          type: string
         achTenderInfo:
           $ref: '#/components/schemas/TransactionPaymentResponse_achTenderInfo'
         ccTenderInfo:
@@ -4918,7 +4988,6 @@ components:
         userName:
           type: string
         chargeBackAmount:
-          nullable: true
           type: number
         suppressTechnologyFee:
           type: boolean
@@ -5736,6 +5805,68 @@ components:
           type: string
         item:
           $ref: '#/components/schemas/PFLiteGenerateQuoteResponse_item'
+      type: object
+    VerifyBankAccountResponse:
+      example:
+        id: pgxV9vjr
+        verificationEntityId: eef0486e-50bf-40e1-b585-4f65fc724387
+        verifyingEntity: Adyen
+        verificationStatus: Valid
+        message: null
+        createdOn: 10-04-2024 12:22:54
+        createdBy: JohnDoe
+        modifiedOn: 10-10-2024 03:59:10
+        modifiedBy: JohnDoe
+      properties:
+        id:
+          type: string
+        verificationEntityId:
+          type: string
+        verifyingEntity:
+          enum:
+          - Other
+          - Adyen
+          type: string
+        verificationStatus:
+          enum:
+          - Pending
+          - Valid
+          - Closed
+          - Invalid
+          - Failed
+          type: string
+        message:
+          type: string
+        createdOn:
+          type: string
+        createdBy:
+          type: string
+        modifiedOn:
+          type: string
+        modifiedBy:
+          type: string
+      type: object
+    SecureVerifyBankAccountRequestDTO:
+      example:
+        verificationEntityId: null
+        accountNumber: "67893857890"
+        routingNumber: "026009593"
+        accountHolderName: Joe Demon
+        explicitVerification: false
+      properties:
+        verificationEntityId:
+          type: string
+        accountNumber:
+          type: string
+        routingNumber:
+          type: string
+        accountHolderName:
+          type: string
+        explicitVerification:
+          type: boolean
+      required:
+      - accountNumber
+      - routingNumber
       type: object
     AutoPayEnrollmentRequest:
       example:
@@ -6624,6 +6755,8 @@ components:
       - merchantId
       - paymentDescription
       - referenceDataList
+      - referenceNumber
+      - referenceType
       - settings
       - title
       type: object
@@ -7196,7 +7329,10 @@ components:
           - PaymentIntent
           type: string
         refundOrigin:
-          $ref: '#/components/schemas/TransactionPaymentResponse_refundOrigin'
+          enum:
+          - API
+          - Callback
+          type: string
         billingContact:
           $ref: '#/components/schemas/TransactionPaymentResponse_billingContact'
         referenceTransactionId:
@@ -7337,7 +7473,6 @@ components:
         tokenLinkId:
           type: string
         paymentLinkId:
-          nullable: true
           type: string
         additionalFields:
           type: string
@@ -8534,7 +8669,10 @@ components:
           - PaymentIntent
           type: string
         refundOrigin:
-          $ref: '#/components/schemas/TransactionPaymentResponse_refundOrigin'
+          enum:
+          - API
+          - Callback
+          type: string
         billingContact:
           $ref: '#/components/schemas/TransactionPaymentResponse_billingContact'
         shippingContact:
@@ -9305,6 +9443,7 @@ components:
       required:
       - vendorId
       type: object
+    secureaccess: {}
     SecureVendorStatusRequestDTO:
       example:
         vendorId: PZdOm6xQ
@@ -9418,7 +9557,6 @@ components:
       - legalEntityType
       - notificationType
       - paymentMethodType
-      - phoneNumber
       - physicalAddress
       - vendorName
       type: object
@@ -9727,17 +9865,6 @@ components:
         address:
           $ref: '#/components/schemas/TransactionPaymentResponse_billingContact_address'
       type: object
-    TransactionPaymentResponse_refundOrigin:
-      oneOf:
-      - type: integer
-      - type: string
-    TransactionPaymentResponse_achTenderInfo_commissionType:
-      oneOf:
-      - type: integer
-      - enum:
-        - Fixed
-        - Percentage
-        type: string
     TransactionPaymentResponse_achTenderInfo:
       properties:
         bankName:
@@ -9796,7 +9923,10 @@ components:
         createAccountToken:
           type: boolean
         commissionType:
-          $ref: '#/components/schemas/TransactionPaymentResponse_achTenderInfo_commissionType'
+          enum:
+          - Fixed
+          - Percentage
+          type: string
         commissionValue:
           type: number
         commissionFixedValue:
@@ -9849,7 +9979,10 @@ components:
         createAccountToken:
           type: boolean
         commissionType:
-          $ref: '#/components/schemas/TransactionPaymentResponse_achTenderInfo_commissionType'
+          enum:
+          - Fixed
+          - Percentage
+          type: string
         commissionValue:
           type: number
         commissionFixedValue:
@@ -10100,7 +10233,10 @@ components:
           - CashDiscount
           type: string
         commissionType:
-          $ref: '#/components/schemas/TransactionPaymentResponse_achTenderInfo_commissionType'
+          enum:
+          - Fixed
+          - Percentage
+          type: string
         commissionValue:
           type: number
         commissionFixedValue:
@@ -11197,7 +11333,10 @@ components:
         createAccountToken:
           type: boolean
         commissionType:
-          $ref: '#/components/schemas/TransactionPaymentResponse_achTenderInfo_commissionType'
+          enum:
+          - Fixed
+          - Percentage
+          type: string
         commissionValue:
           type: number
         commissionFixedValue:
@@ -11425,7 +11564,10 @@ components:
           - CashDiscount
           type: string
         commissionType:
-          $ref: '#/components/schemas/TransactionPaymentResponse_achTenderInfo_commissionType'
+          enum:
+          - Fixed
+          - Percentage
+          type: string
         commissionValue:
           type: number
         commissionFixedValue:
@@ -12350,7 +12492,10 @@ components:
         createAccountToken:
           type: boolean
         commissionType:
-          $ref: '#/components/schemas/TransactionPaymentResponse_achTenderInfo_commissionType'
+          enum:
+          - Fixed
+          - Percentage
+          type: string
         commissionValue:
           type: number
         commissionFixedValue:

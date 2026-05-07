@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFLitePaymentLinkRequestCallbackParameters
+# Org.OpenAPITools.Model.PFLitePaymentLinkRequestCallbackParameters
 
 ## Properties
 

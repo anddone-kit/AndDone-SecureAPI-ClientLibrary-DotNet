@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureUpdatePaymentLinkRequestSettingsIntent
+# Org.OpenAPITools.Model.SecureUpdatePaymentLinkRequestSettingsIntent
 
 ## Properties
 

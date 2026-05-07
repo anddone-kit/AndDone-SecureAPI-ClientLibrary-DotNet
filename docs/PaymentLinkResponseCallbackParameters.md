@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentLinkResponseCallbackParameters
+# Org.OpenAPITools.Model.PaymentLinkResponseCallbackParameters
 
 ## Properties
 

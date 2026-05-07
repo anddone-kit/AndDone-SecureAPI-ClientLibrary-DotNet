@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.UpdateIntentRequest
+# Org.OpenAPITools.Model.UpdateIntentRequest
 
 ## Properties
 

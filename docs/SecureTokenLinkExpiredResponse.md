@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureTokenLinkExpiredResponse
+# Org.OpenAPITools.Model.SecureTokenLinkExpiredResponse
 
 ## Properties
 

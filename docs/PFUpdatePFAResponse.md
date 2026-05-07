@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFUpdatePFAResponse
+# Org.OpenAPITools.Model.PFUpdatePFAResponse
 
 ## Properties
 

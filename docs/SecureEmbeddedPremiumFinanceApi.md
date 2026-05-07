@@ -1,6 +1,6 @@
-# AndDoneSecureClientLibrary.Api.SecureEmbeddedPremiumFinanceApi
+# Org.OpenAPITools.Api.SecureEmbeddedPremiumFinanceApi
 
-All URIs are relative to *https://api.uat.anddone.com*
+All URIs are relative to *https://api.anddone.com*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
@@ -14,7 +14,7 @@ All URIs are relative to *https://api.uat.anddone.com*
 
 <a id="secureepfmerchantsquotespolicyput"></a>
 # **SecureEpfMerchantsQuotesPolicyPut**
-> PFPolicyUpdateResponse SecureEpfMerchantsQuotesPolicyPut (string xApiKey, string xAppKey, float xVersion, string origin, PFPolicyUpdateRequestDTO pFPolicyUpdateRequestDTO = null)
+> PFPolicyUpdateResponse SecureEpfMerchantsQuotesPolicyPut (string xApiKey, string xAppKey, float xVersion, string origin, PFPolicyUpdateRequestDTO? pFPolicyUpdateRequestDTO = null)
 
 This API is will update the policy number
 
@@ -22,9 +22,9 @@ This API is will update the policy number
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -33,13 +33,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var pFPolicyUpdateRequestDTO = new PFPolicyUpdateRequestDTO(); // PFPolicyUpdateRequestDTO | Signature Request details (optional) 
+            var pFPolicyUpdateRequestDTO = new PFPolicyUpdateRequestDTO?(); // PFPolicyUpdateRequestDTO? | Signature Request details (optional) 
 
             try
             {
@@ -86,7 +86,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **pFPolicyUpdateRequestDTO** | [**PFPolicyUpdateRequestDTO**](PFPolicyUpdateRequestDTO.md) | Signature Request details | [optional]  |
+| **pFPolicyUpdateRequestDTO** | [**PFPolicyUpdateRequestDTO?**](PFPolicyUpdateRequestDTO?.md) | Signature Request details | [optional]  |
 
 ### Return type
 
@@ -122,9 +122,9 @@ This API will update PFA to book a quote.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -133,7 +133,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -214,7 +214,7 @@ No authorization required
 
 <a id="secureepfquotescaptureesignput"></a>
 # **SecureEpfQuotesCaptureesignPut**
-> void SecureEpfQuotesCaptureesignPut (string xApiKey, string xAppKey, float xVersion, string origin, PFQuoteEsignRequest pFQuoteEsignRequest = null)
+> void SecureEpfQuotesCaptureesignPut (string xApiKey, string xAppKey, float xVersion, string origin, PFQuoteEsignRequest? pFQuoteEsignRequest = null)
 
 This API will eSign the pfa with insured name.
 
@@ -222,9 +222,9 @@ This API will eSign the pfa with insured name.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -233,13 +233,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var pFQuoteEsignRequest = new PFQuoteEsignRequest(); // PFQuoteEsignRequest | PFQuote Request (optional) 
+            var pFQuoteEsignRequest = new PFQuoteEsignRequest?(); // PFQuoteEsignRequest? | PFQuote Request (optional) 
 
             try
             {
@@ -282,7 +282,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **pFQuoteEsignRequest** | [**PFQuoteEsignRequest**](PFQuoteEsignRequest.md) | PFQuote Request | [optional]  |
+| **pFQuoteEsignRequest** | [**PFQuoteEsignRequest?**](PFQuoteEsignRequest?.md) | PFQuote Request | [optional]  |
 
 ### Return type
 
@@ -310,7 +310,7 @@ No authorization required
 
 <a id="secureepfquotesgeneratepost"></a>
 # **SecureEpfQuotesGeneratePost**
-> List&lt;PFGenerateQuoteResponse&gt; SecureEpfQuotesGeneratePost (string xApiKey, string xAppKey, float xVersion, string origin, QuoteRequest quoteRequest = null)
+> List&lt;PFGenerateQuoteResponse&gt; SecureEpfQuotesGeneratePost (string xApiKey, string xAppKey, float xVersion, string origin, QuoteRequest? quoteRequest = null)
 
 This API is used to Generate Quotes
 
@@ -318,9 +318,9 @@ This API is used to Generate Quotes
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -329,13 +329,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var quoteRequest = new QuoteRequest(); // QuoteRequest | Quote Request (optional) 
+            var quoteRequest = new QuoteRequest?(); // QuoteRequest? | Quote Request (optional) 
 
             try
             {
@@ -382,7 +382,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **quoteRequest** | [**QuoteRequest**](QuoteRequest.md) | Quote Request | [optional]  |
+| **quoteRequest** | [**QuoteRequest?**](QuoteRequest?.md) | Quote Request | [optional]  |
 
 ### Return type
 
@@ -410,7 +410,7 @@ No authorization required
 
 <a id="secureepfquotesintentpost"></a>
 # **SecureEpfQuotesIntentPost**
-> List&lt;QuoteResponse&gt; SecureEpfQuotesIntentPost (string xApiKey, string xAppKey, float xVersion, string origin, GetQuoteRequest getQuoteRequest = null)
+> List&lt;QuoteResponse&gt; SecureEpfQuotesIntentPost (string xApiKey, string xAppKey, float xVersion, string origin, GetQuoteRequest? getQuoteRequest = null)
 
 This API will return quotes created againsts a payment intent.
 
@@ -418,9 +418,9 @@ This API will return quotes created againsts a payment intent.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -429,13 +429,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var getQuoteRequest = new GetQuoteRequest(); // GetQuoteRequest | Signature Request details (optional) 
+            var getQuoteRequest = new GetQuoteRequest?(); // GetQuoteRequest? | Signature Request details (optional) 
 
             try
             {
@@ -482,7 +482,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **getQuoteRequest** | [**GetQuoteRequest**](GetQuoteRequest.md) | Signature Request details | [optional]  |
+| **getQuoteRequest** | [**GetQuoteRequest?**](GetQuoteRequest?.md) | Signature Request details | [optional]  |
 
 ### Return type
 
@@ -510,7 +510,7 @@ No authorization required
 
 <a id="secureepfquotespost"></a>
 # **SecureEpfQuotesPost**
-> QuoteResponse SecureEpfQuotesPost (string xApiKey, string xAppKey, float xVersion, string origin, GetQuoteKeyRequest getQuoteKeyRequest = null)
+> QuoteResponse SecureEpfQuotesPost (string xApiKey, string xAppKey, float xVersion, string origin, GetQuoteKeyRequest? getQuoteKeyRequest = null)
 
 This API will return quote by QuoteKey.
 
@@ -518,9 +518,9 @@ This API will return quote by QuoteKey.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -529,13 +529,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var getQuoteKeyRequest = new GetQuoteKeyRequest(); // GetQuoteKeyRequest | Signature Request details (optional) 
+            var getQuoteKeyRequest = new GetQuoteKeyRequest?(); // GetQuoteKeyRequest? | Signature Request details (optional) 
 
             try
             {
@@ -582,7 +582,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **getQuoteKeyRequest** | [**GetQuoteKeyRequest**](GetQuoteKeyRequest.md) | Signature Request details | [optional]  |
+| **getQuoteKeyRequest** | [**GetQuoteKeyRequest?**](GetQuoteKeyRequest?.md) | Signature Request details | [optional]  |
 
 ### Return type
 
@@ -610,7 +610,7 @@ No authorization required
 
 <a id="secureepfretrievepfapost"></a>
 # **SecureEpfRetrievepfaPost**
-> string SecureEpfRetrievepfaPost (string xApiKey, string xAppKey, float xVersion, string origin, PFRetrievePFARequestDTO pFRetrievePFARequestDTO = null)
+> string SecureEpfRetrievepfaPost (string xApiKey, string xAppKey, float xVersion, string origin, PFRetrievePFARequestDTO? pFRetrievePFARequestDTO = null)
 
 This API will return PFA for given quoteKey.
 
@@ -618,9 +618,9 @@ This API will return PFA for given quoteKey.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -629,13 +629,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureEmbeddedPremiumFinanceApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var pFRetrievePFARequestDTO = new PFRetrievePFARequestDTO(); // PFRetrievePFARequestDTO | PFRetrieve PFA Request (optional) 
+            var pFRetrievePFARequestDTO = new PFRetrievePFARequestDTO?(); // PFRetrievePFARequestDTO? | PFRetrieve PFA Request (optional) 
 
             try
             {
@@ -682,7 +682,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **pFRetrievePFARequestDTO** | [**PFRetrievePFARequestDTO**](PFRetrievePFARequestDTO.md) | PFRetrieve PFA Request | [optional]  |
+| **pFRetrievePFARequestDTO** | [**PFRetrievePFARequestDTO?**](PFRetrievePFARequestDTO?.md) | PFRetrieve PFA Request | [optional]  |
 
 ### Return type
 

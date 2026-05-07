@@ -1,6 +1,6 @@
-# AndDoneSecureClientLibrary.Api.SecurePremiumFinanceLiteApi
+# Org.OpenAPITools.Api.SecurePremiumFinanceLiteApi
 
-All URIs are relative to *https://api.uat.anddone.com*
+All URIs are relative to *https://api.anddone.com*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
@@ -10,7 +10,7 @@ All URIs are relative to *https://api.uat.anddone.com*
 
 <a id="secureepflitequotesgeneratepost"></a>
 # **SecureEpfliteQuotesGeneratePost**
-> PFLiteGenerateQuoteResponse SecureEpfliteQuotesGeneratePost (string xApiKey, string xAppKey, float xVersion, string origin, PFLiteSecureQuoteRequest pFLiteSecureQuoteRequest = null)
+> PFLiteGenerateQuoteResponse SecureEpfliteQuotesGeneratePost (string xApiKey, string xAppKey, float xVersion, string origin, PFLiteSecureQuoteRequest? pFLiteSecureQuoteRequest = null)
 
 This API is used to generate the quote from the provider.
 
@@ -18,9 +18,9 @@ This API is used to generate the quote from the provider.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -29,13 +29,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecurePremiumFinanceLiteApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var pFLiteSecureQuoteRequest = new PFLiteSecureQuoteRequest(); // PFLiteSecureQuoteRequest | PFLite Quote Secure Request details (optional) 
+            var pFLiteSecureQuoteRequest = new PFLiteSecureQuoteRequest?(); // PFLiteSecureQuoteRequest? | PFLite Quote Secure Request details (optional) 
 
             try
             {
@@ -82,7 +82,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **pFLiteSecureQuoteRequest** | [**PFLiteSecureQuoteRequest**](PFLiteSecureQuoteRequest.md) | PFLite Quote Secure Request details | [optional]  |
+| **pFLiteSecureQuoteRequest** | [**PFLiteSecureQuoteRequest?**](PFLiteSecureQuoteRequest?.md) | PFLite Quote Secure Request details | [optional]  |
 
 ### Return type
 
@@ -110,7 +110,7 @@ No authorization required
 
 <a id="secureepflitequoteslinkpost"></a>
 # **SecureEpfliteQuotesLinkPost**
-> List&lt;PFLiteQuoteByPaymentLinkResponse&gt; SecureEpfliteQuotesLinkPost (string xApiKey, string xAppKey, float xVersion, string origin, PFLiteGetQuoteRequest pFLiteGetQuoteRequest = null)
+> List&lt;PFLiteQuoteByPaymentLinkResponse&gt; SecureEpfliteQuotesLinkPost (string xApiKey, string xAppKey, float xVersion, string origin, PFLiteGetQuoteRequest? pFLiteGetQuoteRequest = null)
 
 This API will return quotes created againsts a payment link.
 
@@ -118,9 +118,9 @@ This API will return quotes created againsts a payment link.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -129,13 +129,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecurePremiumFinanceLiteApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var pFLiteGetQuoteRequest = new PFLiteGetQuoteRequest(); // PFLiteGetQuoteRequest | Signature Request details (optional) 
+            var pFLiteGetQuoteRequest = new PFLiteGetQuoteRequest?(); // PFLiteGetQuoteRequest? | Signature Request details (optional) 
 
             try
             {
@@ -182,7 +182,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **pFLiteGetQuoteRequest** | [**PFLiteGetQuoteRequest**](PFLiteGetQuoteRequest.md) | Signature Request details | [optional]  |
+| **pFLiteGetQuoteRequest** | [**PFLiteGetQuoteRequest?**](PFLiteGetQuoteRequest?.md) | Signature Request details | [optional]  |
 
 ### Return type
 
@@ -218,9 +218,9 @@ This API is used to create Payment Links
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -229,7 +229,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecurePremiumFinanceLiteApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header

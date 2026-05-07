@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentBatchEventLogResponse
+# Org.OpenAPITools.Model.PaymentBatchEventLogResponse
 
 ## Properties
 

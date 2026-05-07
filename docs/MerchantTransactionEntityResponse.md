@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.MerchantTransactionEntityResponse
+# Org.OpenAPITools.Model.MerchantTransactionEntityResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFLiteQuoteByPaymentLinkResponsePoliciesInnerCarrier
+# Org.OpenAPITools.Model.PFLiteQuoteByPaymentLinkResponsePoliciesInnerCarrier
 
 ## Properties
 

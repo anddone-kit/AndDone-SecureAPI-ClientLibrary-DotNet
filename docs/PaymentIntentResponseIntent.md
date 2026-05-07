@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentIntentResponseIntent
+# Org.OpenAPITools.Model.PaymentIntentResponseIntent
 
 ## Properties
 

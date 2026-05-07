@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.MerchantTransactionEntityResponseDataInner
+# Org.OpenAPITools.Model.MerchantTransactionEntityResponseDataInner
 
 ## Properties
 
@@ -57,7 +57,7 @@ Name | Type | Description | Notes
 **AdjustmentDisplayName** | **string** |  | [optional] 
 **AdjustmentDescriptorMessage** | **string** |  | [optional] 
 **PaymentAdjustmentType** | **string** |  | [optional] 
-**CommissionType** | [**TransactionPaymentResponseAchTenderInfoCommissionType**](TransactionPaymentResponseAchTenderInfoCommissionType.md) |  | [optional] 
+**CommissionType** | **string** |  | [optional] 
 **CommissionValue** | **float** |  | [optional] 
 **CommissionFixedValue** | **float** |  | [optional] 
 **AccountToken** | **string** |  | [optional] 

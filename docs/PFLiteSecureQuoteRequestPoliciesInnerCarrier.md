@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFLiteSecureQuoteRequestPoliciesInnerCarrier
+# Org.OpenAPITools.Model.PFLiteSecureQuoteRequestPoliciesInnerCarrier
 
 ## Properties
 

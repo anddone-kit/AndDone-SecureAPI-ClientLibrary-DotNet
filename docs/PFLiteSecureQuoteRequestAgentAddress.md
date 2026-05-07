@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFLiteSecureQuoteRequestAgentAddress
+# Org.OpenAPITools.Model.PFLiteSecureQuoteRequestAgentAddress
 This denotes the address of the agent.
 
 ## Properties

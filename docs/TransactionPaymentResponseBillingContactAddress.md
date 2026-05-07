@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.TransactionPaymentResponseBillingContactAddress
+# Org.OpenAPITools.Model.TransactionPaymentResponseBillingContactAddress
 
 ## Properties
 

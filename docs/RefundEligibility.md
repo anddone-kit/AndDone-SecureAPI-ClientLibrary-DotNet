@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.RefundEligibility
+# Org.OpenAPITools.Model.RefundEligibility
 
 ## Properties
 

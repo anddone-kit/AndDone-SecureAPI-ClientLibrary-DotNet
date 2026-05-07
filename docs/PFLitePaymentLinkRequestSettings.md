@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFLitePaymentLinkRequestSettings
+# Org.OpenAPITools.Model.PFLitePaymentLinkRequestSettings
 
 ## Properties
 

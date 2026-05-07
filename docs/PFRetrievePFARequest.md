@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFRetrievePFARequest
+# Org.OpenAPITools.Model.PFRetrievePFARequest
 
 ## Properties
 

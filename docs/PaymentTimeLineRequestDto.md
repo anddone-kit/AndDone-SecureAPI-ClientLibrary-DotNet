@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentTimeLineRequestDto
+# Org.OpenAPITools.Model.PaymentTimeLineRequestDto
 
 ## Properties
 

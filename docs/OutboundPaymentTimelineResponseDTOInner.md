@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.OutboundPaymentTimelineResponseDTOInner
+# Org.OpenAPITools.Model.OutboundPaymentTimelineResponseDTOInner
 
 ## Properties
 

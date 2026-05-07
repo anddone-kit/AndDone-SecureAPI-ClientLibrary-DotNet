@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureTransactionDetailDTOTenderInfo
+# Org.OpenAPITools.Model.SecureTransactionDetailDTOTenderInfo
 
 ## Properties
 
@@ -37,7 +37,7 @@ Name | Type | Description | Notes
 **AccountToken** | **string** |  | [optional] 
 **AccountTokenMessage** | **string** |  | [optional] 
 **CreateAccountToken** | **bool** |  | [optional] 
-**CommissionType** | [**TransactionPaymentResponseAchTenderInfoCommissionType**](TransactionPaymentResponseAchTenderInfoCommissionType.md) |  | [optional] 
+**CommissionType** | **string** |  | [optional] 
 **CommissionValue** | **float** |  | [optional] 
 **CommissionFixedValue** | **float** |  | [optional] 
 

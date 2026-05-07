@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.VendorRequestDTOPhysicalAddress
+# Org.OpenAPITools.Model.VendorRequestDTOPhysicalAddress
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureTransactionCancelRequest
+# Org.OpenAPITools.Model.SecureTransactionCancelRequest
 
 ## Properties
 

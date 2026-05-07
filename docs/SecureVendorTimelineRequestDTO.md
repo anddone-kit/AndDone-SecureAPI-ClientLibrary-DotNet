@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureVendorTimelineRequestDTO
+# Org.OpenAPITools.Model.SecureVendorTimelineRequestDTO
 
 ## Properties
 

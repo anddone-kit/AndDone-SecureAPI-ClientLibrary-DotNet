@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.TokenLinkResponseDataInner
+# Org.OpenAPITools.Model.TokenLinkResponseDataInner
 
 ## Properties
 
