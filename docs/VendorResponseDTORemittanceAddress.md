@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.VendorResponseDTORemittanceAddress
+# Org.OpenAPITools.Model.VendorResponseDTORemittanceAddress
 
 ## Properties
 

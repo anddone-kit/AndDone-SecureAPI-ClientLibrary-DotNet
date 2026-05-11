@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.TransactionDetailResponse
+# Org.OpenAPITools.Model.TransactionDetailResponse
 
 ## Properties
 
@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **BatchId** | **string** |  | [optional] 
 **TransactionCode** | **string** |  | [optional] 
 **TransactionOrigin** | **string** |  | [optional] 
-**RefundOrigin** | [**TransactionPaymentResponseRefundOrigin**](TransactionPaymentResponseRefundOrigin.md) |  | [optional] 
+**RefundOrigin** | **string** |  | [optional] 
 **BillingContact** | [**TransactionPaymentResponseBillingContact**](TransactionPaymentResponseBillingContact.md) |  | [optional] 
 **ReferenceTransactionId** | **string** |  | [optional] 
 **TransactionDate** | **string** |  | [optional] 

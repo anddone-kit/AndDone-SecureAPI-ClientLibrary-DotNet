@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.VendorRequestDTO
+# Org.OpenAPITools.Model.VendorRequestDTO
 
 ## Properties
 
@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **PaymentMethodType** | **string** |  | 
 **NotificationType** | **string** |  | 
 **VendorNotes** | **string** |  | [optional] 
-**PhoneNumber** | **string** |  | 
+**PhoneNumber** | **string** |  | [optional] 
 **IsMobileNumber** | **bool** |  | [optional] 
 **UseSameAsPhysicalAddress** | **bool** |  | [optional] 
 **Email** | **string** |  | 

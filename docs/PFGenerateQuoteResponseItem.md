@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFGenerateQuoteResponseItem
+# Org.OpenAPITools.Model.PFGenerateQuoteResponseItem
 
 ## Properties
 

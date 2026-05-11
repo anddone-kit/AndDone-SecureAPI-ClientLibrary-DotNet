@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentBatchDetailsResponseTransactionDetailsInner
+# Org.OpenAPITools.Model.PaymentBatchDetailsResponseTransactionDetailsInner
 
 ## Properties
 

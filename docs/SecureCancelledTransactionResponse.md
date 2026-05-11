@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureCancelledTransactionResponse
+# Org.OpenAPITools.Model.SecureCancelledTransactionResponse
 
 ## Properties
 

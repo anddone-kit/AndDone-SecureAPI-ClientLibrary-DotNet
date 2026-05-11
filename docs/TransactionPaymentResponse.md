@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.TransactionPaymentResponse
+# Org.OpenAPITools.Model.TransactionPaymentResponse
 
 ## Properties
 
@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **ProcessMethod** | **string** |  | [optional] 
 **ProcessorName** | **string** |  | [optional] 
 **TransactionOrigin** | **string** |  | [optional] 
-**RefundOrigin** | [**TransactionPaymentResponseRefundOrigin**](TransactionPaymentResponseRefundOrigin.md) |  | [optional] 
+**RefundOrigin** | **string** |  | [optional] 
 **AchTenderInfo** | [**TransactionPaymentResponseAchTenderInfo**](TransactionPaymentResponseAchTenderInfo.md) |  | [optional] 
 **CcTenderInfo** | [**TransactionPaymentResponseCcTenderInfo**](TransactionPaymentResponseCcTenderInfo.md) |  | [optional] 
 **DebitCardTenderInfo** | [**TransactionPaymentResponseCcTenderInfo**](TransactionPaymentResponseCcTenderInfo.md) |  | [optional] 
@@ -38,7 +38,7 @@ Name | Type | Description | Notes
 **ChargebackTargetAccount** | **string** |  | [optional] 
 **UserId** | **string** |  | [optional] 
 **UserName** | **string** |  | [optional] 
-**ChargeBackAmount** | **decimal?** |  | [optional] 
+**ChargeBackAmount** | **float** |  | [optional] 
 **SuppressTechnologyFee** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

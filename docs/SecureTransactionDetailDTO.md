@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureTransactionDetailDTO
+# Org.OpenAPITools.Model.SecureTransactionDetailDTO
 
 ## Properties
 
@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **TraceNumber** | **string** |  | [optional] 
 **TransactionCode** | **string** |  | [optional] 
 **TransactionOrigin** | **string** |  | [optional] 
-**RefundOrigin** | [**TransactionPaymentResponseRefundOrigin**](TransactionPaymentResponseRefundOrigin.md) |  | [optional] 
+**RefundOrigin** | **string** |  | [optional] 
 **BillingContact** | [**TransactionPaymentResponseBillingContact**](TransactionPaymentResponseBillingContact.md) |  | [optional] 
 **ShippingContact** | [**TransactionPaymentResponseBillingContact**](TransactionPaymentResponseBillingContact.md) |  | [optional] 
 **ReferenceTransactionId** | **string** |  | [optional] 

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFCheckEndorsementsResponseItemPoliciesInner
+# Org.OpenAPITools.Model.PFCheckEndorsementsResponseItemPoliciesInner
 
 ## Properties
 

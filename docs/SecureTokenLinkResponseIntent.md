@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureTokenLinkResponseIntent
+# Org.OpenAPITools.Model.SecureTokenLinkResponseIntent
 
 ## Properties
 

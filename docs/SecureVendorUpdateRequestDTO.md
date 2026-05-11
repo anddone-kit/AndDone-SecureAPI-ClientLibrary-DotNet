@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureVendorUpdateRequestDTO
+# Org.OpenAPITools.Model.SecureVendorUpdateRequestDTO
 
 ## Properties
 

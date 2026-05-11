@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFEndorsementRequestQuotePoliciesInnerPolicyFeeInner
+# Org.OpenAPITools.Model.PFEndorsementRequestQuotePoliciesInnerPolicyFeeInner
 
 ## Properties
 

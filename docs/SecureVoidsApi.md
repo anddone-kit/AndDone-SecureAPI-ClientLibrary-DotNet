@@ -1,6 +1,6 @@
-# AndDoneSecureClientLibrary.Api.SecureVoidsApi
+# Org.OpenAPITools.Api.SecureVoidsApi
 
-All URIs are relative to *https://api.uat.anddone.com*
+All URIs are relative to *https://api.anddone.com*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
@@ -16,9 +16,9 @@ This API cancel a transaction.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -27,7 +27,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVoidsApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureVendorResponseDTO
+# Org.OpenAPITools.Model.SecureVendorResponseDTO
 
 ## Properties
 

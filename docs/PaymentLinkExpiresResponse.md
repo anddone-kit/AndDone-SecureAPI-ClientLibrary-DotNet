@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentLinkExpiresResponse
+# Org.OpenAPITools.Model.PaymentLinkExpiresResponse
 
 ## Properties
 

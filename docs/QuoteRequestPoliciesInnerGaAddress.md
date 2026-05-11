@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.QuoteRequestPoliciesInnerGaAddress
+# Org.OpenAPITools.Model.QuoteRequestPoliciesInnerGaAddress
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.TokenLinkSecureRequestCustomersInner
+# Org.OpenAPITools.Model.TokenLinkSecureRequestCustomersInner
 
 ## Properties
 

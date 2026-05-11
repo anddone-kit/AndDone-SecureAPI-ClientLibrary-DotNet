@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFEndorsementRequestQuoteDetailsRecurringACH
+# Org.OpenAPITools.Model.PFEndorsementRequestQuoteDetailsRecurringACH
 
 ## Properties
 

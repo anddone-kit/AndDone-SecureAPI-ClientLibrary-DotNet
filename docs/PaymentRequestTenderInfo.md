@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentRequestTenderInfo
+# Org.OpenAPITools.Model.PaymentRequestTenderInfo
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentIntentRequestSplitsInner
+# Org.OpenAPITools.Model.PaymentIntentRequestSplitsInner
 
 ## Properties
 

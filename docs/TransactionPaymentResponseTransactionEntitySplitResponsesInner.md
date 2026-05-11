@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.TransactionPaymentResponseTransactionEntitySplitResponsesInner
+# Org.OpenAPITools.Model.TransactionPaymentResponseTransactionEntitySplitResponsesInner
 
 ## Properties
 

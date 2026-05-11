@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFUpdatePFARequestDTO
+# Org.OpenAPITools.Model.PFUpdatePFARequestDTO
 
 ## Properties
 

@@ -1,6 +1,6 @@
-# AndDoneSecureClientLibrary.Api.SecurePaymentBatchingApi
+# Org.OpenAPITools.Api.SecurePaymentBatchingApi
 
-All URIs are relative to *https://api.uat.anddone.com*
+All URIs are relative to *https://api.anddone.com*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
@@ -20,9 +20,9 @@ This API is used for getting Secure Payment Batch Details
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -31,7 +31,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecurePaymentBatchingApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -120,9 +120,9 @@ This API execute on-demand batch transaction.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -131,7 +131,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecurePaymentBatchingApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -208,7 +208,7 @@ No authorization required
 
 <a id="securebatchespost"></a>
 # **SecureBatchesPost**
-> PaymentBatchResponse SecureBatchesPost (string xApiKey, string xAppKey, float xVersion, string origin, int? startRow = null, int? pageSize = null, string sortField = null, bool? asc = null)
+> PaymentBatchResponse SecureBatchesPost (string xApiKey, string xAppKey, float xVersion, string origin, int? startRow = null, int? pageSize = null, string? sortField = null, bool? asc = null)
 
 This API is used for getting Secure Payment Batches
 
@@ -216,9 +216,9 @@ This API is used for getting Secure Payment Batches
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -227,7 +227,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecurePaymentBatchingApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -235,7 +235,7 @@ namespace Example
             var origin = "origin_example";  // string | origin
             var startRow = 56;  // int? | Set StartRow (optional) 
             var pageSize = 56;  // int? | Set PageSize (optional) 
-            var sortField = "sortField_example";  // string | Set SortField (optional) 
+            var sortField = "sortField_example";  // string? | Set SortField (optional) 
             var asc = true;  // bool? | Set Asc (optional) 
 
             try
@@ -285,7 +285,7 @@ catch (ApiException e)
 | **origin** | **string** | origin |  |
 | **startRow** | **int?** | Set StartRow | [optional]  |
 | **pageSize** | **int?** | Set PageSize | [optional]  |
-| **sortField** | **string** | Set SortField | [optional]  |
+| **sortField** | **string?** | Set SortField | [optional]  |
 | **asc** | **bool?** | Set Asc | [optional]  |
 
 ### Return type
@@ -322,9 +322,9 @@ This API will returns batch timeline.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -333,7 +333,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecurePaymentBatchingApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -422,9 +422,9 @@ This API cancels transactions from an active batch.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -433,7 +433,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecurePaymentBatchingApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header

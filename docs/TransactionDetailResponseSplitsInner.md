@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.TransactionDetailResponseSplitsInner
+# Org.OpenAPITools.Model.TransactionDetailResponseSplitsInner
 
 ## Properties
 

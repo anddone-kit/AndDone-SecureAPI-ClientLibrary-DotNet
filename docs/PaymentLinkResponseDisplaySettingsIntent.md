@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentLinkResponseDisplaySettingsIntent
+# Org.OpenAPITools.Model.PaymentLinkResponseDisplaySettingsIntent
 
 ## Properties
 

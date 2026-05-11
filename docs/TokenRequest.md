@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.TokenRequest
+# Org.OpenAPITools.Model.TokenRequest
 
 ## Properties
 

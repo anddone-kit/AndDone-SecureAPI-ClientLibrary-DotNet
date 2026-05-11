@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentLinkRequest
+# Org.OpenAPITools.Model.PaymentLinkRequest
 
 ## Properties
 
@@ -24,8 +24,8 @@ Name | Type | Description | Notes
 **Splits** | [**List&lt;PaymentIntentRequestSplitsInner&gt;**](PaymentIntentRequestSplitsInner.md) |  | [optional] 
 **QuoteKey** | **string** |  | [optional] 
 **AccountNumber** | **string** |  | [optional] 
-**ReferenceType** | **string** |  | [optional] 
-**ReferenceNumber** | **string** |  | [optional] 
+**ReferenceType** | **string** |  | 
+**ReferenceNumber** | **string** |  | 
 **ReferenceKey** | **string** |  | [optional] 
 **ReferenceDataList** | [**List&lt;PaymentLinkRequestReferenceDataListInner&gt;**](PaymentLinkRequestReferenceDataListInner.md) |  | 
 **EnablePremiumFinance** | **bool** |  | [optional] 

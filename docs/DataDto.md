@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.DataDto
+# Org.OpenAPITools.Model.DataDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureUpdatePaymentLinkRequestSettings
+# Org.OpenAPITools.Model.SecureUpdatePaymentLinkRequestSettings
 
 ## Properties
 

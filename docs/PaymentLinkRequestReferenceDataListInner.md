@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentLinkRequestReferenceDataListInner
+# Org.OpenAPITools.Model.PaymentLinkRequestReferenceDataListInner
 
 ## Properties
 

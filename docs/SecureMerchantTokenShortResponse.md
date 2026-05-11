@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecureMerchantTokenShortResponse
+# Org.OpenAPITools.Model.SecureMerchantTokenShortResponse
 
 ## Properties
 

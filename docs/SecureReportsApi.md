@@ -1,6 +1,6 @@
-# AndDoneSecureClientLibrary.Api.SecureReportsApi
+# Org.OpenAPITools.Api.SecureReportsApi
 
-All URIs are relative to *https://api.uat.anddone.com*
+All URIs are relative to *https://api.anddone.com*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
@@ -8,7 +8,7 @@ All URIs are relative to *https://api.uat.anddone.com*
 
 <a id="securereportsdownloadspost"></a>
 # **SecureReportsDownloadsPost**
-> void SecureReportsDownloadsPost (string xApiKey, string xAppKey, float xVersion, string origin, ReportDownloadRequest reportDownloadRequest = null)
+> void SecureReportsDownloadsPost (string xApiKey, string xAppKey, float xVersion, string origin, ReportDownloadRequest? reportDownloadRequest = null)
 
 This API will add system report.
 
@@ -16,9 +16,9 @@ This API will add system report.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -27,13 +27,13 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureReportsApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var reportDownloadRequest = new ReportDownloadRequest(); // ReportDownloadRequest | ReportDownloadRequest (optional) 
+            var reportDownloadRequest = new ReportDownloadRequest?(); // ReportDownloadRequest? | ReportDownloadRequest (optional) 
 
             try
             {
@@ -76,7 +76,7 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **reportDownloadRequest** | [**ReportDownloadRequest**](ReportDownloadRequest.md) | ReportDownloadRequest | [optional]  |
+| **reportDownloadRequest** | [**ReportDownloadRequest?**](ReportDownloadRequest?.md) | ReportDownloadRequest | [optional]  |
 
 ### Return type
 

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PaymentListResponseDTO
+# Org.OpenAPITools.Model.PaymentListResponseDTO
 
 ## Properties
 

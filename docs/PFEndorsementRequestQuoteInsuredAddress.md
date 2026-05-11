@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.PFEndorsementRequestQuoteInsuredAddress
+# Org.OpenAPITools.Model.PFEndorsementRequestQuoteInsuredAddress
 This denotes the address of the insured.
 
 ## Properties

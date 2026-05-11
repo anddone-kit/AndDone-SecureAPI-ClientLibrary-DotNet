@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.SecurePaymentBatchDetailsRequest
+# Org.OpenAPITools.Model.SecurePaymentBatchDetailsRequest
 
 ## Properties
 

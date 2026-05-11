@@ -1,6 +1,6 @@
-# AndDoneSecureClientLibrary.Api.SecureVendorManagementApi
+# Org.OpenAPITools.Api.SecureVendorManagementApi
 
-All URIs are relative to *https://api.uat.anddone.com*
+All URIs are relative to *https://api.anddone.com*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
@@ -23,9 +23,9 @@ This API deletes vendor into system
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -34,7 +34,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVendorManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -119,9 +119,9 @@ This API gets details of particular vendor
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -130,7 +130,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVendorManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -219,9 +219,9 @@ This API Updates the existing vendor
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -230,7 +230,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVendorManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -319,9 +319,9 @@ This API creates vendor into system
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -330,7 +330,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVendorManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -411,7 +411,7 @@ No authorization required
 
 <a id="vendorapisecuremerchantsvendorssearchpost"></a>
 # **VendorapiSecureMerchantsVendorsSearchPost**
-> PageVendorResponseDTO VendorapiSecureMerchantsVendorsSearchPost (string xApiKey, string xAppKey, float xVersion, string origin, string paymentMethodType = null, string attention = null, string vendorId = null, string vendorName = null, string vendorStatus = null, string createdBy = null, string startDate = null, string endDate = null, int? pageSize = null, string searchText = null, string sortField = null, int? startRow = null, bool? asc = null)
+> PageVendorResponseDTO VendorapiSecureMerchantsVendorsSearchPost (string xApiKey, string xAppKey, float xVersion, string origin, string? paymentMethodType = null, string? attention = null, string? vendorId = null, string? vendorName = null, string? vendorStatus = null, string? createdBy = null, string? startDate = null, string? endDate = null, int? pageSize = null, string? searchText = null, string? sortField = null, int? startRow = null, bool? asc = null)
 
 This API returns list of all the Vendors of Merchant
 
@@ -419,9 +419,9 @@ This API returns list of all the Vendors of Merchant
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -430,23 +430,23 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVendorManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
             var xVersion = 8.14D;  // float | x-version
             var origin = "origin_example";  // string | origin
-            var paymentMethodType = "Check";  // string | Set paymentMethodType (optional) 
-            var attention = "attention_example";  // string | Set attention (optional) 
-            var vendorId = "vendorId_example";  // string | Set vendorId (optional) 
-            var vendorName = "vendorName_example";  // string | Set vendorName (optional) 
-            var vendorStatus = "vendorStatus_example";  // string | Set vendorStatus (optional) 
-            var createdBy = "createdBy_example";  // string | Set createdBy (optional) 
-            var startDate = "startDate_example";  // string | set start Date (optional) 
-            var endDate = "endDate_example";  // string | set end Date (optional) 
+            var paymentMethodType = "Check";  // string? | Set paymentMethodType (optional) 
+            var attention = "attention_example";  // string? | Set attention (optional) 
+            var vendorId = "vendorId_example";  // string? | Set vendorId (optional) 
+            var vendorName = "vendorName_example";  // string? | Set vendorName (optional) 
+            var vendorStatus = "vendorStatus_example";  // string? | Set vendorStatus (optional) 
+            var createdBy = "createdBy_example";  // string? | Set createdBy (optional) 
+            var startDate = "startDate_example";  // string? | set start Date (optional) 
+            var endDate = "endDate_example";  // string? | set end Date (optional) 
             var pageSize = 56;  // int? | Set PageSize (optional) 
-            var searchText = "searchText_example";  // string | search Text (optional) 
-            var sortField = "sortField_example";  // string | Set SortField (optional) 
+            var searchText = "searchText_example";  // string? | search Text (optional) 
+            var sortField = "sortField_example";  // string? | Set SortField (optional) 
             var startRow = 56;  // int? | Set StartRow (optional) 
             var asc = true;  // bool? | Set Asc (optional) 
 
@@ -495,17 +495,17 @@ catch (ApiException e)
 | **xAppKey** | **string** | an authorization header |  |
 | **xVersion** | **float** | x-version |  |
 | **origin** | **string** | origin |  |
-| **paymentMethodType** | **string** | Set paymentMethodType | [optional]  |
-| **attention** | **string** | Set attention | [optional]  |
-| **vendorId** | **string** | Set vendorId | [optional]  |
-| **vendorName** | **string** | Set vendorName | [optional]  |
-| **vendorStatus** | **string** | Set vendorStatus | [optional]  |
-| **createdBy** | **string** | Set createdBy | [optional]  |
-| **startDate** | **string** | set start Date | [optional]  |
-| **endDate** | **string** | set end Date | [optional]  |
+| **paymentMethodType** | **string?** | Set paymentMethodType | [optional]  |
+| **attention** | **string?** | Set attention | [optional]  |
+| **vendorId** | **string?** | Set vendorId | [optional]  |
+| **vendorName** | **string?** | Set vendorName | [optional]  |
+| **vendorStatus** | **string?** | Set vendorStatus | [optional]  |
+| **createdBy** | **string?** | Set createdBy | [optional]  |
+| **startDate** | **string?** | set start Date | [optional]  |
+| **endDate** | **string?** | set end Date | [optional]  |
 | **pageSize** | **int?** | Set PageSize | [optional]  |
-| **searchText** | **string** | search Text | [optional]  |
-| **sortField** | **string** | Set SortField | [optional]  |
+| **searchText** | **string?** | search Text | [optional]  |
+| **sortField** | **string?** | Set SortField | [optional]  |
 | **startRow** | **int?** | Set StartRow | [optional]  |
 | **asc** | **bool?** | Set Asc | [optional]  |
 
@@ -543,9 +543,9 @@ This API suspends vendor into system
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -554,7 +554,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVendorManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -639,9 +639,9 @@ This API gets timeline of particular vendor
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -650,7 +650,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVendorManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header
@@ -739,9 +739,9 @@ This API unsuspends vendor into system
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using AndDoneSecureClientLibrary.Api;
-using AndDoneSecureClientLibrary.Client;
-using AndDoneSecureClientLibrary.Model;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
 
 namespace Example
 {
@@ -750,7 +750,7 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "https://api.uat.anddone.com";
+            config.BasePath = "https://api.anddone.com";
             var apiInstance = new SecureVendorManagementApi(config);
             var xApiKey = "xApiKey_example";  // string | an authorization header
             var xAppKey = "xAppKey_example";  // string | an authorization header

@@ -1,4 +1,4 @@
-# AndDoneSecureClientLibrary.Model.GetQuoteRequest
+# Org.OpenAPITools.Model.GetQuoteRequest
 
 ## Properties
 
